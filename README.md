@@ -1,4 +1,4 @@
-Programming with JavaScript - javascript1
+Programming with JavaScript - js
 ===================
 
 [![Join the chat at https://gitter.im/mosbth/javascript1](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/mosbth/javascript1?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
@@ -6,11 +6,11 @@ Programming with JavaScript - javascript1
 [![CircleCI](https://circleci.com/gh/dbwebb-se/javascript1.svg?style=svg)](https://circleci.com/gh/dbwebb-se/javascript1)
 
 
-Coursematerial for javascript1-course, aimed at a swedish target audience as the first course in programming with JavaScript (in a (web) browser environment) on University level in computer science. 
+Coursematerial for js-course, aimed at a swedish target audience as the first course in programming with JavaScript (in a (web) browser environment) on University level in computer science.
 
 The course will have a high enough level to satisfy those who are familiar with another programming language and has the need to learn programming JavaScript in a browser.
 
-Relased as part of a University course: https://dbwebb.se/kurser/javascript1
+Relased as part of a University course: https://dbwebb.se/kurser/js
 
 The course repo is managed by a [dbwebb command line utility](https://dbwebb.se/dbwebb-cli).
 
@@ -30,5 +30,5 @@ Feel free to help building up the repository with more content suited for traini
 
 ```
  .
-..:  Copyright (c) 2014-2018 dbwebb et al, info@dbwebb.se
+..:  Copyright (c) 2014-2020 dbwebb et al, info@dbwebb.se
 ```
