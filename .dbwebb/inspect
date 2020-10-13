@@ -4,14 +4,14 @@
 # Usage: dbwebb inspect kmom01
 #
 # Sequence executed:
-# javascript1(), javascript1kmom01(), javascript1last()
+# js(), jskmom01(), jslast()
 #
 
 
 #
-# Test javascript1 general
+# Test js general
 #
-javascript1()
+js()
 {
     inspectIntro
 }
@@ -21,7 +21,7 @@ javascript1()
 #
 # Test general, last in sequence
 #
-function javascript1last()
+function jslast()
 {
     inspectMe "me/redovisa" "me.html" "redovisning.html"
 }
@@ -29,79 +29,79 @@ function javascript1last()
 
 
 #
-# Test javascript1 kmom01
+# Test js kmom01
 #
-javascript1kmom01()
+jskmom01()
 {
-    javascript1exercise "lab1" "answer.html" "uppgift/javascript-med-variabler-loopar-och-inbyggda-funktioner"
-    javascript1exercise "sandbox" "index.html" "uppgift/sandbox-steg-1"
+    jsexercise "lab1" "answer.html" "uppgift/javascript-med-variabler-loopar-och-inbyggda-funktioner"
+    jsexercise "sandbox" "index.html" "uppgift/sandbox-steg-1"
 }
 
 
 
 #
-# Test javascript1 kmom02
+# Test js kmom02
 #
-javascript1kmom02()
+jskmom02()
 {
-    javascript1exercise "lab2" "answer.html" "uppgift/javascript-med-funktioner"
-    javascript1exercise "flag1" "index.html" "uppgift/gor-svenska-flaggan-i-html-och-css"
-    javascript1exercise "sandbox2" "index.html" "uppgift/sandbox-steg-2"
+    jsexercise "lab2" "answer.html" "uppgift/javascript-med-funktioner"
+    jsexercise "flag1" "index.html" "uppgift/gor-svenska-flaggan-i-html-och-css"
+    jsexercise "sandbox2" "index.html" "uppgift/sandbox-steg-2"
 }
 
 
 
 #
-# Test javascript1 kmom03
+# Test js kmom03
 #
-javascript1kmom03()
+jskmom03()
 {
-    javascript1exercise "lab3" "answer.html" "uppgift/javascript-och-arrayer"
-    javascript1exercise "flag2" "index.html" "uppgift/gor-svenska-flaggan-med-javascript-html-och-css"
-    javascript1exercise "sandbox3" "index.html" "uppgift/sandbox-steg-3"
+    jsexercise "lab3" "answer.html" "uppgift/javascript-och-arrayer"
+    jsexercise "flag2" "index.html" "uppgift/gor-svenska-flaggan-med-javascript-html-och-css"
+    jsexercise "sandbox3" "index.html" "uppgift/sandbox-steg-3"
 }
 
 
 
 #
-# Test javascript1 kmom04
+# Test js kmom04
 #
-javascript1kmom04()
+jskmom04()
 {
-    javascript1exercise "lab4" "answer.html" "uppgift/javascript-och-arrayer"
-    javascript1exercise "lab5" "answer.html" "uppgift/javascript-och-objekt"
-    javascript1exercise "flag3" "index.html" "uppgift/gor-svenska-flaggan-med-javascript-och-objekt"
+    jsexercise "lab4" "answer.html" "uppgift/javascript-och-arrayer"
+    jsexercise "lab5" "answer.html" "uppgift/javascript-och-objekt"
+    jsexercise "flag3" "index.html" "uppgift/gor-svenska-flaggan-med-javascript-och-objekt"
 }
 
 
 
 #
-# Test javascript1 kmom
+# Test js kmom
 #
-javascript1kmom05()
+jskmom05()
 {
-    javascript1exercise "dom" "index.html" "uppgift/javascript-dom-och-events"
-    javascript1exercise "flag4" "index.html" "uppgift/memory-rita-flaggor-med-javascript-och-dom"
+    jsexercise "dom" "index.html" "uppgift/javascript-dom-och-events"
+    jsexercise "flag4" "index.html" "uppgift/memory-rita-flaggor-med-javascript-och-dom"
 }
 
 
 
 #
-# Test javascript1 kmom
+# Test js kmom
 #
-javascript1kmom06()
+jskmom06()
 {
-    javascript1exercise "hangman" "index.html" "uppgift/hanga-gubben-som-modul-i-javascript"
+    jsexercise "hangman" "index.html" "uppgift/hanga-gubben-som-modul-i-javascript"
 }
 
 
 
 #
-# Test javascript1 kmom
+# Test js kmom
 #
-javascript1kmom10()
+jskmom10()
 {
-    javascript1exercise "intelligence" "index.html" "javascript1/kmom10"
+    jsexercise "intelligence" "index.html" "js/kmom10"
 }
 
 
@@ -109,10 +109,10 @@ javascript1kmom10()
 #---------------------- BELOW SHOULD BE REPLACED ----------------------------
 
 #
-# Test javascript1 sandbox
+# Test js sandbox
 # REPLACE with inspectLab
 #
-javascript1exercise()
+jsexercise()
 {
     local lab="$1"
     local main="$2"
