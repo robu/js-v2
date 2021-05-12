@@ -1,3 +1,3 @@
-let value = 42
+const value = 42
 
 module.exports = value
