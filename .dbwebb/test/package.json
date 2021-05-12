@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "Test suite for js course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest suite.d/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbwebb-se/js-v2.git"
+  },
+  "author": "Kenneth Lewenhagen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbwebb-se/js-v2/issues"
+  },
+  "homepage": "https://github.com/dbwebb-se/js-v2#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

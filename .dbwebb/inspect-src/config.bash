@@ -1,3 +1,4 @@
+
 #!/usr/bin/env bash
 #
 # Sample configuration file to use with dbwebb gui for inspect.
@@ -9,8 +10,11 @@
 #echo $COURSE
 
 # Where are the inspect source files stored, default is in the course repo
-export INSPECT_SOURCE_DIR="$DIR/.solutions/inspect-src"
+#export INSPECT_SOURCE_DIR="$DIR/.solutions/inspect-src"
 
 # Course specific settings
 export REDOVISA_HTTP_PREFIX="http://www.student.bth.se"
 export REDOVISA_HTTP_POSTFIX="me/redovisa"
+
+# Do or dont do dbwebb inspect
+export NO_DBWEBB_INSPECT=1

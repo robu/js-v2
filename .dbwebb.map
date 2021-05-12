@@ -5,33 +5,25 @@
 #
 
 # kmom01
-me/kmom01/sandbox
-me/kmom01/lab1
+me/kmom01/scripts1
 
 # kmom02
-me/kmom02/sandbox2
-me/kmom02/flag1
-me/kmom02/lab2
+me/kmom02/scripts2
 
 # kmom03
-me/kmom03/sandbox3
-me/kmom03/flag2
-me/kmom03/lab3
+me/kmom03/dom1
 
 # kmom04
-me/kmom04/flag3
-me/kmom04/lab4
-me/kmom04/lab5
+me/kmom04/dom2
 
 # kmom05
-me/kmom05/flag4
-me/kmom05/dom
+me/kmom05/api
 
 # kmom06
-me/kmom06/hangman
+me/kmom06/component
 
 # kmom10
-me/kmom10/intelligence
+me/kmom10/project
 
 # redovisa
 me/redovisa
