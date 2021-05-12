@@ -1,6 +1,6 @@
-# Get going with webpack
+# Webpack
 
-
+This folder contains an example of how we can use webpack to bundle our code.
 
 ### Prerequisite
 
@@ -10,7 +10,7 @@ You have installed nodejs and npm.
 
 ### Get going
 
-The directory contains all code necessary to run a small example of how webpack works.
+Follow the steps to get started.
 
 1. Step into the folder containing the file `package.json`.
 1. Run the command `$ npm install` to install the dependencies. The dependencies are:

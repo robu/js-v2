@@ -1,4 +1,5 @@
 const base = require('path').resolve(__dirname, './../../../../me/kmom01/function')
+
 const loop = require(`${base}/loop`);
 const sum = require(`${base}/sum`);
 
