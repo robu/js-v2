@@ -2,13 +2,13 @@
 
 
 
-### Prerequisite {#pre}
+### Prerequisite
 
 You have installed nodejs and npm.
 
 
 
-### Get going {#get-going}
+### Get going
 
 The directory contains all code necessary to run a small example of how webpack works.
 
