@@ -1,9 +1,9 @@
-Kom igång med JavaScript i terminalen {#intro}
+Kom igång med JavaScript i terminalen
 =======================================================
 
 Den här artikeln förutsätter att du har node installerat och fungerande. Vi börjar med att dubbelkolla så det fungerar.
 
-```
+```console
 $ node
 Welcome to Node.js v14.17.0.
 Type ".help" for more information.
