@@ -5,7 +5,7 @@
   "description": "",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "test": "eslint -c .eslintrc.json src/"
+    "test": "eslint -c ../eslint/.eslintrc.json src/"
   },
   "author": "",
   "license": "ISC",
