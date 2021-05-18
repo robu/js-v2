@@ -5,16 +5,11 @@
   "description": "",
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "test": "eslint -c ../eslint/.eslintrc.json src/"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.26.0",
-    "eslint-config-standard": "^16.0.2",
-    "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0"
   }

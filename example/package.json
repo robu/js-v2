@@ -4,7 +4,7 @@
   "description": "This folder contains several examples used in the course.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "eslint -c eslint/.eslintrc.json"
   },
   "author": "",
   "license": "ISC",
