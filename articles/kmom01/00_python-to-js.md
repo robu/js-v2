@@ -168,7 +168,7 @@ my_list = [1, "text", 5, 42]
 print(my_list[2])
 ```
 
-En lista i JavaScript:
+En array i JavaScript:
 
 ```js
 const myList = [1, "text", 5, 42]
