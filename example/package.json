@@ -2,7 +2,7 @@
   "name": "example",
   "version": "1.0.0",
   "description": "This folder contains several examples used in the course.",
-  "main": "index.js",
+  "private": true,
   "scripts": {
       "test": "eslint -c eslint/.eslintrc.json"
   },
