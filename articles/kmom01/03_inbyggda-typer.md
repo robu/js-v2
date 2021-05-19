@@ -59,7 +59,7 @@ Infinity
 Strängar och `String`
 ==================================
 
-Strängar omsluts med enkelfnutt `'`, dubbelfnutt `"` eller backticks `\`` speciella tecken kan escapas med backslash `\` på samma sätt som i andra programmeringsspråk. En tom sträng är `''` eller `""`. Strängar kan även innehålla unicode tecken enligt `\uXXXX` där `XXXX` är fyra hexadecimala siffror.
+Strängar omsluts med enkelfnutt `'`, dubbelfnutt `"` eller backticks ``` speciella tecken kan escapas med backslash `\` på samma sätt som i andra programmeringsspråk. En tom sträng är `''` eller `""`. Strängar kan även innehålla unicode tecken enligt `\uXXXX` där `XXXX` är fyra hexadecimala siffror.
 
 Strängkonkatenering sker med operatorn `+` eller `+=`.
 
