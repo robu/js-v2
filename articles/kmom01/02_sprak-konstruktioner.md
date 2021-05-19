@@ -241,3 +241,46 @@ En variabel som ännu inte blivit tilldelad ett värde sägs ha värdet `undefin
 Man kan tilldela en variabel ett värde `null` som kan sägas innebära avsaknaden av värde. Vill man undvika `undefined` kan man explicit tilldela en variabel `null`. Internt representeras `null` av ett objekt, iallafall enligt funktionen `typeof()` och det kan kännas lite udda, men det är inget som bör störa oss.
 
 Vi tar och kikar lite djupare in i var och en av dessa, samtidigt som vi gör lite övningar. Då fortsätter vi.
+
+
+
+Variabler utan värde, `undefined`
+==================================
+
+En variabel som inte har tilldelats ett värde får automatiskt värdet [`undefined`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/undefined). Det är ett odefinerat värde.
+
+```javascript
+let i;
+
+if(i === undefined) {
+  // Yep, this is true for i
+}
+
+if(typeof i === 'undefined') {
+  // Yep, this is true for i
+}
+```
+
+
+
+Ett icke-värde, `null`
+==================================
+
+Javascript skiljer på [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null) som är ett icke-värde och `undefined` som är ett odefinierat värde. Man använder `null` för att ge en variabel värdet `null`, med mening. När värdet `undefined` dyker upp så innebär det oftast att man inte initierat en variabel med ett värde.
+
+```javascript
+let i;
+let j = null;
+
+if(i === j) {
+  // Nope, not the same type, they are not equal.
+}
+
+if(i == j) {
+  // Yep, both evaluates to false so they are equal.
+}
+
+if(j === null) {
+  // Yep, j is null for sure.
+}
+```
