@@ -81,7 +81,7 @@ Vi kan där se vilken fil, rad och plats det handlar om:
 ...
 ```
 
-Rad 5, tecken nummer 17 i forloop.js. Det är av typen "error", felet är "Extra semicolon" och felet heter "semi". Mycket yttig information.
+Rad 5, tecken nummer 17 i forloop.js. Det är av typen "error", felet är "Extra semicolon" och felet heter "semi". Mycket nyttig information.
 
 Om vi inte vill fixa det själva finns en fantastisk grej som vi såg längst ner när vi körde lintern:
 
@@ -97,3 +97,5 @@ $ npm run linter kmom01/forloop.js -- --fix
 ```
 
 `--` talar om att det kommer ett argument till kommandot och `--fix` är själva optionet.
+
+Som nämn ovan så kommer läraren använda configfilen från exempelmappen vid rättning så om den visar grönt är allt ok vad det gäller validering. Skulle det visa fel kommer det sannolikt bli komplettering. Bra att ha koll på.
