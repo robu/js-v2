@@ -175,3 +175,67 @@ const myList = [1, "text", 5, 42]
 
 console.log(myList[2])
 ```
+
+
+
+### Funktion
+
+Funktion i Python:
+
+```python
+def calculate():
+    print(12 + 10)
+
+calculate()
+```
+
+Funktion i JavaScript:
+
+```js
+function calculate () {
+  console.log(29 + 13)
+}
+
+calculate()
+```
+
+Funktion med argument i Python:
+
+```python
+def calculate(a, b):
+    print(a + b)
+
+calculate(29, 13)
+```
+
+Funktion med argument i JavaScript:
+
+```js
+function calculate (a, b) {
+  console.log(a + b)
+}
+
+calculate(29, 13)
+```
+
+Funktion med returvärde i Python:
+
+```python
+def calculate(a, b):
+    return a + b
+
+sum = calculate(29, 13)
+print(sum)
+```
+
+Funktion med returvärde i JavaScript:
+
+```js
+function calculate (a, b) {
+  return a + b
+}
+
+const sum = calculate(29, 13)
+
+console.log(sum)
+```
