@@ -32,13 +32,13 @@ Hur gör vi då för att testa koden?
 
 När vi står vår me-mapp kan vi köra scriptet med:
 
-```shell
+```console
 $ npm run linter <folder or file>
 ```
 
 Låt säga att det är ett valideringsfel i filen `kmom01/forloop.js` och vi kör lintern på den:
 
-```shell
+```console
 $ npm run linter kmom01/forloop.js
 
 > example@1.0.0 linter
@@ -54,7 +54,7 @@ $ npm run linter kmom01/forloop.js
 
 Vi kan där se vilken fil, rad och plats det handlar om:
 
-```shell
+```console
 ...
 /home/klw/git/work/dbwebb-kurser/js-v2/example/kmom01/forloop.js
   5:17  error  Extra semicolon  semi
@@ -69,14 +69,14 @@ Rad 5, tecken nummer 17 i forloop.js. Det är av typen "error", felet är "Extra
 
 Om vi inte vill fixa det själva finns en fantastisk grej som vi såg längst ner när vi körde lintern:
 
-```shell
+```console
 ✖ 1 problem (1 error, 0 warnings)
   1 error and 0 warnings potentially fixable with the `--fix` option.
 ```
 
 Vi kan lösa de felen automatiskt med ett option `--fix`:
 
-```shell
+```console
 $ npm run linter kmom01/forloop.js -- --fix
 ```
 

@@ -12,13 +12,13 @@ Tanken är att du ska ha mappen `me/` som rotmapp och där installera alla beroe
 
 Ställ dig i kursrepot och kopiera in filen från exempelmappen:
 
-```shell
+```console
 $ cp example/environment/package.json .
 ```
 
 Sedan är det bara att installera:
 
-```shell
+```console
 $ npm install
 # massa utskrift från installationen
 ```
