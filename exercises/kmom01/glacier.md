@@ -30,7 +30,7 @@ Utgå ifrån att år 2000 är startdatum. Skapa ett script `kmom01/glacier.js` s
 
 ```shell
 $ node glacier.js
-Year    Rate    sealevel
+Year    Rate    Sea
 ------------------------
 2000    0.36cm  0mm
 2001    0.38cm  0.76mm
