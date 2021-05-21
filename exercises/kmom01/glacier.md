@@ -28,7 +28,7 @@ Givet datan ovan ska du skapa en rapport enligt kraven nedan. Du får använda v
 
 Utgå ifrån att år 2000 är startdatum. Skapa ett script `kmom01/glacier.js` som skapar följande utskrift:
 
-```shell
+```console
 $ node glacier.js
 Year    Rate    Sea
 ------------------------
@@ -60,15 +60,15 @@ Year    Rate    Sea
 
 Ta en kopia på föregående script och döp kopian till `glacier_extra.js`.
 
-```shell
+```console
 $ cp glacier.js glacier_extra.js
 ```
 
-Bygg om scriptet så man kan skicka in två argument till en funktion, `calculate(<endYear>, <logRate>)`. `endYear` är året som rapporten ska sluta på och `logRate` är hur ofta åren ska skrivas ut.
+Bygg om scriptet så man kan skicka in två argument till en funktion, `calculate(<endYear>, <logRate>)`, där`endYear` är året som rapporten ska sluta på och `logRate` är hur ofta åren ska skrivas ut.
 
 Ett exempel på hur det kan se ut med argumenten `calculate(2050, 5)`:
 
-```shell
+```console
 $ node glacier_extra.js
 Year    Rate    Sea
 ------------------------
