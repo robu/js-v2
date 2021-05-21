@@ -68,7 +68,7 @@ Bygg om scriptet så man kan skicka in två argument till en funktion, `calculat
 
 Ett exempel på hur det kan se ut med argumenten `calculate(2050, 5)`:
 
-```console
+```shell-session
 $ node glacier_extra.js
 Year    Rate    Sea
 ------------------------
