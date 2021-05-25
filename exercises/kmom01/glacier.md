@@ -1,4 +1,4 @@
-# Uppgift - Rapport
+# Uppgift - "Glacier Report"
 
 I den här första uppgiften ska du skapa script som hjälper till att beräkna förhållanden mellan de smältande glaciärerna och den stigande havsnivån. Du jobbar i mappen `kmom01/`.
 
@@ -14,7 +14,7 @@ Det förutsätts att du gått igenom artiklarna för [kursmoment 01](../../artic
 
 Att glaciärerna smälter är ett välkänt globalt problem och nu behövs din hjälp för att framställa en rapport som visar data över hur det egentligen ser ut.
 
-Havsnivån hör stigit sedan slutet av 1800-talet när människan började bränna kol, gas och andra fossila bränslen för energi. Koldioxiden som då skickas upp i atmosfären absorberar solens värme och håller den kvar. Det har gjort att planeten blivit varmare vilket i sin tur gjort att glaciärerna har börjat smälta och havsvattnet expanderat av värmen.
+Havsnivån har stigit sedan slutet av 1800-talet när människan började bränna kol, gas och andra fossila bränslen för energi. Koldioxiden som då skickas upp i atmosfären absorberar solens värme och håller den kvar. Det har gjort att planeten blivit varmare vilket i sin tur gjort att glaciärerna har börjat smälta och havsvattnet expanderat av värmen.
 
 Man räknar med att de smältande glaciärerna har stått för ca 21% av havsnivåns stigning sedan år 2000 och globalt stiger havsnivån 3.6mm per år.
 
@@ -68,7 +68,7 @@ Bygg om scriptet så man kan skicka in två argument till en funktion, `calculat
 
 Ett exempel på hur det kan se ut med argumenten `calculate(2050, 5)`:
 
-```shell-session
+```console
 $ node glacier_extra.js
 Year    Rate    Sea
 ------------------------
@@ -89,3 +89,5 @@ Year    Rate    Sea
 ### Avslutningsvis
 
 Lycka till och hör av dig om du kör fast eller har några funderingar.
+
+[TBD: Länk till issues](#)
