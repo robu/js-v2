@@ -1,7 +1,7 @@
 {
-  "name": "example",
+  "name": "general",
   "version": "1.0.0",
-  "description": "This folder contains several examples used in the course.",
+  "description": "Contains all packages used in the course.",
   "private": true,
   "type": "module",
   "scripts": {

@@ -47,7 +47,7 @@ $ touch variables.js
 
 Öppna den i valfri editor och lägg in följande kod:
 
-```javascript
+```js
 const value = 25
 const text = `lite text`
 let newValue = value + 15
@@ -78,7 +78,7 @@ Vi tar och tittar på de vanligaste konstruktionerna och hur de se ut i JavaScri
 
 
 
-#### if/else/else if
+#### If/else/else if
 
 Vi kontrollerar om variablen `value` är större än, mindre än eller samma som `maxValue`.
 
@@ -97,7 +97,7 @@ if (value > maxValue) {
 
 
 
-#### forloop
+#### Forloop
 
 Vi skriver ut värdet på variabeln `i` på lite olika sätt.
 
@@ -118,6 +118,55 @@ for (let i = 0; i <= value; i += 2) {
 for (let i = value; i >= 0; i--) {
   console.log(i)
 }
+```
+
+
+
+#### While loop
+
+En while loop som räknar ner från 42:
+
+```js
+let value = 42
+
+while (value > 0) {
+  console.log(value)
+  value--
+}
+```
+
+Det är som alltid viktigt att se till så loopen kan nå sitt mål, så det inte blir en oändlig loop.
+
+
+
+#### Funktioner
+
+Vi kan såklart även använda funktioner i JavaScript.
+
+```javascript
+(function () {
+  console.log(`I get executed immediatly`)
+}())
+
+function printSomethingNice () {
+  console.log(`You look good today!`)
+}
+
+function printSomethingNiceArguments (how, when) {
+  console.log(`You look ${how} ${when}!`)
+}
+
+const arrowFunction = () => console.log(`I am an arrow function!`)
+const arrowFunctionArguments = (a, b) => a + b
+
+printSomethingNice()
+printSomethingNiceArguments(`good`, `today`)
+arrowFunction()
+
+const answer = arrowFunctionArguments(13, 29)
+
+console.log(answer)
+
 ```
 
 
