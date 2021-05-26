@@ -3,11 +3,11 @@ Moduler
 
 I den här artikeln går vi igenom vad en modul är och rätar ut frågetecknen runt olika typer av moduler.
 
-Filera som används kan ni hitta i [exempelmappen](../../example/modules)
+Filera som används kan ni hitta i [exempelmappen](../../example/modules/article).
 
 ### Vad är en modul?
 
-Från början var JavaScript program oftast små script som löste en liten uppgift i webbläsaren där det behövdes. Det fanns inget behov att dela upp koden i mindre fristående delar. Nu för tiden finns hela program och spel som körs i webbläsaren med en rysligt massa JavaScript. Vi kör även JavaScript på serversidan (tex node.js), vilket medför att det totalt körs mycket mer JavaScript överallt. JavaScript på serversidan har kunnat importera moduler länge och nu har turen kommit till webbläsaren med.
+Från början var JavaScript program oftast små script som löste en liten uppgift i webbläsaren där det behövdes. Det fanns inget behov att dela upp koden i mindre fristående delar. Nu för tiden finns hela program och spel som körs i webbläsaren med en rysligt massa JavaScript. Vi kör även JavaScript på serversidan (tex node.js), vilket medför att det totalt körs mycket mer JavaScript överallt. JavaScript på serversidan har kunnat importera moduler länge och sedan några år tillbaka har turen kommit till webbläsaren.
 
 En modul är en isolerad del med scriptkod som oftast innehåller det som just den delen behöver, isolerat från övrig kod. Man kan med fördel bara importera den när man behöver den och den blir enklare att underhålla.
 
