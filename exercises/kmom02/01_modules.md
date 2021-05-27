@@ -48,7 +48,7 @@ $ cp example/kmom02/*.mjs kmom02/
 
 1. Skapa en ny modul: `report.mjs` som ska exportera följande funktioner:
     | Namn        | Argument           | Vad ska hända?  |
-    | ------------- |:-------------:| -----:|
+    | ------------- |:-------------:|:-----|
     | prettyPrint | &lt;string&gt;, &lt;array&gt; | Skriv ut en rapport av alla inskickade djur. Se nedan för exempel. |
     | fixFirstLetter      | &lt;array&gt;      |   Returnera arrayen där första bokstaven är gjord till versal. |
     | sortAnimals | &lt;array&gt; | Returnera den inskickade arrayen sorterad alfabetiskt i stigande ordning. Du kan göra skillnad på gemener och versaler. |
