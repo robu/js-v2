@@ -51,7 +51,7 @@ $ cp example/kmom02/*.mjs kmom02/
     | ------------- |:-------------:| -----:|
     | prettyPrint | &lt;string&gt;, &lt;array&gt; | Skriv ut en rapport av alla inskickade djur. Se nedan för exempel. |
     | fixFirstLetter      | &lt;array&gt;      |   Returnera arrayen där första bokstaven är gjord till versal. |
-    | sortAnimals | &lt;array&gt;, &lt;string&gt; | Returnera den inskickade arrayen sorterad alfabetiskt i stigande ordning. |
+    | sortAnimals | &lt;array&gt; | Returnera den inskickade arrayen sorterad alfabetiskt i stigande ordning. Du kan göra skillnad på gemener och versaler. |
 
     Om man exekverar prettyPrint med argumenten `African` och en array med alla Afrikas djur, `prettyPrint('African', allAfricanAnimals)` ska man få utskriften:
 
@@ -77,7 +77,22 @@ $ cp example/kmom02/*.mjs kmom02/
 
 ### Extra uppgift (Optionell)
 
-Det finns ingen extrauppgift.
+Funktionen `sortAnimals()` ska inte bry sig om gemener och versaler, utan allt ska hamna i ordning, tex:
+
+```console
+[
+  'African penguin',
+  'african pterodactyl', <--- notera
+  'African wild dog',
+  'Black rhino',
+  'Chimpanzee',
+  'Ethiopian wolf',
+  'Giraffe',
+  'Hooded vulture',
+  'Mountain gorilla',
+  'White rhino'
+]
+```
 
 
 
