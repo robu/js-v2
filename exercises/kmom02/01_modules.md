@@ -41,9 +41,9 @@ $ cp example/kmom02/*.mjs kmom02/
     ```console
     Removed: Monarch butterfly
     ```
-    Om man istället försöker ta bort `King Kong` från någon lista ska det skrivas ut:
+    Om man istället försöker ta bort ett värde som inte finns, till exempel `Tyrannosaurus`, från någon array ska det skrivas ut:
     ```console
-    No "King Kong" in array.
+    No "Tyrannosaurus" in array.
     ```
 
 1. Skapa en ny modul: `report.mjs` som ska exportera följande funktioner:
@@ -52,8 +52,10 @@ $ cp example/kmom02/*.mjs kmom02/
     | prettyPrint | &lt;string&gt;, &lt;array&gt; | Skriv ut en rapport av alla inskickade djur. Se nedan för exempel. |
     | fixFirstLetter      | &lt;array&gt;      |   Returnera arrayen där första bokstaven är gjord till versal. |
     | sortAnimals | &lt;array&gt; | Returnera den inskickade arrayen sorterad alfabetiskt i stigande ordning. Du kan göra skillnad på gemener och versaler. |
+    | filterAnimals | &lt;[array, array]&gt;, &lt;int&gt; | Returnera en array med alla djur som har färre eller lika många bokstäver (inte tecken) som den inskickade siffran. Se nedan för exempel. |
 
-    Om man exekverar prettyPrint med argumenten `African` och en array med alla Afrikas djur, `prettyPrint('African', allAfricanAnimals)` ska man få utskriften:
+
+    **prettyPrint** Om man exekverar prettyPrint med argumenten `African` och en array med alla Afrikas djur, `prettyPrint('African', allAfricanAnimals)` ska man få utskriften:
 
     ```console
     --- REPORT ---
@@ -68,16 +70,28 @@ $ cp example/kmom02/*.mjs kmom02/
     * Giraffe
     * Hooded vulture
     * Chimpanzee
-    * african pig
     ```
 
     Använder man andra argument ska man såklart få en annan utskrift, men i samma format.
+
+    **filterAnimals** Om funktionen exekveras med alla afrikanska och amerikanska djur samt siffran 10, `filterAnimals([allAfricanAnimals, allAmericanAnimals], 10)`, ska resultatet bli:
+
+    ```console
+    [
+      'Pangolin',
+      'Black rhino',
+      'White rhino',
+      'Giraffe',
+      'Chimpanzee',
+      'Delta Smelt'
+    ]
+    ```
 
 
 
 ### Extra uppgift (Optionell)
 
-Funktionen `sortAnimals()` ska inte bry sig om gemener och versaler, utan allt ska hamna i ordning, tex:
+Skapa en ny funktion `sortAnimalsExtra()` som ska sortera enligt tidigare, men inte bry sig om gemener och versaler, utan allt ska hamna i ordning, tex:
 
 ```console
 [
