@@ -2,13 +2,13 @@ import chai from 'chai';
 import chaifs from 'chai-fs';
 import chaiFiles from 'chai-files';
 import chaiExecAsync from '@jsdevtools/chai-exec';
-import {SOURCE, KMOM, SOLUTION, ERROR_MSG} from './config.mjs';
+import {SOURCE, SOLUTION, ERROR_MSG} from './config.mjs';
 const EXERCISE = 'glacier'
-// var myArgs = process.argv.slice(2);
-// console.log("KMOM: " + myArgs[1]);
-// chai.use(chaifs);
+const KMOM = 'kmom01'
+import * as fs from 'fs'
 chai.use(chaiExecAsync);
 chai.use(chaiFiles);
+// chai.use(chaifs);
 
 // chai.config.showDiff = false;
 // chai.config.includeStack = false;
@@ -25,13 +25,13 @@ describe('Testsuite for KMOM01', () => {
 
     describe("Glacier", () => {
 
-        let sourceFile1 = `${SOURCE}/${KMOM}/${EXERCISE}/glacier.js`;
-        let solutionFile1 = `${SOLUTION}/${KMOM}/${EXERCISE}/glacier.js`;
+        let sourceFile1 = `${SOURCE}/${KMOM}/glacier.js`;
+        let solutionFile1 = `${SOLUTION}/${KMOM}/glacier.js`;
 
         /**
         * Check that the file(s) are there.
         */
-        it('The file is present', (done) => {
+        it('should be a file present', (done) => {
             expect(file(sourceFile1), ERROR_MSG).to.exist
             // expect(sourceFile1, ERROR_MSG).to.be.a.file("No such file.");
             done();
@@ -47,14 +47,20 @@ describe('Testsuite for KMOM01', () => {
         });
     });
 
-    describe("Glacier EXTRA", () => {
-        let sourceFile2 = `${SOURCE}/${KMOM}/${EXERCISE}/glacier_extra.js`;
-        let solutionFile2 = `${SOLUTION}/${KMOM}/${EXERCISE}/glacier_extra.js`;
+    describe("(OPTIONAL) EXTRA ASSIGNMENT: Glacier_extra", () => {
+        let sourceFile2 = `${SOURCE}/${KMOM}/glacier_extra.js`;
+        let solutionFile2 = `${SOLUTION}/${KMOM}/glacier_extra.js`;
 
         /**
         * Check that the file(s) are there.
         */
-        it('The file is present', (done) => {
+        it('should be a file present', (done) => {
+            // let there = fs.existsSync(sourceFile2)
+            // if (there){
+            //     chai.assert.isOk()
+            //
+            // }
+            // else chai.assert.fail("No file there...")
             expect(file(sourceFile2), "Random error message").to.exist
             done();
         });

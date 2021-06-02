@@ -72,6 +72,8 @@ Vi kan även välja vad vi vill att den importerade funktionen/variabeln ska het
 import { sum as anything } from './module.mjs'
 ```
 
+Man kan även använda wildcardet `*`: `import * as anything from ...` för att importera allt. Det är dock inte att föredra då det blir odiciplinerat att inte veta vad vi vill importera.
+
 
 
 #### CommonJS

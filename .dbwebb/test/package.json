@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "jest": "jest suite.d/",
-    "test": "mocha 'mocha/kmom01.mjs'"
+    "test": "mocha 'mocha/'$npm_config_kmom'.test.mjs'",
+    "test-extra": "mocha 'mocha/'$npm_config_kmom'.test.optional.mjs'",
+    "test-all": "npm run test --kmom=$npm_config_kmom && npm run test-extra --kmom=$npm_config_kmom"
   },
   "repository": {
     "type": "git",

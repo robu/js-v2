@@ -1,9 +1,9 @@
 (function () {
-    'use strict';
+  'use strict'
 
-    var myContent = document.getElementById('content');
+  const myContent = document.getElementById('content')
 
-    myContent.innerHTML = '<h3>This is a template!</h3>';
+  myContent.innerHTML = '<h3>This is a template!</h3>'
 
-    window.console.log('Sandbox is ready!');
-})();
+  window.console.log('Sandbox is ready!')
+})()

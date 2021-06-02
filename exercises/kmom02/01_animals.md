@@ -1,4 +1,4 @@
-# Uppgift - "Modules"
+# Uppgift - "Animals"
 
 I den här uppgiften ska du skapa ett par moduler som exporterar fördefinierad funktionalitet.
 
@@ -37,11 +37,11 @@ $ cp example/kmom02/*.mjs kmom02/
     | addAnimal(string)  | Lägg till ett nytt djur i listan. |
     | removeAnimal(string) | Ta bort ett djur från listan. Returnera information om det gick bra eller inte. Se nedan för exempel. |
 
-    **removeAnimal**: Om man försöker ta bort `Monarch butterfly` från de amerikanska djuren ska det skrivas ut:
+    **removeAnimal**: Om man försöker ta bort `Monarch butterfly` från de amerikanska djuren ska det returneras:
     ```console
     Removed: Monarch butterfly
     ```
-    Om man istället försöker ta bort ett värde som inte finns, till exempel `Tyrannosaurus`, från någon array ska det skrivas ut:
+    Om man istället försöker ta bort ett värde som inte finns, till exempel `Tyrannosaurus`, från någon array ska det returneras:
     ```console
     No "Tyrannosaurus" in array.
     ```
@@ -50,8 +50,8 @@ $ cp example/kmom02/*.mjs kmom02/
 
     | Namn        | Vad ska hända?  |
     | ------------- |:-----|
-    | prettyPrint(string, array) |  Skriv ut en rapport av alla inskickade djur. Se nedan för exempel. |
-    | fixFirstLetter(array)   |   Returnera arrayen där första bokstaven är gjord till versal. |
+    | prettyPrint(string, array) |  Returnera en rapport av alla inskickade djur. Se nedan för exempel. |
+    | fixFirstLetter(array)   |   Returnera arrayen där första bokstaven på alla djur är gjord till versal. |
     | sortAnimals(array) | Returnera den inskickade arrayen sorterad alfabetiskt i stigande ordning. Du kan göra skillnad på gemener och versaler. |
     | filterAnimals([array, array...], int) | Returnera en array med alla djur som har färre eller lika många bokstäver (inte tecken) som den inskickade siffran. Se nedan för exempel. |
 
