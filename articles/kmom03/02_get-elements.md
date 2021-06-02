@@ -21,7 +21,7 @@ Där har vi satt ett id på elementet, bra. Då är det bara att tuta på!
 
 Då JavaScript-filen har länkats in via `js/main.js` kan vi nå vår div därifrån:
 
-```javascript
+```js
 let myContent = document.getElementById('content')
 
 myContent.innerHTML = '<h3>This is a template!</h3>'
@@ -47,11 +47,13 @@ Om du nu kikar i consolen kan du se hela elementet som vi har fångat:
 
 ### Hämta via klassnamn
 
-Om vi hämtar element via klassnamn får vi alla element som har den klassen. Funktionen returnerar en array-list-liknande historia, en HTMLCollection. Vi behöver loopa igenom den eller peka på elementen i arrayen specifikt.
+Om vi hämtar element via klassnamn får vi alla element som har det efterfrågade klassnamnet. Funktionen returnerar en *live HTMLCollection*. Det betyder att den representerar elementen i realtid och om vi ändrar på elementen kommer vi även ändra de hämtade objekten. Ofta spelar det ingen roll, men det är bra att känna till när vi itererar igenom elementen.
+
+Vi behöver loopa igenom den eller peka på elementen i arrayen specifikt.
 
 
 
-#### html-filen
+#### html och css filerna
 
 ```html
 <div id="content" class="content">
@@ -63,16 +65,25 @@ Om vi hämtar element via klassnamn får vi alla element som har den klassen. Fu
 </div>
 ```
 
+Vi behöver lägga följande i css filen:
+
+```css
+.box {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+}
+```
 
 
 #### JavaScript-filen
 
 ```js
-let boxes = document.getElementsByClassName("box")
+const boxes = document.getElementsByClassName("box")
 
 for (let i = 0; i < boxes.length; i++) {
-    boxes[i].style.backgroundColor = "#503899"
-    boxes[i].style.margin = "5px"
+  boxes[i].style.backgroundColor = "#503899"
+  boxes[i].style.margin = "5px"
 }
 
 console.log(boxes)
@@ -87,6 +98,14 @@ En HTMLCollection har egenskapen `length` så vi kan loopa igenom den och nå al
 Om du nu kikar i consolen kan du se att vi har fem objekt i typen `HTMLCollection`.
 
 ![element hämtade via klassnamn](../img/classname.png)
+
+
+
+### Hämta via querySelector
+
+Som ett alternativ till att hämta element med klassnamn kan vi använda och `querySelectorAll()`. Där returneras en statisk nodelista där alla element med den valda *css selectorn* finns. Om vi tar ovan exempel igen men hämtar med querySelectorAll istället behövre vi bara ändra raden som hämtar elementen: `const boxes = document.querySelectorAll(".box")`.
+
+Man kan även välja att enbart hämta det första element som matchar med `querySelector(selector)`.
 
 
 

@@ -1,16 +1,21 @@
 Skapa element
 ==================================
 
-Vi kan även skapa html-element i JavaScript. Det görs med den inbyggda funktionen `createElement`. Låt säga att vi vill skapa 5 lådor, där vi har stylat klassnamnet `box` i css. Vi kan åstadkomma skapandet i JavaScript:
+Vi kan även skapa html-element i JavaScript. Det görs med den inbyggda funktionen `createElement`. Låt säga att vi vill skapa 5 lådor, där vi har stylat klassnamnet `box` i css.
+
+Vi utgår ifrån vår [sandbox](../../example/sandbox).
+
+Vi kan åstadkomma skapandet i JavaScript:
 
 ```js
-let myContent = document.getElementsByClassName('content')[0]
+const myContent = document.getElementsByClassName('content')[0]
 
 for (let i = 0; i < 5; i++) {
-    let box = document.createElement("div")
-    box.className = "box"
+  const box = document.createElement("div")
 
-    myContent.appendChild(box)
+  box.className = "box"
+
+  myContent.appendChild(box)
 }
 ```
 
