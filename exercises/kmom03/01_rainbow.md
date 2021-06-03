@@ -1,4 +1,4 @@
-# Uppgift - "Regnbåge"
+# Uppgift - "Rainbow"
 
 I den här uppgiften ska du skapa former i olika färger och arbeta med DOM strädet och dess funktionalitet.
 
@@ -34,16 +34,17 @@ $ cp -r example/rainbow/* kmom03/
 1. När man klickat på en form ska respektive namn och år skrivas ut tillsammans med bilden. Namn och år finns i `main.js` och bilden finns i mappen `img/`.
 1. Alla eventlyssnare ska tas bort när man klickat på en form.
 1. Utöver dessa krav vill de se hur dina vingar bär. Utmana dig själv och lägg gärna till mer funktionalitet.
-
+1. Se till så koden validerar `$ npm run linter me/kmom03`.
 
 
 
 TBD: youtube klipp med hur kan det se ut?
 
 
+
 ### Extra uppgift (Optionell)
 
-Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten?
+1. Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten?
 
 
 
