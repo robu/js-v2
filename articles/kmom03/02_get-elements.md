@@ -53,7 +53,7 @@ Vi behöver loopa igenom den eller peka på elementen i arrayen specifikt.
 
 
 
-#### html och css filerna
+#### html- och cssfilerna
 
 ```html
 <div id="content" class="content">

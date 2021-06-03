@@ -1,6 +1,6 @@
 # Uppgift - "Regnbåge"
 
-I den här uppgiften ska du skapa former i olika färger.
+I den här uppgiften ska du skapa former i olika färger och arbeta med DOM strädet och dess funktionalitet.
 
 Du jobbar i mappen `kmom03/`.
 
@@ -8,106 +8,42 @@ Du jobbar i mappen `kmom03/`.
 
 ### Förutsättning
 
-Det förutsätts att du gått igenom artiklarna för [kursmoment 02](../../articles/kmom02).
+Det förutsätts att du gått igenom artiklarna för [kursmoment 03](../../articles/kmom03). De ger dig koll på hur vi börjar jobba med JavaScript och webbläsaren.
 
 
 
 ### Intro
 
-Efter ditt jobb med glaciärerna är dina kunskaper efterfrågade i andra sammanhang. Organisationen "Hållbara djur" vill att du hjälper dem med dokumentationen av utrotningshotade djur. De vill ha en uppsättning av något som tydligen kallas "ES moduler".
+Nu börjar fler få upp ögonen för ditt sinne för programmering och nästa jobb väntar! Rörelsen "eQuality" behöver en dynamisk webbsida där användaren kan interagera med innehållet. Användaren ska kunna klicka på former och få se namnen på några av historiens största förkämpar för mänskliga rättigheter och människans lika värde.
 
-Den data du kan få är listor på några utrotningshotade djur i olika platser på jorden. Du hittar tre filer i exempelmappen som du börjar med att kopiera in i arbetsmappen:
+De kan ge dig en start att utgå ifrån och av någon anledning har de lagt filerna i exempelmappen. Mycket märkligt, tänker du, men det är bara att kopiera in dem och köra:
 
 ```console
 $ cd me
-$ cp -r example/sandbox/* kmom02/
+$ cp -r example/rainbow/* kmom03/
 ```
 
 
 
 ### Krav
 
-1. Skapa en fil `kmom02/main.js` som du kan ha för att testa dina moduler.
-1. Varje modul du kopierade in ska exportera följande funktioner:
-
-    | Namn        |  Vad ska hända?  |
-    | ------------- | :-----|
-    | allAnimals()      | Returnera hela arrayen med djur. |
-    | getRandomAnimal()   |   Returnera ett slumpmässigt djur från arrayen. |
-    | addAnimal(string)  | Lägg till ett nytt djur i listan. |
-    | removeAnimal(string) | Ta bort ett djur från listan. Returnera information om det gick bra eller inte. Se nedan för exempel. |
-
-    **removeAnimal**: Om man försöker ta bort `Monarch butterfly` från de amerikanska djuren ska det returneras:
-    ```console
-    Removed: Monarch butterfly
-    ```
-    Om man istället försöker ta bort ett värde som inte finns, till exempel `Tyrannosaurus`, från någon array ska det returneras:
-    ```console
-    No "Tyrannosaurus" in array.
-    ```
-
-1. Skapa en ny modul: `report.mjs` som ska exportera följande funktioner:
-
-    | Namn        | Vad ska hända?  |
-    | ------------- |:-----|
-    | prettyPrint(string, array) |  Returnera en rapport av alla inskickade djur. Se nedan för exempel. |
-    | fixFirstLetter(array)   |   Returnera arrayen där första bokstaven på alla djur är gjord till versal. |
-    | sortAnimals(array) | Returnera den inskickade arrayen sorterad alfabetiskt i stigande ordning. Du kan göra skillnad på gemener och versaler. |
-    | filterAnimals([array, array...], int) | Returnera en array med alla djur som har färre eller lika många bokstäver (inte tecken) som den inskickade siffran. Se nedan för exempel. |
+1. Du får enbart ändra i filen `main.js`.
+1. Varje gång man klickar på knappen ska en form ritas ut med korrekt bakgrundsfärg. Färgerna finns i ordning en array i `main.js`.
+1. Knappen ska visa vilken bild som kommer näst. När alla bilder är framme, tas knappen bort.
+1. När man klickat på knappen ska det även läggas till en eventlyssnare som lägger till en ram runt formen. När man för musen utanför ska ramen försvinna.
+1. När man klickat på en form ska respektive namn och år skrivas ut tillsammans med bilden. Namn och år finns i `main.js` och bilden finns i mappen `img/`.
+1. Alla eventlyssnare ska tas bort när man klickat på en form.
+1. Utöver dessa krav vill de se hur dina vingar bär. Utmana dig själv och lägg gärna till mer funktionalitet.
 
 
-    **prettyPrint** Om man exekverar prettyPrint med argumenten `African` och en array med alla Afrikas djur, `prettyPrint('African', allAfricanAnimals)` ska man få utskriften:
 
-    ```console
-    --- REPORT ---
-    African animals
 
-    * Ethiopian wolf
-    * Black rhino
-    * White rhino
-    * Mountain Gorilla
-    * African Wild Dog
-    * African penguin
-    * Giraffe
-    * Hooded vulture
-    * Chimpanzee
-    ```
-
-    Använder man andra argument ska man såklart få en annan utskrift, men i samma format.
-
-    **filterAnimals** Om funktionen exekveras med alla afrikanska och amerikanska djur samt siffran 10, `filterAnimals([allAfricanAnimals, allAmericanAnimals], 10)`, ska resultatet bli:
-
-    ```console
-    [
-      'Pangolin',
-      'Black rhino',
-      'White rhino',
-      'Giraffe',
-      'Chimpanzee',
-      'Delta Smelt'
-    ]
-    ```
-
+TBD: youtube klipp med hur kan det se ut?
 
 
 ### Extra uppgift (Optionell)
 
-Skapa en ny funktion `sortAnimalsExtra()` som ska sortera enligt tidigare, men inte bry sig om gemener och versaler, utan allt ska hamna i ordning, tex:
-
-```console
-[
-  'African penguin',
-  'african pterodactyl', <--- notera
-  'African wild dog',
-  'Black rhino',
-  'Chimpanzee',
-  'Ethiopian wolf',
-  'Giraffe',
-  'Hooded vulture',
-  'Mountain gorilla',
-  'White rhino'
-]
-```
+Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten?
 
 
 

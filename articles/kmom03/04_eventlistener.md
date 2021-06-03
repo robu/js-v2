@@ -136,3 +136,26 @@ boxes[i].addEventListener("dblclick", ...)
 
 // etc
 ```
+
+
+
+### Ta bort eventlyssnare
+
+VI kan behöva ta bort en eventlyssnare och då är det enklare om vi inte har använt en anonym funktion som lyssnare, utan en namngiven funktion. VI behöver nämligen skicka med både typen av event och själva lyssnaren: `target.removeEventListener(type, listener[, options])`, till exempel:
+
+
+
+```js
+let boxes = document.getElementsByClassName("box")
+
+function changeColor(event) {
+  event.target.style.backgroundColor = "blue"
+}
+
+for (let i = 0; i < boxes.length; i++) {
+  boxes[i].addEventListener("click", changeColor)
+}
+
+// Tar bort eventlyssnaren på den första lådan.
+boxes[0].removeEventListener("click", changeColor)
+```
