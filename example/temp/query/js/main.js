@@ -3,7 +3,8 @@
   const boxes = document.querySelectorAll(".box")
 
   for (let i = 0; i < boxes.length; i++) {
-    let el = document.createElement("div")
+    const el = document.createElement("div")
+
     el.className = "box"
     document.body.appendChild(el)
 
