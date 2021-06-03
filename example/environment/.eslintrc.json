@@ -9,6 +9,7 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
+    "ignorePatterns": ["**/dist/*.js"],
     "rules": {
         "linebreak-style": [
             2,
