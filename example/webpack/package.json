@@ -3,15 +3,21 @@
   "version": "1.0.0",
   "private": true,
   "description": "",
-  "type": "module",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "webpack --config webpack.prod.config.js",
+    "start": "webpack --watch --config webpack.dev.config.js",
+    "linter": "eslint -c .eslintrc.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^5.37.0",
-    "webpack-cli": "^4.7.0"
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "eslint": "^7.26.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-node": "^11.1.0"
   }
 }

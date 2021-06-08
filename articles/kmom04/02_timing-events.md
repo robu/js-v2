@@ -1,0 +1,9 @@
+Timing events
+==================================
+
+
+
+### setTimeout
+
+
+### setInterval

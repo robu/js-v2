@@ -1,0 +1,1 @@
+(()=>{"use strict";document.body.innerHTML="Hi John McClane, the secret value is: 42"})();
