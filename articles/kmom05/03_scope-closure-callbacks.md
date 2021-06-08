@@ -1,4 +1,4 @@
-scope, closure och callbacks
+Scope, closure och callbacks
 ==================================
 
 Låt oss ta en djupare titt på funktioner och hur de kan användas.
