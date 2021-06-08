@@ -32,10 +32,14 @@ Kopiera även in filen `package.json` och se till så du har webpack installerat
 
 ### Krav
 
+#### 0. Miljön
+
 1. Lägg till scriptet `start` i package.json.
 Det ska köra webpack i development mode med optionet `--watch`.
 
 1. Lägg även till scriptet `build` som bygger webpack i production mode och placerar bundle.js i mappen `dist/`.
+
+1. Dina källfiler har du i mappen `src/`.
 
 1. Du ska använda ES moduler. Läs igenom hela uppgiften och fundera på vilka moduler som passar och skaffa en grundtanke för upplägget.
 
