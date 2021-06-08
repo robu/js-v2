@@ -262,7 +262,7 @@ Det kan vara enkelt eller utmanande, välj en rimlig nivå.
 
 ### Extra uppgift (Optionell)
 
-##### 5. Animera med timer
+#### 5. Animera med timer
 
 Skapa en timer som byter utseende (färg, form) och position på ett element 5 gånger under 1 sekund.
 
