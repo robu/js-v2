@@ -233,6 +233,14 @@ Skapa händelser för piltangenterna så att man kan flytta valda element till h
 TBD: youtube klipp med hur kan det se ut?
 
 
+### Validering
+
+Se till så koden validerar:
+
+```console
+$ cd me
+$ npm run linter kmom04/
+```
 
 ### Extra uppgift (Optionell)
 
