@@ -14,7 +14,7 @@ Det förutsätts att du gått igenom artiklarna för [kursmoment 04](../../artic
 
 ### Intro
 
-Din förra uppgift blev så bra och höll den kvalitét som "eQuality" vill utstråla. Användarna tyckte mycket om att interagera med webbsidan och har nu önskat en version till. Fast med mer fokus på tangenbordevent.
+Din förra uppgift blev så bra och höll den kvalitét som "eQuality" vill utstråla. Användarna tyckte mycket om att interagera med webbsidan och har nu önskat en version till. Fast med mer fokus på tangentbordevents.
 
 De vill även att uppgiften ska byggas ihop med något som heter "webpack" för att hålla ned mängden data som behöver skickas.
 
@@ -31,36 +31,24 @@ Kopiera även in filen `package.json` och se till så du har webpack installerat
 
 ### Krav
 
-1. Lägg till två script i package.json.
-    1. `start` som kör webpack i development mode med optionet `--watch`.
-    1. `build` som bygger webpack i production mode.
-    Den bundlade koden ska finnas i mappen `dist/`.
+1. Lägg till scriptet `start` i package.json.
+Det ska köra webpack i development mode med optionet `--watch`.
 
-1. Du ska använda ES moduler. Läs igenom hela uppgiften och fundera på vilka moduler som hade fungerat bra.
+1. Lägg även till scriptet `build` som bygger webpack i production mode och placerar bundle.js i mappen `dist/`.
 
-
-#### 1. Grunder
- TBD
+1. Du ska använda ES moduler. Läs igenom hela uppgiften och fundera på vilka moduler som passar och skaffa en grundtanke för upplägget.
 
 
 
-##### 1.1 Placera ut en grön låda
+#### 1. Storlekar och position
+
+
+
+##### 1.1 Placera ut en röd låda
 
 Skapa en låda på din sida: `<div id="box1" class="box center red size200"></div>` i filen `index.html`, positionera ut den med absolut positionering i centrum av webbsidans fönster.
 
 Sätt följande i stylesheeten:
-
-```css
-html, body {
-    position: relative;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-```
-
-Använd CSS-klasser för att ge lådan egenskaper. Här är ett exempel som du kan utgå ifrån.
 
 ```css
 * {
@@ -76,7 +64,11 @@ html, body {
     padding: 0;
     overflow: hidden;
 }
+```
 
+Använd CSS-klasser för att ge lådan egenskaper. Här är ett exempel som du kan utgå ifrån.
+
+```css
 .box {
     position: absolute;
 }
@@ -88,6 +80,11 @@ html, body {
 
 .red {
     background-color: red;
+}
+
+.size200 {
+    height: 200px;
+    width: 200px;   
 }
 ```
 
@@ -117,8 +114,6 @@ Tips. Skapa egna små funktioner för att lösa uppgiften. Dina funktioner kan b
 
 #### 2. Eventhantering
 
-TBD
-
 
 
 ##### 2.1 När webbläsarens fönster ändrar storlek
@@ -131,7 +126,7 @@ Tips: `Window.onresize`.
 
 
 
-#### 2.2 Fånga ett klick-event
+##### 2.2 Fånga ett klick-event
 
 Skapa en CSS-klass som definierar en `outline` för ett objekt, kalla CSS-klassen för `selected`.
 
@@ -145,10 +140,30 @@ Tips. `Element.classlist`, `EventTarget.addEventListener`.
 
 
 
-### 3. Keyboardevents
+##### 2.3 Fånga ett dubbelklick-event
+
+Skapa en CSS-klass som använder sig av CSS-transitions för att animera förändringen av ett elements storlek.
+
+```css
+.animateSize {
+    transition: width 1s, height 1s;
+}
+```
+När du dubbelklickar på ett element skall det "försvinna" enligt följande.
+
+1. Ge elementet klassen `.animateSize`.
+2. Sätt elementets `width` och `height` till `2px`.
+3. Använd en timer för att radera elementet efter 2 sekunder.
+
+Tips: `transition`, `window.setTimeout`.
 
 
-#### 3.1 Tangenten `e`
+
+#### 3. Keyboardevents
+
+
+
+##### 3.1 Tangenten `e`
 
 Skapa en CSS-klass som gör ett cirkulärt element. Du kan uppnå denna effekten genom att sätta 50% som värde på `border-radius`. Döp klassen till `circle`.
 
@@ -157,7 +172,8 @@ När man klickar på tangenten `e` så skall alla element som har klassen `selec
 Tips: `Document.getElementsByClassName()`, `NodeList`, Använd en for-loop för att loopa runt elementen i `Nodelist`.
 
 
-#### 3.2 Tangenterna `q`, `w`
+
+##### 3.2 Tangenterna `q`, `w`
 
 Skapa en funktion som tar ett element och förändrar dess storlek men behåller dess centrumposition.
 
@@ -171,7 +187,7 @@ Elementets upplevda centrum-position skall inte ändras. Man skall få känslan 
 
 
 
-#### 3.3 Tangenten `r`
+##### 3.3 Tangenten `r`
 
 Skapa CSS-klasser som representerar bakgrundsfärgerna `["red", "orange", "yellow", "green", "blue", "indigo", "violet"]`.
 
@@ -189,9 +205,9 @@ Gillar du inte färgerna så kan du byta till andra.
 
 
 
-#### 3.4 Tangenten `t`
+##### 3.4 Tangenten `t`
 
-När man trycker på knappen `t` skall det skapas en kopia av alla element som är `selected`. Kopian skall placeras ut på en slumpmässig position, men hela elementet måste vara placerat innanför nuvarande storlek på fönster.
+När man trycker på `t` skall det skapas en kopia av alla element som är `selected`. Kopian skall placeras ut på en slumpmässig position, men hela elementet måste vara placerat innanför nuvarande storlek på fönster.
 
 Missa inte att lägga till eventhanteraren för att göra select/de-select av ett element.
 
@@ -199,38 +215,58 @@ Tips: `Element.cloneNode`, `Node.appendChild`. Använd inte `document.getElement
 
 
 
-#### 3.5 Tangenten `y`
+##### 3.5 Tangenten `y`
 
-Tryck på knappen `y` för att radera de element som är valda.
+Tryck på `y` för att radera de element som är valda.
 
 Tips: `document.querySelectorAll`, `Node.removeChild`.
 
 
 
-#### 3.6 Tangenten `u`
+##### 3.6 Tangenten `u`
 
-Tryck på knappen `u` för att göra alla valda element till icke valda.
-
-
-
-#### 3.7 Tangenten `i`
-
-Tryck på knappen `i` för att göra alla element till valda.
-
-
-#### 3.8 Tangenten `p`
-
-När man trycker på tangenten `p` så skall ett slumpmässigt element skapas. Ta en kopia av `#box1`, men slumpa fram dess position, färg och form.
+Tryck på `u` för att göra alla valda element till icke valda.
 
 
 
-#### 3.9 Piltangenterna
+##### 3.7 Tangenten `i`
+
+Tryck på `i` för att göra alla element till valda.
+
+
+
+##### 3.8 Tangenten `p`
+
+När man trycker på `p` så skall ett slumpmässigt element skapas. Ta en kopia av `#box1`, men slumpa fram dess position, färg och form.
+
+
+
+##### 3.9 Piltangenterna
 
 Skapa händelser för piltangenterna så att man kan flytta valda element till höger, vänster, upp och ned. Välj själv hur många pixel du vill flytta för varje tangentnedtryckning.
 
 
 
+#### 5. Gör en egen händelse
+
+Gör en egen valfri händelse. Beskriv din händelse i redovisningstexten och berättar vad du gjort och hur du löste det. Glöm inte att meddela hur eventet triggas.
+
+Det kan vara enkelt eller utmanande, välj en rimlig nivå.
+
+
+
 TBD: youtube klipp med hur kan det se ut?
+
+
+
+### Extra uppgift (Optionell)
+
+##### 5. Animera med timer
+
+Skapa en timer som byter utseende (färg, form) och position på ett element 5 gånger under 1 sekund.
+
+Skapa en händelse för tangenten `d` som skall gälla samtliga element som är valda.
+
 
 
 ### Validering
@@ -241,26 +277,6 @@ Se till så koden validerar:
 $ cd me
 $ npm run linter kmom04/
 ```
-
-### Extra uppgift (Optionell)
-
-#### 4. Dubbelklick
-
-Skapa en CSS-klass som använder sig av CSS-transitions för att animera förändringen av ett elements storlek.
-
-```css
-.animateSize {
-    transition: width 1s, height 1s;
-}
-```
-När du dubbelklickar på ett element skall det "försvinna" enligt följande.
-
-1. Ge elementet klassen `.animateSize`.
-2. Sätt elementets `width` och `height` till `2px`.
-3. Använd en timer för att radera elementet efter 2 sekunder.
-
-Tips: `transition`, `window.setTimeout`.
-
 
 
 
