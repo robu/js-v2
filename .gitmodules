@@ -1,3 +1,6 @@
 [submodule "js-solutions"]
 	path = .solutions
 	url = git@bitbucket.org:mosbth/javascript1-solutions.git
+[submodule ".solutions"]
+	path = .solutions
+	url = git@bitbucket.org:dbwebbse/js-solutions.git
