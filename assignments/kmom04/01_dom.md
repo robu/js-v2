@@ -4,6 +4,7 @@ I den här uppgiften tränar vi mer på manipuleringen av dom. Vi ska bygga vida
 
 Du jobbar i mappen `kmom04/`.
 
+TBD: youtube klipp med hur kan det se ut?
 
 
 ### Förutsättning
@@ -247,15 +248,11 @@ Skapa händelser för piltangenterna så att man kan flytta valda element till h
 
 
 
-#### 5. Gör en egen händelse
+#### 4. Gör en egen händelse
 
 Gör en egen valfri händelse. Beskriv din händelse i redovisningstexten och berättar vad du gjort och hur du löste det. Glöm inte att meddela hur eventet triggas.
 
 Det kan vara enkelt eller utmanande, välj en rimlig nivå.
-
-
-
-TBD: youtube klipp med hur kan det se ut?
 
 
 
