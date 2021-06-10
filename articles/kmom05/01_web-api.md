@@ -1,7 +1,7 @@
 Web API's
 ==================================
 
-När vi bygger hemsidor eller appar för webben kan vi använda oss av olika så kallade API:er (Application Programming Interface). Ett API är ett gränssnitt med funktioner som är kopplade mellan scriptspråket och bakomliggande bibliotek eller tjänst. Vi ska titta närmare på några utav dem. Du kan se alla i sin [helhet på mdn](https://developer.mozilla.org/en-US/docs/Web/API).
+När vi bygger hemsidor eller appar för webben kan vi använda oss av olika så kallade API:er (Application Programming Interface). Ett API är ett gränssnitt med funktioner som är kopplade mellan scriptspråket och bakomliggande bibliotek eller tjänst. Vi ska titta närmare på några utav dem. Du kan läsa om alla [Web API's på mdn](https://developer.mozilla.org/en-US/docs/Web/API).
 
 
 
@@ -11,7 +11,7 @@ JavaScript på klientsidan kan lagra data i webbläsaren åt oss. Datan lagras s
 
 Windowobjektet ger oss två sätt att lagra datan på: *sessionStorage* och *localStorage*.
 
-[Läs mer på mdn](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
+Läs mer om [Web Storage på mdn](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)
 
 
 
