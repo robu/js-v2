@@ -1,31 +1,26 @@
 (function () {
   'use strict'
 
-  // const myContent = document.getElementById('content')
-  const staffTable = document.getElementById('staffTable')
+  const staff = document.getElementById('staff')
+  const url = 'https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/fetch/data/'
+  const file = 'staff.json'
 
-  // myContent.innerHTML = '<h3>This is a template!</h3>'
+  function addDataToTable (data) {
+    for (const teacher of data) {
+      staff.innerHTML += `
+        <tr>
+            <td>${teacher.firstname}</td>
+            <td>${teacher.lastname}</td>
+            <td>${teacher.courses.join(", ")}</td>
+        </tr>`
+    }
+  }
 
-  // fetch('https://api.carbonintensity.org.uk/intensity/factors/')
-  //     .then(response => response.json())
-  //     .then(json => console.log(json.data[0]))
-
-  fetch('https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/fetch/data/staff.json')
+  fetch(`${url}/${file}`)
     .then(response => response.json())
     .then(function (json) {
-      staffTable.innerHTML = `<thead><tr><th>Firstname</th><th>Lastname</th></tr></thead>`
-      staffTable.innerHTML += `<tbody>`
-      for (const teacher of json) {
-        staffTable.innerHTML += `
-                <tr>
-                    <td>${teacher.firstname}</td>
-                    <td>${teacher.lastname}</td>
-                </tr>`
-      }
-      staffTable.innerHTML += `</tbody>`
-
+      addDataToTable(json)
     })
 
-  // https://carbonintensity.org.uk/
   window.console.log('Sandbox is ready!')
 })()
