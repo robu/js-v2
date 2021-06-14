@@ -1,18 +1,40 @@
 [
     {
         "firstname": "Kenneth",
-        "lastname": "Lewenhagen"
+        "lastname": "Lewenhagen",
+        "courses": [
+            "DV1611",
+            "DV1563",
+            "DV1466",
+            "DV1561"
+        ]
     },
     {
         "firstname": "Mikael",
-        "lastname": "Roos"
+        "lastname": "Roos",
+        "courses": [
+            "DV1606",
+            "DV1605",
+            "PA1439",
+            "DV1608"
+        ]
     },
     {
         "firstname": "Andreas",
-        "lastname": "Arnesson"
+        "lastname": "Arnesson",
+        "courses": [
+            "DV1531",
+            "DV1618",
+            "DV1617"
+        ]
     },
     {
         "firstname": "Emil",
-        "lastname": "Folino" 
+        "lastname": "Folino",
+        "courses": [
+            "PA1436",
+            "DV1506",
+            "DV1612"
+        ]
     }
 ]
