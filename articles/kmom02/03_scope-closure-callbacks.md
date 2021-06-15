@@ -13,15 +13,15 @@ JavaScript har block-scope, tack vare `let` och `const` som kom med ES6. Tidigar
 
 ```js
 function f1 (a) {
-  const b = a + 1
+    const b = a + 1
 
-  function f2 (c) {
-    const d = c + 1
+    function f2 (c) {
+        const d = c + 1
 
-    return a + b + c + d - 2 // a, b, c, d is available
-  }
+        return a + b + c + d - 2 // a, b, c, d is available
+    }
 
-  return f2(b)
+    return f2(b)
 }
 
 f1(10) // Returns 42
@@ -41,14 +41,14 @@ Här är ett exempel på en closure där den inre funktionen har tillgång till 
 ```js
 // Example on closure where inner function has access to non-local variables
 let accessToInner = (function () {
-  let a = 1
+    let a = 1
 
-  function inner (b) {
-    a += b
-    return a
-  }
+    function inner (b) {
+        a += b
+        return a
+    }
 
-  return inner
+    return inner
 })()
 
 console.log(accessToInner(1)) // returns 2
@@ -87,7 +87,7 @@ Ett vanligt sätt att använda anonyma funktioner är för callbacks, följande 
 let button = document.getElementById('button')
 
 button.addEventListener('click', function () {
-  console.log('Great - you clicked the button!')
+    console.log('Great - you clicked the button!')
 })
 ```
 

@@ -38,16 +38,16 @@ const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-  mode: 'development',
-  devtool: 'inline-source-map',
-  entry: './js/main.js',
-  plugins: [
-    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
-  ],
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  }
+    mode: 'development',
+    devtool: 'inline-source-map',
+    entry: './js/main.js',
+    plugins: [
+        new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
+    ],
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    }
 }
 ```
 
@@ -62,8 +62,8 @@ För att kompilera JavaScript koden använder vi oss av kommandot `webpack --wat
 
 ```json
 "scripts": {
-  "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "webpack --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
 },
 ```
 

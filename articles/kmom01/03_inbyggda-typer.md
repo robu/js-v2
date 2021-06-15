@@ -3,7 +3,7 @@ Nummer och `Number`
 
 JavaScript hanterar heltal, flyttal och hexadecimala tal som literaler. Vissa implementationer stödjer även oktala tal men det stödjs ej i standarden så vi undviker dem som literaler.
 
-```javascript
+```js
 2              // Integer
 42             // Integer
 4.2            // Float
@@ -26,7 +26,7 @@ När vi jobbar med nummer så stöds de vanliga [aritmetiska operatorer](https:/
 
 Det finns en samling matematiska funktioner som är samlade i objektet [`Math`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Math). Med dessa kan du utföra vanliga matematiska beräkningar.
 
-```javascript
+```js
 Math.PI           // Constant value for PI
 Math.random()     // Return a random number
 Math.tan(2)       // Return tangent of 2
@@ -36,7 +36,7 @@ Det är objektet [`Number`](https://developer.mozilla.org/en/JavaScript/Referenc
 
 Var uppmärksam på Nan och Infinity i dina beräkningar. Se följande exempel.
 
-```javascript
+```js
 > 1/0
 Infinity
 > 0/0
@@ -98,7 +98,7 @@ Vill du ha mer kontroll på hur konvertering sker kan du använda funktionerna [
 
 Notera att `toString` anropas som en metod på ett objekt, medan `parseInt` och `parseFloat` kan anropas som en funktion.
 
-```javascript
+```js
 > a = 42
 42
 > a.toString()
@@ -153,14 +153,14 @@ let today = new Date();
 /*
 * Year, month and day
 */
-console.log(today.getFullYear()); // Displays the current year in the format YYYY
-console.log(today.getMonth()); // Displays a number-representation of the current month, (0-11)
-console.log(today.getDate()); // Displays a number-representation of the current day, (1-31)
+console.log(today.getFullYear()) // Displays the current year in the format YYYY
+console.log(today.getMonth()) // Displays a number-representation of the current month, (0-11)
+console.log(today.getDate()) // Displays a number-representation of the current day, (1-31)
 
 /*
 * Hours, minutes and seconds
 */
-console.log(today.getHours()); // Displays the current hour in your timezone, 24h
-console.log(today.getMinutes()); // Displays the current minute
-console.log(today.getSeconds()); // Displays the current seconds
+console.log(today.getHours()) // Displays the current hour in your timezone, 24h
+console.log(today.getMinutes()) // Displays the current minute
+console.log(today.getSeconds()) // Displays the current seconds
 ```

@@ -17,7 +17,7 @@ Vi börjar med att kika på ett event från tangentbordet. Ett event kan triggas
 
 ```js
 document.addEventListener("keydown", function(event) {
-  console.log(event)
+    console.log(event)
 })
 ```
 
@@ -106,9 +106,9 @@ Vi hämtar lådorna med javascript och lägger på en eventlyssnare, som triggas
 let boxes = document.getElementsByClassName("box")
 
 for (let i = 0; i < boxes.length; i++) {
-  boxes[i].addEventListener("click", function(event) {
-    event.target.style.backgroundColor = "blue"
-  })
+    boxes[i].addEventListener("click", function(event) {
+        event.target.style.backgroundColor = "blue"
+    })
 }
 ```
 
@@ -149,11 +149,11 @@ VI kan behöva ta bort en eventlyssnare och då är det enklare om vi inte har a
 let boxes = document.getElementsByClassName("box")
 
 function changeColor(event) {
-  event.target.style.backgroundColor = "blue"
+    event.target.style.backgroundColor = "blue"
 }
 
 for (let i = 0; i < boxes.length; i++) {
-  boxes[i].addEventListener("click", changeColor)
+    boxes[i].addEventListener("click", changeColor)
 }
 
 // Tar bort eventlyssnaren på den första lådan.

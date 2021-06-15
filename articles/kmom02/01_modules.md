@@ -23,10 +23,10 @@ När man pratar om moduler i JavaScript så finns det såklart flera varianter a
 
 #### ESM
 
-Den varianten vi ska använda är ESM. För att tydliggöra att det är just en modul vi skapar ger vi filen filändelsen `.mjs`. Om man vill använda det i en webbläsare kan vi sätta attributet `type="module"` i script taggen, men det tar vi senare. Vi kan exportera en funktion eller variabel med namn eller som ett default-värde. För att till exempel exportera funktionen `sum()` namngiven kan vi göra på följande sätt:
+Den varianten vi ska använda är ESM. Vi kan exportera en funktion eller variabel med namn eller som ett default-värde. För att till exempel exportera funktionen `sum()` namngiven kan vi göra på följande sätt:
 
 ```js
-// module.mjs
+// module.js
 function sum (x, y) {
     return x + y
 }
@@ -40,8 +40,8 @@ export { sum }
 Och sedan importera den från en annan fil:
 
 ```js
-// main.mjs
-import { sum } from './module.mjs'
+// main.js
+import { sum } from './module.js'
 
 console.log(sum(26, 16)) // 42
 ```
@@ -50,17 +50,17 @@ console.log(sum(26, 16)) // 42
 Om vi istället vill exportera funktionen som ett default värde och kunna importera den med valfritt namn ser det ut så här:
 
 ```js
-// module_default.mjs
+// module_default.js
 function sum (x, y) {
-  return x + y
+    return x + y
 }
 
 export default sum
 ```
 
 ```js
-// main_default.mjs
-import anything from './module_default.mjs'
+// main_default.js
+import anything from './module_default.js'
 
 console.log(anything(26, 16))
 ```
@@ -69,7 +69,7 @@ Vi kan även välja vad vi vill att den importerade funktionen/variabeln ska het
 
 ```js
 // Example of import - as
-import { sum as anything } from './module.mjs'
+import { sum as anything } from './module.js'
 ```
 
 Man kan även använda wildcardet `*`: `import * as anything from ...` för att importera allt. Det är dock inte att föredra då det blir odiciplinerat att inte veta vad vi vill importera.
@@ -85,7 +85,7 @@ Om vi tar föregående exempel och gör om det till en CommonJS modul ser det ut
 ```js
 // module.js
 function sum (x, y) {
-  return x + y
+    return x + y
 }
 
 module.exports = sum

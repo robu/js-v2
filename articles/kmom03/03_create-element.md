@@ -11,11 +11,11 @@ Vi kan åstadkomma skapandet i JavaScript:
 const myContent = document.getElementsByClassName('content')[0]
 
 for (let i = 0; i < 5; i++) {
-  const box = document.createElement("div")
+    const box = document.createElement("div")
 
-  box.className = "box"
+    box.className = "box"
 
-  myContent.appendChild(box)
+    myContent.appendChild(box)
 }
 ```
 

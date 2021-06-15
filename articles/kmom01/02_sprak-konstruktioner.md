@@ -56,9 +56,10 @@ i
 
 Pröva att skriva in en identifierare och tilldela den ett värde av en literal.
 
-```javascript
-let myValue = "fortytwo";
-myValue;
+```js
+let myValue = "fortytwo"
+
+myValue
 ```
 
 
@@ -249,14 +250,14 @@ Variabler utan värde, `undefined`
 
 En variabel som inte har tilldelats ett värde får automatiskt värdet [`undefined`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/undefined). Det är ett odefinerat värde.
 
-```javascript
-let i;
+```js
+let i
 
-if(i === undefined) {
+if (i === undefined) {
   // Yep, this is true for i
 }
 
-if(typeof i === 'undefined') {
+if (typeof i === 'undefined') {
   // Yep, this is true for i
 }
 ```
@@ -269,18 +270,18 @@ Ett icke-värde, `null`
 Javascript skiljer på [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null) som är ett icke-värde och `undefined` som är ett odefinierat värde. Man använder `null` för att ge en variabel värdet `null`, med mening. När värdet `undefined` dyker upp så innebär det oftast att man inte initierat en variabel med ett värde.
 
 ```javascript
-let i;
-let j = null;
+let i
+let j = null
 
-if(i === j) {
+if (i === j) {
   // Nope, not the same type, they are not equal.
 }
 
-if(i == j) {
+if (i == j) {
   // Yep, both evaluates to false so they are equal.
 }
 
-if(j === null) {
+if (j === null) {
   // Yep, j is null for sure.
 }
 ```
