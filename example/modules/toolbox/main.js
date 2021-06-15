@@ -1,5 +1,5 @@
-import * as myCalc from './calculator.mjs'
-import { randInt, roundDecimals } from './helpers.mjs'
+import * as myCalc from './calculator.js'
+import { randInt, roundDecimals } from './helpers.js'
 
 const sum = myCalc.add(15, 27)
 const difference = myCalc.sub(65, 23)

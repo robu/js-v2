@@ -19,6 +19,7 @@
             2,
             "unix"
         ],
-        "quotes": "off"
+        "quotes": "off",
+        "indent": ["error", 4]
     }
 }
