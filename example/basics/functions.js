@@ -1,13 +1,13 @@
 (function () {
-  console.log(`I get executed immediatly`)
+    console.log(`I get executed immediatly`)
 }())
 
 function printSomethingNice () {
-  console.log(`You look good today!`)
+    console.log(`You look good today!`)
 }
 
 function printSomethingNiceArguments (how, when) {
-  console.log(`You look ${how} ${when}!`)
+    console.log(`You look ${how} ${when}!`)
 }
 
 const arrowFunction = () => console.log(`I am an arrow function!`)
