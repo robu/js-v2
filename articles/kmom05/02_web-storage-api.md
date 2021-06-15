@@ -47,3 +47,5 @@ myStore.setItem('tomato', "45")
 // Clears all data from storage
 myStore.clear()
 ```
+
+Du kan se ett exempel på Web Storage i [exempelmappen](../../example/webstorage).
