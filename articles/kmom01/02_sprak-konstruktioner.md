@@ -224,7 +224,7 @@ Här skapar vi alltså en instans av objektet och får därmed tillgång till de
 
 Det är `number`, `string`, `boolean` som är primitiver och resten är specialiserade objekttyper. Typerna `Number`, `String`, `Boolean`, `Function`, `Array`, `Date` och `RegExp` är en variant, en specialisering, av typen `Object`.
 
-Funktionen `typeof()` svarar med en upplevd typ i form an en sträng.
+Funktionen `typeof()` svarar med en upplevd typ i form av en sträng.
 
 Uttrycket `instanceof` testar om ett objekt/värde/variabel är av en viss Objekt.
 
