@@ -133,7 +133,7 @@ speak("I speak, therefore I am.") // Prints "I speak, therefore I am." in the co
 
 ### Self-invoking
 
-En *self-invoking* funktion är egentligen en *function expression* som exekveras automatiskt. För att tala om att det är en function expression behöver vi paranteser runt om och för att det ska exekveras automatiskt lägger vi till `()` i slutet:
+En *self-invoking* funktion är egentligen en *function expression* som exekveras automatiskt. För att tala om att det är en function expression behöver vi parenteser runt om och för att det ska exekveras automatiskt lägger vi till `()` i slutet:
 
 ```js
 (function () {
