@@ -19,8 +19,8 @@ Efter ditt jobb med glaciärerna är dina kunskaper efterfrågade i andra samman
 Den data du kan få är listor på några utrotningshotade djur i olika platser på jorden. Du hittar tre filer i exempelmappen som du börjar med att kopiera in i arbetsmappen:
 
 ```console
-$ cd me
-$ cp example/kmom02/*.mjs kmom02/
+# Stå i kursmappens rot
+$ cp example/kmom02/*.mjs me/kmom02/
 ```
 
 
