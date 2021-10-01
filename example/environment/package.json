@@ -4,7 +4,7 @@
   "description": "Contains all packages used in the course.",
   "private": true,
   "scripts": {
-    "linter": "eslint -c ../example/environment/.eslintrc.json"
+    "linter": "eslint -c .eslintrc.json"
   },
   "author": "",
   "license": "ISC",
