@@ -85,6 +85,15 @@ Year    Rate    Sea
 2050    1.23cm  37.8mm
 ```
 
+### Validering
+
+Se till så koden validerar:
+
+```console
+$ cd me
+$ npm run linter kmom01/
+```
+
 
 ### Avslutningsvis
 

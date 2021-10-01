@@ -19,8 +19,8 @@ Nu börjar fler få upp ögonen för ditt sinne för programmering och nästa jo
 De kan ge dig en start att utgå ifrån och av någon anledning har de lagt filerna i exempelmappen. Mycket märkligt, tänker du, men det är bara att kopiera in dem och köra:
 
 ```console
-$ cd me
-$ cp -r example/rainbow/* kmom03/
+# Ställ dig i kurmappen
+$ cp -r example/rainbow/* me/kmom03/
 ```
 
 
@@ -47,6 +47,17 @@ TBD: youtube klipp med hur kan det se ut?
 1. Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten?
 
 1. Du kanske till och med kan göra ett memoryspel av korten?
+
+
+
+### Validering
+
+Se till så koden validerar:
+
+```console
+$ cd me
+$ npm run linter kmom03/
+```
 
 
 

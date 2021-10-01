@@ -109,6 +109,15 @@ Skapa en ny funktion `sortAnimalsExtra()` som ska sortera enligt tidigare, men i
 ]
 ```
 
+### Validering
+
+Se till så koden validerar:
+
+```console
+$ cd me
+$ npm run linter kmom02/
+```
+
 
 
 ### Avslutningsvis
