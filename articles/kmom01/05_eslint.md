@@ -6,7 +6,12 @@ Många programmeringsspråk har en standardsyntax att följa. Det kan handla om 
 
 ### ESLint i kursen
 
-I den här kursen används ES standard, med vissa inställningar. Du kan hitta filen i [exempelmappen](../../example/environment). Det är den du kommer använda och det är även den som läraren använder vid rättning.
+I den här kursen används ES standard, med vissa inställningar. Du kan hitta filen i [exempelmappen](../../example/environment). Det är den du kommer använda och det är även den som läraren använder vid rättning. Kopiera in filen till din me-mapp:
+
+```console
+# stå i kursens rotmapp
+$ cp example/environment/.eslintrc.json me/
+```
 
 Då formatet på kursen är nytt så kan konfigurationen vara diskuterbar. Om valideringen säger ifrån och du känner att du vill/kan motivera varför regeln ska ändras är det fritt fram. Gör bara en issue i jsrepot så tar vi det där ifrån.
 
@@ -18,11 +23,11 @@ Vi kör vår linter i terminalen med hjälp av `npm`. Filen som heter `package.j
 
 ```json
 "scripts": {
-    "linter": "eslint -c ../example/environment/.eslintrc.json"
+    "linter": "eslint -c .eslintrc.json"
 },
 ```
 
-Där talar vi om att med kommandot *linter* vill vi köra eslint med den definierade configfilen som finns i mappen example/environment/.
+Där talar vi om att med kommandot *linter* vill vi köra eslint med den definierade configfilen numer ligger i me-mappen.
 
 
 
