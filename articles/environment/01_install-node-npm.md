@@ -1,7 +1,7 @@
 Installera Node.js och npm
 ===================================
 
-[FIGURE src=/image/snapvt16/nodejs-logo.png class="right"]
+![Nodejs logo](../img/nodejs-logo.png)
 
 Vi skall installera en miljö för JavaScript. Det handlar om Node.js och pakethanteraren npm. Vi ska installea LTS versionen av Node.js, vilket står för Long Term Support och är oftast lite stabilare.
 
@@ -38,17 +38,6 @@ Programmen node och npm läggs till i din PATH automatiskt.
 
 Du kan nu starta programmen från windows-terminalen `cmd` eller ifrån Cygwin. Men starta om din terminal så att den får del av den uppdaterade pathen.
 
-```console
-$ node --version
-v14.18.1
-$ npm --version
-6.14.15
-```
-
-Så här kan det se ut i Cygwin.
-
-![Node och npm är installerade i din Windows-maskin.](../img/js-cygwin.PNG)
-
 
 
 Installera Windows 10 WSL Debian/Bash
@@ -60,7 +49,7 @@ Olika linux-varianter har olika sätt att installera node och npm. Följ instruk
 
 Sist jag installerade på WSL Debian/GNU Linux (oktober 2021) så var instruktionen enligt följande.
 
-Först hämtar jag installationsprogrammen, så att pakethanteraren vet vad som skall installeras. Jag behöver vara root när detta görs.
+Först hämtar jag installationsprogrammet, så att pakethanteraren vet vad som skall installeras. Jag behöver vara root när detta görs. Kör
 
 ```text
 # Using Debian, as root
@@ -77,49 +66,14 @@ Jag får eventuellt uppdatera sökvägen, så mitt shell hittar de nyligen insta
 $ hash -r
 ```
 
-Du kan nu starta programmet `node` från din terminal.
-
-```console
-$ node --version
-v14.18.1
-$ which node
-/usr/bin/node
-```
-
-Jag dubbelkollar att pakethanteraren `npm` fungerar.
-
-```console
-$ npm --version
-6.14.15
-$ which npm
-/usr/bin/npm
-```
-
-Så här ser det ut på Debian/Linux i WSL i Windows.
-
-![Nu fungerar Node och npm i WSL.](../img/js-wsl.PNG)
-
-
 
 
 Installera på Mac OS
 -------------------------------
 
-Gå till [nedladdningssidan för Node](https://nodejs.org/en/download/). Ladda ned installationsprogrammet och installera.
+Gå till [nedladdningssidan för Node](https://nodejs.org/en/download/). Ladda ned installationsprogrammet (LTS) och installera.
 
 Du kan nu starta programmet `node` från din terminal.
-
-```text
-which node
-node --version
-```
-
-Jag dubbelkollar att pakethanteraren `npm` fungerar.
-
-```text
-which npm
-npm --version
-```
 
 
 
@@ -131,11 +85,11 @@ Olika linux-varianter har olika sätt att installera node och npm. Följ instruk
 Sist jag installerade på Debian 11 (oktober 2021) så var instruktionen enligt följande.
 
 ```console
-# installera progeammet Curl om det behövs
+# installera programmet Curl om det behövs
 $ sudo apt install curl
 
 # Lägg till Node.js repository i Debian
-$ curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+$ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 
 # Installera nodejs (och npm)
 $ sudo apt install nodejs
@@ -143,20 +97,18 @@ $ sudo apt install nodejs
 
 Du kan nu starta programmet `node` från din terminal.
 
+
+
+Verifiera node och npm
+-------------------------------
+
+Nu är programmen installerade och redo. Verifiera att både node och npm fungerar enligt följande:
+
 ```console
-$ which node
-/usr/bin/node
 $ node --version
 v16.11.1
-```
-
-Jag dubbelkollar att pakethanteraren `npm` fungerar.
-
-```console
-$ which npm
-/usr/bin/npm
 $ npm --version
-8.0.0
+6.14.15
 ```
 
 
@@ -166,9 +118,9 @@ Verifiera att Node.js fungerar
 
 Du kan nu köra JavaScript med node. Pröva följande.
 
-```text
+```console
 $ node --help
-$ node --eval "console.log('Hello World');"
+$ node --eval "console.log('Hello World')"
 Hello World
 ```
 
@@ -195,21 +147,6 @@ Du kan också låta nodejs köra JavaScript-program som finns i filer.
 $ echo "console.log('Hello')" > hello.js
 $ node hello.js
 Hello
-```
-<!--
-Så här kan det se ut.
-
-[ASCIINEMA src=91268]
- -->
-
-
-Verifiera att npm fungerar
--------------------------------
-
-Se vad du kan göra med npm.
-
-```console
-$ npm --help
 ```
 
 
