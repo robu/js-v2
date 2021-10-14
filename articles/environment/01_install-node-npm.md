@@ -3,7 +3,7 @@ Installera Node.js och npm
 
 ![Nodejs logo](../img/nodejs-logo.png)
 
-Vi skall installera en miljö för JavaScript. Det handlar om Node.js och pakethanteraren npm. Vi ska installea LTS versionen av Node.js, vilket står för Long Term Support och är oftast lite stabilare.
+Vi skall installera en miljö för JavaScript. Det handlar om Node.js och pakethanteraren npm. Vi ska installera LTS versionen av Node.js, vilket står för Long Term Support och är oftast lite stabilare.
 
 Miljön innebär att du kan köra JavaScript på din dator och du kan ta del av alla de program och paket som erbjuds via pakethanteraren npm.
 
