@@ -47,7 +47,8 @@ $ npm --version
 
 Så här kan det se ut i Cygwin.
 
-[FIGURE src=../img/js-cygwin.PNG?w=w3 caption="Node och npm är installerade i din Windows-maskin."]
+![Node och npm är installerade i din Windows-maskin.](../img/js-cygwin.PNG)
+
 <!--
 Du kommer även åt programmen via din Cygwin-terminal, om du har Cygwin installerat.
 
