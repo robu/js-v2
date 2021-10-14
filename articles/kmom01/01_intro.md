@@ -39,4 +39,4 @@ Det som sedan ligger närmast till hands är en webbläsare och en grundstruktur
 
 Din webbläsare har en developer tools (console) där du kan skriva enklare konstruktioner i JavaScript.
 
-Vill du göra kodexempel och dela med dig av koden så använder du online-verktyg likt jsfiddle eller codepen.
+Vill du göra kodexempel och dela med dig av koden så använder du online-verktyg likt [jsfiddle](https://jsfiddle.net/) eller [codepen](https://codepen.io/). Det är gratis att skapa ett konto på båda de sidorna.
