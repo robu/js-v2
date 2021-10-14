@@ -6,7 +6,7 @@ I den här första uppgiften ska du skapa script som hjälper till att beräkna 
 
 ### Förutsättning
 
-Det förutsätts att du gått igenom artiklarna för [kursmoment 01](../../articles/kmom01) och har miljön på plats. Dubbelkolla så du har `me/package.json`, `me/.eslintrc.json` samt kört kommandot `$ npm install`.
+Det förutsätts att du gått igenom artiklarna för [kursmoment 01](../../articles/kmom01) och har [miljön](../../articles/environment) på plats. Dubbelkolla så du har `me/package.json`, `me/.eslintrc.json` samt kört kommandot `$ npm install`.
 
 
 
