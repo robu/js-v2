@@ -49,13 +49,6 @@ Så här kan det se ut i Cygwin.
 
 ![Node och npm är installerade i din Windows-maskin.](../img/js-cygwin.PNG)
 
-<!--
-Du kommer även åt programmen via din Cygwin-terminal, om du har Cygwin installerat.
-
-Öppna din Cygwin-terminal så kan det se ut så här.
-
-[FIGURE src=image/snapvt19/cygwin-node-npm-version.png?w=w3 caption="Node och npm går även att nå från Cygwin."] -->
-
 
 
 Installera Windows 10 WSL Debian/Bash
@@ -104,15 +97,8 @@ $ which npm
 
 Så här ser det ut på Debian/Linux i WSL i Windows.
 
-[FIGURE src=../img/js-wsl.PNG?w=w3 caption="Nu fungerar Node och npm i WSL."]
+![Nu fungerar Node och npm i WSL.](../img/js-wsl.PNG)
 
-<!--
-I debian fanns det tidigare ett kommando som hette node, därför installeras vår "node" som nodejs. Men jag vill använda det som node och lägger därför en symbolisk länk till nodejs som jag döper till node.
-
-```bash
-$ sudo ln -s $( which nodejs ) /usr/bin/node
-```
--->
 
 
 
