@@ -183,31 +183,31 @@ Du kan också köra node interaktivt och evaluera JavaScript rad för rad. Progr
 
 **NOTERING:** För att få upp prompten i cygwin skall node köras i _interactive mode_. Detta gör du genom att använda kommandot `node -i`.
 
-```text
+```console
 $ node
 > console.log("Hej")
 Hej
 >
 ```
-
+<!--
 För att få upp prompten i cygwin skall node köras i _interactive mode_. Detta gör du genom att använda kommandot `node -i`.
 
 Så här kan det se ut.
 
-[ASCIINEMA src=91267]
+[ASCIINEMA src=91267] -->
 
 Du kan också låta nodejs köra JavaScript-program som finns i filer.
 
-```text
+```console
 $ echo "console.log('Hello')" > hello.js
 $ node hello.js
 Hello
 ```
-
+<!--
 Så här kan det se ut.
 
 [ASCIINEMA src=91268]
-
+ -->
 
 
 Verifiera att npm fungerar
@@ -215,7 +215,7 @@ Verifiera att npm fungerar
 
 Se vad du kan göra med npm.
 
-```text
+```console
 $ npm --help
 ```
 
