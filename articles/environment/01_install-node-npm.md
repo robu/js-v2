@@ -135,32 +135,35 @@ Installera på Linux
 
 Olika linux-varianter har olika sätt att installera node och npm. Följ instruktionerna på [nedladdningssidan för olika pakethanterare](https://nodejs.org/en/download/package-manager/). Det kan finnas vissa förberedelser som behövs för att du skall kunna installera den senaste versionen, det handlar om vilket repo som apt-get använder för att hämta installationsfilern från. Kolla nedladdningssidan för att vara säker.
 
-Sist jag installerade på Debian 9 (januari 2019, v10 av Node) så var instruktionen enligt följande.
+Sist jag installerade på Debian 11 (oktober 2021) så var instruktionen enligt följande.
 
-```text
-# Using Debian, as root
-curl -sL https://deb.nodesource.com/setup_10.x | bash -
-apt-get install -y nodejs
-```
+```console
+# installera progeammet Curl om det behövs
+$ sudo apt install curl
 
-Jag får eventuellt uppdatera sökvägen, så mitt shell hittar de nyligen installerade binärerna.
+# Lägg till Node.js repository i Debian
+$ curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 
-```text
-hash -r
+# Installera nodejs (och npm)
+$ sudo apt install nodejs
 ```
 
 Du kan nu starta programmet `node` från din terminal.
 
-```text
-which node
-node --version
+```console
+$ which node
+/usr/bin/node
+$ node --version
+v16.11.1
 ```
 
 Jag dubbelkollar att pakethanteraren `npm` fungerar.
 
-```text
-which npm
-npm --version
+```console
+$ which npm
+/usr/bin/npm
+$ npm --version
+8.0.0
 ```
 
 
