@@ -13,7 +13,7 @@ Miljön innebär att du kan köra JavaScript på din dator och du kan ta del av 
 
 
 
-Läs mer {#mer}
+Läs mer
 -------------------------------
 
 Du kan läsa mer om [Node.js på webbplatsen](https://nodejs.org/).
@@ -22,14 +22,14 @@ Du kan läsa mer om [npm på webbplatsen](https://www.npmjs.com/). Där kan du o
 
 
 
-Förutsättning {#pre}
+Förutsättning
 -------------------------------
 
 Du kör Windows, macOS eller en linuxdistribution, du är bekant med terminalen och hur man installerar program.
 
 
 
-Installera på Windows (inklusive Cygwin) {#windows}
+Installera på Windows (inklusive Cygwin)
 -------------------------------
 
 Gå till [nedladdningssidan för Node](https://nodejs.org/en/download/). Ladda ned installationsprogrammet och installera.
@@ -55,7 +55,7 @@ Du kommer även åt programmen via din Cygwin-terminal, om du har Cygwin install
 
 
 
-Installera Windows 10 WSL Debian/Bash {#wsl}
+Installera Windows 10 WSL Debian/Bash
 -------------------------------
 
 Även om du har installerat Node på din Windows-maskin, och du använder WSL, så behöver du installera Node/npm i din klient i WSL. Du har då två installationer av Node, en i Windows och en i ditt WSL.
@@ -109,7 +109,7 @@ $ sudo ln -s $( which nodejs ) /usr/bin/node
 
 
 
-Installera på Mac OS {#macos}
+Installera på Mac OS
 -------------------------------
 
 Gå till [nedladdningssidan för Node](https://nodejs.org/en/download/). Ladda ned installationsprogrammet och installera.
@@ -130,7 +130,7 @@ npm --version
 
 
 
-Installera på Linux {#linux}
+Installera på Linux
 -------------------------------
 
 Olika linux-varianter har olika sätt att installera node och npm. Följ instruktionerna på [nedladdningssidan för olika pakethanterare](https://nodejs.org/en/download/package-manager/). Det kan finnas vissa förberedelser som behövs för att du skall kunna installera den senaste versionen, det handlar om vilket repo som apt-get använder för att hämta installationsfilern från. Kolla nedladdningssidan för att vara säker.
@@ -165,7 +165,7 @@ npm --version
 
 
 
-Verifiera att Node.js fungerar {#test}
+Verifiera att Node.js fungerar
 -------------------------------
 
 Du kan nu köra JavaScript med node. Pröva följande.
@@ -205,7 +205,7 @@ Så här kan det se ut.
 
 
 
-Verifiera att npm fungerar {#test1}
+Verifiera att npm fungerar
 -------------------------------
 
 Se vad du kan göra med npm.
@@ -216,7 +216,7 @@ $ npm --help
 
 
 
-Avslutningsvis {#avslutning}
+Avslutningsvis
 ------------------------------
 
 Se till så installationen av node och npm är på sin plats innan du går vidare.
