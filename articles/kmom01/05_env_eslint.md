@@ -50,7 +50,7 @@ $ npm run linter kmom01/forloop.js
 > eslint -c eslint/.eslintrc.json "kmom01/forloop.js"
 
 
-/home/klw/git/work/dbwebb-kurser/js-v2/example/kmom01/forloop.js
+/some/path/to/forloop.js
   5:17  error  Extra semicolon  semi
 
 ✖ 1 problem (1 error, 0 warnings)
@@ -61,7 +61,7 @@ Vi kan där se vilken fil, rad och plats det handlar om:
 
 ```console
 ...
-/home/klw/git/work/dbwebb-kurser/js-v2/example/kmom01/forloop.js
+/some/path/to/forloop.js
   5:17  error  Extra semicolon  semi
 ...
 ```
