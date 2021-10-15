@@ -43,11 +43,13 @@ describe('Testsuite for KMOM01', () => {
         it("should match output", async () => {
             let srcExec = await chaiExecAsync(`node ${sourceFile1}`);
             let solutionExec = await chaiExecAsync(`node ${solutionFile1}`);
-            expect(srcExec.stdout, ERROR_MSG).to.equal(solutionExec.stdout);
+            // srcExec.should.equal(solutionExec, "YEEEAHHHHHH")
+
+            expect(srcExec.stdout, ERROR_MSG).to.eql(solutionExec.stdout);
         });
     });
 
-    describe("(OPTIONAL) EXTRA ASSIGNMENT: Glacier_extra", () => {
+    describe("(OPTIONAL) Glacier_extra", () => {
         let sourceFile2 = `${SOURCE}/${KMOM}/glacier_extra.js`;
         let solutionFile2 = `${SOLUTION}/${KMOM}/glacier_extra.js`;
 
@@ -68,11 +70,14 @@ describe('Testsuite for KMOM01', () => {
         /**
         * Compare the output.
         */
-        it("should match output", async () => {
-            let srcExec = await chaiExecAsync(`node ${sourceFile2}`);
-            let solutionExec = await chaiExecAsync(`node ${solutionFile2}`);
-            expect(srcExec.stdout, ERROR_MSG).to.equal(solutionExec.stdout);
-        });
+        if (fs.existsSync(sourceFile2)) {
+            it("should match output", async () => {
+
+                let srcExec = await chaiExecAsync(`node ${sourceFile2}`);
+                let solutionExec = await chaiExecAsync(`node ${solutionFile2}`);
+                expect(srcExec.stdout, ERROR_MSG).to.eql(solutionExec.stdout);
+            });
+        }
     });
 
 
