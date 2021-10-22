@@ -11,7 +11,10 @@ Webpack är en *module bundler* för JavaScript applikationer. Vi kan med hjälp
 
 Vi känner till [npm](https://www.npmjs.com) och vi vet att det är en pakethanterare för Node. Vi ska använda npm för att installera *webpack*.
 
+Börja med att ställa dig i mappen `me/`.
+
 ```console
+# Stå i mappen js/me
 $ npm install --save-dev webpack webpack-cli clean-webpack-plugin
 ```
 
@@ -29,7 +32,7 @@ Nu läggs det till några rader i package.json:
 
 ### Komma igång
 
-Vi börjar med att skapa en konfigurationsfil för webpack där vi pekar ut vilken JavaScript fil vi vill ha som ingång (entry) för vår applikation. Vi definierar även vilken fil vi vill att alla moduler ska kompileras till (output). Vi döper konfigurationsfilen till webpack.config.js.
+Vi börjar med att skapa en konfigurationsfil för webpack där vi pekar ut vilken JavaScript fil vi vill ha som ingång (entry) för vår applikation. Vi definierar även vilken fil vi vill att alla moduler ska kompileras till (output). För att konstruktionen ska fungera över alla kursmoment så ska vi lägga till lite variabler i package.json.
 
 ```js
 // webpack.config.js
@@ -37,10 +40,10 @@ Vi börjar med att skapa en konfigurationsfil för webpack där vi pekar ut vilk
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-module.exports = {
+module.exports = (env) => {
     mode: 'development',
     devtool: 'inline-source-map',
-    entry: './js/main.js',
+    entry: `./${env.kmom}/js/main.js`,
     plugins: [
         new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
     ],
@@ -52,7 +55,7 @@ module.exports = {
 ```
 
 
-Vi vill alltså börja appen från `entry`-filen `src/main.js`. Vi använder sedan `path` modulen i nodejs för att peka ut sökvägen så den kompilerade filen hamnar i `dist/bundle.js`.
+Vi vill alltså börja appen från `entry`-filen `js/main.js` i respektive kursmoment. Vi använder sedan `path` modulen i nodejs för att peka ut sökvägen så den kompilerade filen hamnar i `dist/bundle.js`. Strukturen `${env.kmom}` tar emot en miljövariabel från det kommando vi använder när vi exekverar webpack. Vi tittar mer på det längre ned.
 
 Raden `mode: 'development',` berättar för webpack att vi just nu hållar på att utveckla så vi vill ha att filerna kompileras för utveckling. Vi kommer senare i artikeln se hur vi bygger produktionsfiler.
 
