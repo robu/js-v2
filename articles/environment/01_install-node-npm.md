@@ -40,7 +40,7 @@ Du kan nu starta programmen från windows-terminalen `cmd` eller ifrån Cygwin. 
 
 
 
-Installera Windows 10 WSL Debian/Bash
+Installera på Windows 10 WSL Debian/Bash
 -------------------------------
 
 Även om du har installerat Node på din Windows-maskin, och du använder WSL, så behöver du installera Node/npm i din klient i WSL. Du har då två installationer av Node, en i Windows och en i ditt WSL.
