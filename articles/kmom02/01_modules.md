@@ -11,7 +11,7 @@ Från början var JavaScript program oftast små script som löste en liten uppg
 
 En modul är en isolerad del med scriptkod som oftast innehåller det som just den delen behöver, isolerat från övrig kod. Man kan med fördel bara importera den när man behöver den och den blir enklare att underhålla.
 
-Ni som har läst pythonkursen har redan jobbat med moduler och har kanske en känsla för vad det handlar om. Från htmlphpkursen kan det liknas vid funktioner som ni separerade i filer.
+Ni som har läst pythonkursen har redan jobbat med moduler och har kanske en känsla för vad det handlar om. Från webteckursen kan det liknas vid funktioner som ni separerade i filer.
 
 
 
