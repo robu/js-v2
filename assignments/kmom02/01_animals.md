@@ -37,7 +37,7 @@ $ cp example/kmom02/*.mjs me/kmom02/
     | addAnimal(string)  | Lägg till ett nytt djur i listan. |
     | removeAnimal(string) | Ta bort ett djur från listan. Returnera information om det gick bra eller inte. Se nedan för exempel. |
 
-    **removeAnimal**: Om man försöker ta bort `Monarch butterfly` från de amerikanska djuren ska det returneras:
+    **removeAnimal**: Om man till exempel försöker ta bort `Monarch butterfly` från de amerikanska djuren ska det returneras:
     ```console
     Removed: Monarch butterfly
     ```
@@ -45,6 +45,8 @@ $ cp example/kmom02/*.mjs me/kmom02/
     ```console
     No "Tyrannosaurus" in array.
     ```
+
+    Ovan ska såklart fungera med alla djur, inte bara exemplet.
 
 1. Skapa en ny modul: `report.mjs` som ska exportera följande funktioner:
 
