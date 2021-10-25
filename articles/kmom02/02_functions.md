@@ -79,7 +79,7 @@ Den inbyggda variabeln `arguments` är en array som innehåller samtliga argumen
 
 ### Function declaration
 
-En *function declaration* eller *function statement* definierar en namngiven funktionsvariabel. Man kan likna det vid att deklarera en vanlig varibel. Istället för `var` använder vi `function`:
+En *function declaration* eller *function statement* definierar en namngiven funktionsvariabel. Man kan likna det vid att deklarera en vanlig varibel. Istället för `let` använder vi `function`:
 
 ```js
 function taxes () {
