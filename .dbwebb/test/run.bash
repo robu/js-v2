@@ -26,6 +26,8 @@
 # ACRONYM="$3"
 # KMOM="$4"
 
-cd "$1/.dbwebb/test" && bash "$4.bash" "$4" "$3"
+cd "$1/.dbwebb/test" || exit
+bash "$4.bash" "$4" "$3"
 
+# shellcheck disable=SC2181
 [[ "$?" -gt 0 ]] && printf "\n\n[$3] %s\n\n" "Fix your errors and run test again."

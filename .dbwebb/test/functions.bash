@@ -7,13 +7,12 @@ NC='\033[0m' # No Color
 CORRECT='✓'
 ERROR='x'
 KMOM="$1"
-STUD="$2"
+# STUD="$2"
 SOLUTIONPATH="../../.solutions/$KMOM"
 KMOMPATH="../../me/$KMOM"
 
 function header
 {
-    clear
     printf "\n\n"
     printf "${ORANGE}### %s ###${NC}\n\n\n" "Test suite for [$1] in the course js for user [$2]"
 }
@@ -48,8 +47,8 @@ function checkIfFileExist
 
 function checkIfContentMatch
 {
-    file1="$(node $KMOMPATH/$1)"
-    file2="$(node $SOLUTIONPATH/$1)"
+    file1=$(node "$KMOMPATH/$1")
+    file2=$(node "$SOLUTIONPATH/$1")
 
     result=$(diff <(echo "$file1") <(echo "$file2")) > /dev/null
 
@@ -58,10 +57,10 @@ function checkIfContentMatch
     else
         printNo
         printf "%s\n" "-------------------------------------"
-        echo -e $result
+        echo "$result"
         printf "%s\n" "-------------------------------------"
 
-        
+
         exit 1
     fi
 }
