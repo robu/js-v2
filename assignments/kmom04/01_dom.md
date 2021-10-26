@@ -98,7 +98,7 @@ Avsluta med att skapa en funktion som hjälper dig att skriva ut följande via `
 1. Bredd och höjd på `#box1`-elementet.
 1. Positionen på `#box1`-elementet enligt `left, top`.  
 
-Tips. Studera exemplet [`example/getSize/` i kursrepot](js/repo/example/getSize)
+<!-- Tips. Studera exemplet [`example/getSize/` i kursrepot](js/repo/example/getSize) -->
 
 Tips. Använd följande för att hämta detaljer om ett objekt: `Window.getComputedStyle()`, `parseInt()`.
 
