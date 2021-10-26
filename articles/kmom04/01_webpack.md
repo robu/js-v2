@@ -18,7 +18,7 @@ Börja med att ställa dig i mappen `me/`.
 $ npm install --save-dev webpack webpack-cli clean-webpack-plugin
 ```
 
-Nu läggs det till några rader i package.json:
+Nu läggs det till några rader i package.json. I skrivande stund är versionerna:
 
 ```json
 ...
@@ -32,7 +32,7 @@ Nu läggs det till några rader i package.json:
 
 ### Komma igång
 
-Vi börjar med att skapa en konfigurationsfil för webpack där vi pekar ut vilken JavaScript fil vi vill ha som ingång (entry) för vår applikation. Vi definierar även vilken fil vi vill att alla moduler ska kompileras till (output). För att konstruktionen ska fungera över alla kursmoment så ska vi lägga till lite variabler i package.json.
+Vi börjar med att titta på en konfigurationsfil för webpack där vi pekar ut vilken JavaScript fil vi vill ha som ingång (entry) för vår applikation. Vi definierar även vilken fil vi vill att alla moduler ska kompileras till (output). För att konstruktionen ska fungera över alla kursmoment så ska vi hantera lite variabler skickade från package.json.
 
 ```js
 // webpack.config.js
@@ -70,13 +70,13 @@ För att kompilera JavaScript koden använder vi oss av kommandot `webpack --wat
 },
 ```
 
-För att sparka igång webpack med miljövariabeln kan vi köra det med: `$ npm start --kmom=kmom04` för att bygga filerna i mappen `kmom04/`. Npm tar hand om det inskicakde argumentet och skickar vidare det som en miljövariabel via `--env` in till configfilen. Det blir smidigt när vi ska bygga i fler kursmoment.
+För att sparka igång webpack med miljövariabeln kan vi köra det med: `$ npm start --kmom=kmom04` för att bygga filerna i mappen `kmom04/`. Npm tar hand om det inskickade argumentet och skickar vidare det som en miljövariabel via `--env` in till configfilen. Det blir smidigt när vi ska bygga i fler kursmoment.
 
 
 
 ### Produktionskod
 
-Om vi tittar på filen `dist/bundle.js` är det en ganska så stor JavaScript-fil och består till stor del av saker vi inte behöver i produktion. Vi kommer i detta stycket se hur vi kan få ner den ursprungliga storleken rejält.
+Den färdiga "bundle"-filen `dist/bundle.js` är en ganska så stor JavaScript-fil och består till stor del av saker vi inte behöver i produktion. Vi kommer i detta stycket se hur vi kan få ner den ursprungliga storleken rejält (förutsatt att det handlar om mycket js kod).
 
 Vi börjar med att döpa om `webpack.config.js` till `webpack.dev.config.js`, då kan vi skilja på konfigurationen för utveckling och för produktion. Vi ändrar sedan i `package.json` så vårt `npm start` script ser ut som följande. Skillnaden nu är att vi pekar ut konfigurationsfilen istället för att förlita oss på att webpack letar upp den själv.
 
@@ -111,6 +111,18 @@ Vi lägger även till ett script i vår `package.json` så vi kan bygga produkti
 ```
 
 Vi kan nu köra script `build` med kommandot `npm run build`. Vi ser alltså att vi kan lägga till vilket script som helst och använda `run` framför scriptets namn för att köra det.
+
+
+
+### Usch så krångligt...finns inte filerna redan?
+
+Jodå vissa gör de det. Du kan kopiera in dem från exempelmappen:
+
+```console
+# Ställ dig i kursmappen
+$ cp example/environment/*.js me/
+
+```
 
 
 ### Avslutningsvis
