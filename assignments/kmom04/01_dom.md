@@ -26,7 +26,7 @@ $ cd me
 $ cp -r example/sandbox/* kmom04/
 ```
 
-Kopiera även in filen `package.json` och se till så du har webpack installerat.
+Dubbelkolla även filen `package.json` och se till så du har webpack installerat.
 
 
 
