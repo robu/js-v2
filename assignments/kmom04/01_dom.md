@@ -4,7 +4,6 @@ I den här uppgiften tränar vi mer på manipuleringen av dom. Vi ska bygga vida
 
 Du jobbar i mappen `kmom04/`.
 
-TBD: youtube klipp med hur kan det se ut?
 
 
 ### Förutsättning
@@ -275,6 +274,14 @@ Se till så koden validerar:
 $ cd me
 $ npm run linter kmom04/
 ```
+
+
+
+### Hur kan det se ut när det är klart?
+
+Nedan är en video som visar hur det kan se ut när det är klart:
+
+[![js exercise kmom04](https://img.youtube.com/vi/3kN-6TO5dC4/0.jpg)](https://www.youtube.com/watch?v=3kN-6TO5dC4)
 
 
 

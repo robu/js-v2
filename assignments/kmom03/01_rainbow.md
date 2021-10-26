@@ -61,6 +61,15 @@ $ npm run linter kmom03/
 
 
 
+### Hur kan det se ut när det är klart?
+
+Nedan är en video som visar hur det kan se ut när det är klart:
+
+[![js exercise kmom02](https://img.youtube.com/vi/tieLyaJmiUg/0.jpg)](https://www.youtube.com/watch?v=tieLyaJmiUg)
+
+
+
+
 ### Avslutningsvis
 
 Lycka till och hör av dig om du kör fast eller har några funderingar.
