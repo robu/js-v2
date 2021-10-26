@@ -23,7 +23,7 @@ Vi kör vår linter i terminalen med hjälp av `npm`. Filen som heter `package.j
 
 ```json
 "scripts": {
-    "linter": "eslint -c .eslintrc.json"
+    "linter": "eslint -c .eslintrc.json --ext=mjs,js"
 },
 ```
 
