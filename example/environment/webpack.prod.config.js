@@ -3,8 +3,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = (env) => {
     return {
-        mode: 'development',
-        devtool: 'inline-source-map',
+        mode: 'production',
         entry: `./${env.kmom}/js/main.js`,
         plugins: [
             new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
