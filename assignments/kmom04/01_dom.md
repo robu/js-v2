@@ -34,10 +34,7 @@ Dubbelkolla även filen `package.json` och se till så du har webpack installera
 
 #### 0. Miljön
 
-1. Lägg till scriptet `start` i package.json.
-Det ska köra webpack i development mode med optionet `--watch`.
-
-1. Lägg även till scriptet `build` som bygger webpack i production mode och placerar bundle.js i mappen `dist/`.
+1. Se till så du har fungerande script i package.json för att bygga applikationen med webpack, både `dev` och `prod`.
 
 1. Dina källfiler har du i mappen `js/`.
 
