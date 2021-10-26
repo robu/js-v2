@@ -27,7 +27,7 @@ $ cp example/kmom02/*.mjs me/kmom02/
 
 ### Krav
 
-1. Skapa en fil `kmom02/main.js` som du kan ha för att testa dina moduler.
+1. Skapa en fil `kmom02/main.mjs` som du kan ha för att testa dina moduler.
 1. Varje modul du kopierade in ska exportera följande funktioner:
 
     | Namn        |  Vad ska hända?  |
