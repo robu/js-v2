@@ -85,6 +85,8 @@ Year    Rate    Sea
 2050    1.23cm  37.8mm
 ```
 
+
+
 ### Validering
 
 Se till så koden validerar:
@@ -93,6 +95,16 @@ Se till så koden validerar:
 $ cd me
 $ npm run linter kmom01/
 ```
+
+
+
+### Hur kan det se ut när det är klart?
+
+Nedan är en video som visar hur det kan se ut när det är klart:
+
+[![js exercise kmom01](https://img.youtube.com/vi/LcIPQ3YlNLc/0.jpg)](https://www.youtube.com/watch?v=LcIPQ3YlNLc)
+
+
 
 
 ### Avslutningsvis
