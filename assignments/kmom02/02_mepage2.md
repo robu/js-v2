@@ -18,6 +18,8 @@ Krav
 
 1. Ta reda på hur du kan skriva ut dagens datum på din me sida och lägg till det på valfritt ställe.
 
+1. Skapa en funktion som skriver ut "God förmiddag" eller "God eftermiddag" på din sida beroende på om klockan är före eller efter `12.00`.
+
 1. Lägg till din redovisningstext i `redovisning.html`.
 
 1. Gör en dbwebb publish för att kolla att allt validerar och fungerar.
