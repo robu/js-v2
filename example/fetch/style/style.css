@@ -37,7 +37,8 @@ table thead tr {
     text-align: left;
 }
 
-table th, td {
+table th,
+td {
     padding: 12px 15px;
 }
 
