@@ -67,12 +67,3 @@ Om du har tid och kraft.
 1. Lägg extra kraft på CSS och styla din me-sida så den blir mer personlig.
 
 1. Lägg till något enkelt JavaScript som gör din me-sida än mer personlig.
-
-
-
-Tips från coachen {#tips}
------------------------
-
-Koden bakom din me-sida behöver validera och följa god kodstandard.
-
-Lycka till och hojta till i forumet om du behöver hjälp!
