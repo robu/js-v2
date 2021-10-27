@@ -35,9 +35,9 @@ describe('Testsuite for KMOM02', () => {
         });
 
         beforeEach(function() {
-            americanAnimals = american.getAllAnimals()
-            africanAnimals = african.getAllAnimals()
-            europeanAnimals = european.getAllAnimals()
+            americanAnimals = american.allAnimals()
+            africanAnimals = african.allAnimals()
+            europeanAnimals = european.allAnimals()
         })
 
         describe("all", () => {
@@ -189,7 +189,7 @@ describe('Testsuite for KMOM02', () => {
 
         describe("prettyPrint", () => {
             it('should match output (america)', (done) => {
-                const animals = american.getAllAnimals()
+                const animals = american.allAnimals()
                 const msg = report.prettyPrint('American', americanAnimals)
 
                 expect(msg).to.equal(`--- REPORT ---

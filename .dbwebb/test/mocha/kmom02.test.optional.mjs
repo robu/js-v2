@@ -32,9 +32,9 @@ describe('Testsuite for extra optional assignments KMOM02', () => {
     });
 
     beforeEach(function() {
-        americanAnimals = american.getAllAnimals()
-        africanAnimals = african.getAllAnimals()
-        europeanAnimals = european.getAllAnimals()
+        americanAnimals = american.allAnimals()
+        africanAnimals = african.allAnimals()
+        europeanAnimals = european.allAnimals()
     })
 
 
@@ -43,7 +43,7 @@ describe('Testsuite for extra optional assignments KMOM02', () => {
             european.addAnimal('bengt')
             european.addAnimal('t-rex')
             report.sortAnimalsExtra(europeanAnimals)
-            
+
             expect(europeanAnimals).to.have.ordered.members([
                 'Amazon ant',
                 'bengt',

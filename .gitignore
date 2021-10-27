@@ -3,6 +3,8 @@ build/
 node_modules
 package-lock.json
 me/
+package.json
+.eslintrc.json
 *.ansi
 
 # Mac

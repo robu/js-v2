@@ -11,5 +11,8 @@ function header {
 
 cd me || exit 1
 
-header "OPENING FILES"
-atom kmom01
+node kmom01/glacier.js
+
+read -p "Done? "
+
+exit "$?"
