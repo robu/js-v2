@@ -29,9 +29,7 @@ $ cp example/kmom02/*.mjs me/kmom02/
 
 1. Skapa en fil `kmom02/main.mjs` som du kan ha för att testa dina moduler.
 
-1. Skapa en fil `kmom02/helpers.mjs` som ska innehålla lite hjälpfunktioner.
-
-1. `helpers.mjs` ska exportera följande funktioner:
+1. Skapa en fil `helpers.mjs` ska exportera följande funktioner:
 
     | Namn        |  Vad ska hända?  |
     | ------------- | :-----|
