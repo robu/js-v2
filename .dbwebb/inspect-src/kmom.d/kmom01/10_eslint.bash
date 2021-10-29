@@ -9,6 +9,8 @@ function header {
     printf "\033[32;01m>>> -------------- %-20s -------------------------\033[0m\n" "$1"
 }
 
+
+
 if [[ ! -f "package.json" ]] || [[ ! -f ".eslintrc.json" ]]; then
     read -p "Missing files. Should I fix it? [Y/n]" answer
     if [[ "$answer" != "n" ]]; then

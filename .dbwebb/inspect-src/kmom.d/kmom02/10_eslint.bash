@@ -31,8 +31,6 @@ if [[ ! -d "node_modules" ]]; then
     fi
 fi
 
-
-
 npm run linter "me/kmom02/" --silent || exit 1
 
 read -p "Done? "

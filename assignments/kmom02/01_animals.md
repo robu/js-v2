@@ -31,12 +31,12 @@ $ cp example/kmom02/*.mjs me/kmom02/
 
 1. Skapa en fil `helpers.mjs` ska exportera följande funktioner:
 
-    | Namn        |  Vad ska hända?  |
-    | ------------- | :-----|
-    | allAnimals(&lt;array&gt;)      | Returnera hela arrayen med djur. |
-    | getRandomAnimal(&lt;array&gt;)   |   Returnera ett slumpmässigt djur från arrayen. |
-    | addAnimal(&lt;array&gt;, &lt;string&gt;)  | Lägg till ett nytt djur i listan. |
-    | removeAnimal(&lt;array&gt;, &lt;string&gt;) | Ta bort ett djur från listan. Returnera information om det gick bra eller inte. Se nedan för exempel. |
+    | Namn        |  Exempel | Vad ska hända?  |
+    | ------------- | -------- | :-----|
+    | allAnimals(&lt;string&gt;) | allAnimals(), allAnimals("african") | Returnera en array med alla djur från &lt;string&gt; tex `allAnimals("africa")`. Giltiga argument är `africa`, `europe`, `america`. Om inget argument skickas med ska det returneras en sammanslagen array med samtliga djur. |
+    | getRandomAnimal(&lt;array&gt;)| getRandomAnimal(africanAnimals)   |   Returnera ett slumpmässigt djur från arrayen. |
+    | addAnimal(&lt;array&gt;, &lt;string&gt;)| addAnimal(africanAnimals, "Flamingo")  | Lägg till ett nytt djur i listan. |
+    | removeAnimal(&lt;array&gt;, &lt;string&gt;)| removeAnimal("africanAnimals", "Flamingo") | Ta bort ett djur från listan. Returnera information om det gick bra eller inte. Se nedan för exempel. |
 
     **removeAnimal**: Om man till exempel försöker ta bort `Monarch butterfly` från de amerikanska djuren ska det returneras:
     ```console
@@ -51,12 +51,12 @@ $ cp example/kmom02/*.mjs me/kmom02/
 
 1. Skapa en ny modul: `report.mjs` som ska exportera följande funktioner:
 
-    | Namn        | Vad ska hända?  |
-    | ------------- |:-----|
-    | prettyPrint(&lt;string&gt;, &lt;array&gt;) |  Returnera en rapport av alla inskickade djur. Se nedan för exempel. |
-    | fixFirstLetter(&lt;array&gt;)   |   Returnera arrayen där första bokstaven på alla djur är gjord till versal. |
-    | sortAnimals(&lt;array&gt;) | Returnera den inskickade arrayen sorterad alfabetiskt i stigande ordning. Du kan göra skillnad på gemener och versaler. |
-    | filterAnimals([&lt;array&gt;, &lt;array&gt;...], &lt;int&gt;) | Returnera en array med alla djur som har färre eller lika många bokstäver (inte tecken) som den inskickade siffran. Se nedan för exempel. |
+    | Namn        | Exempel | Vad ska hända?  |
+    | ------------- | -------- |:-----|
+    | prettyPrint(&lt;string&gt;, &lt;array&gt;)| prettuPrint("African", africanAnimals) |  Returnera en rapport av alla inskickade djur. Se nedan för exempel. |
+    | fixFirstLetter(&lt;array&gt;) | fixFirstLetter(africanAnimals)  |   Returnera arrayen där första bokstaven på alla djur är gjord till versal. |
+    | sortAnimals(&lt;array&gt;) | sortAnimals(africanAnimals) | Returnera den inskickade arrayen sorterad alfabetiskt i stigande ordning. Du kan göra skillnad på gemener och versaler. |
+    | filterAnimals([&lt;array&gt;, &lt;array&gt;...], &lt;int&gt;) | filterAnimals([africanAnimals, americanAnimals], 10) | Returnera en array med alla djur som har färre eller lika många bokstäver (inte tecken) som den inskickade siffran. Se nedan för exempel. |
 
 
     **prettyPrint** Om man exekverar prettyPrint med argumenten `African` och en array med alla Afrikas djur, `prettyPrint('African', allAfricanAnimals)` ska man få utskriften:
