@@ -123,11 +123,11 @@ $ npm run linter kmom02/
 
 
 
-### Hur kan det se ut när det är klart?
+<!-- ### Hur kan det se ut när det är klart?
 
 Nedan är en video som visar hur det kan se ut när det är klart:
 
-[![js exercise kmom02](https://img.youtube.com/vi/fDMYExdbidY/0.jpg)](https://www.youtube.com/watch?v=fDMYExdbidY)
+[![js exercise kmom02](https://img.youtube.com/vi/fDMYExdbidY/0.jpg)](https://www.youtube.com/watch?v=fDMYExdbidY) -->
 
 
 
