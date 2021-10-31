@@ -8,6 +8,7 @@ import * as african from '../../../me/kmom02/african.mjs'
 import * as european from '../../../me/kmom02/european.mjs'
 import * as american from '../../../me/kmom02/american.mjs'
 import * as report from '../../../me/kmom02/report.mjs'
+import * as helpers from '../../../me/kmom02/helpers.mjs'
 // import * as european from `${SOURCE}/${KMOM}/europe.mjs`
 // import * as american from `${SOURCE}/${KMOM}/american.mjs`
 // const EXERCISE = 'glacier'
@@ -35,9 +36,9 @@ describe('Testsuite for KMOM02', () => {
         });
 
         beforeEach(function() {
-            americanAnimals = american.allAnimals()
-            africanAnimals = african.allAnimals()
-            europeanAnimals = european.allAnimals()
+            americanAnimals = helpers.allAnimals("america")
+            africanAnimals = helpers.allAnimals("africa")
+            europeanAnimals = helpers.allAnimals("europe")
         })
 
         describe("all", () => {
@@ -93,21 +94,21 @@ describe('Testsuite for KMOM02', () => {
         describe("random", () => {
 
             it('should return a random animal (america)', (done) => {
-                const randAnim = american.getRandomAnimal()
+                const randAnim = helpers.getRandomAnimal(americanAnimals)
 
                 expect(americanAnimals).to.include(randAnim);
                 done();
             });
 
             it('should return a random animal (africa)', (done) => {
-                const randAnim = african.getRandomAnimal()
+                const randAnim = helpers.getRandomAnimal(africanAnimals)
 
                 expect(africanAnimals).to.include(randAnim);
                 done();
             });
 
             it('should return a random animal (europe)', (done) => {
-                const randAnim = european.getRandomAnimal()
+                const randAnim = helpers.getRandomAnimal(europeanAnimals)
 
                 expect(europeanAnimals).to.include(randAnim);
                 done();
@@ -117,21 +118,21 @@ describe('Testsuite for KMOM02', () => {
         describe("add", () => {
 
             it('should contain the added super animal (america)', (done) => {
-                american.addAnimal('capybara')
+                helpers.addAnimal(americanAnimals, 'capybara')
 
                 expect(americanAnimals).to.include('capybara');
                 done();
             });
 
             it('should contain the added super animal (africa)', (done) => {
-                african.addAnimal('capybara')
+                helpers.addAnimal(africanAnimals, 'capybara')
 
                 expect(africanAnimals).to.include('capybara');
                 done();
             });
 
             it('should contain the added super animal (europe)', (done) => {
-                european.addAnimal('capybara')
+                helpers.addAnimal(europeanAnimals, 'capybara')
 
                 expect(europeanAnimals).to.include('capybara');
                 done();
@@ -140,7 +141,7 @@ describe('Testsuite for KMOM02', () => {
 
         describe("remove", () => {
             it('should not contain the removed animal (america)', (done) => {
-                let msg = american.removeAnimal('Delta Smelt')
+                let msg = helpers.removeAnimal(americanAnimals, 'Delta Smelt')
 
                 expect(americanAnimals).to.not.include('Delta Smelt');
                 expect(msg).to.equal('Removed: Delta Smelt');
@@ -148,7 +149,7 @@ describe('Testsuite for KMOM02', () => {
             });
 
             it('should not contain the removed animal (africa)', (done) => {
-                let msg = african.removeAnimal('Pangolin')
+                let msg = helpers.removeAnimal(africanAnimals, 'Pangolin')
 
                 expect(africanAnimals).to.not.include('Pangolin');
                 expect(msg).to.equal('Removed: Pangolin');
@@ -156,7 +157,7 @@ describe('Testsuite for KMOM02', () => {
             });
 
             it('should not contain the removed animal (europe)', (done) => {
-                let msg = european.removeAnimal('Polar bear')
+                let msg = helpers.removeAnimal(europeanAnimals, 'Polar bear')
 
                 expect(europeanAnimals).to.not.include('Polar bear');
                 expect(msg).to.equal('Removed: Polar bear');
@@ -166,21 +167,21 @@ describe('Testsuite for KMOM02', () => {
 
         describe("remove (non existent animal)", () => {
             it('should give correct feedback (america)', (done) => {
-                let msg = american.removeAnimal('Andreas')
+                let msg = helpers.removeAnimal(americanAnimals, 'Andreas')
 
                 expect(msg).to.equal('No "Andreas" in array.');
                 done();
             });
 
             it('should give correct feedback (africa)', (done) => {
-                let msg = african.removeAnimal('Emil')
+                let msg = helpers.removeAnimal(africanAnimals, 'Emil')
 
                 expect(msg).to.equal('No "Emil" in array.');
                 done();
             });
 
             it('should give correct feedback (europe)', (done) => {
-                let msg = european.removeAnimal('Mikael')
+                let msg = helpers.removeAnimal(europeanAnimals, 'Mikael')
 
                 expect(msg).to.equal('No "Mikael" in array.');
                 done();
@@ -189,7 +190,6 @@ describe('Testsuite for KMOM02', () => {
 
         describe("prettyPrint", () => {
             it('should match output (america)', (done) => {
-                const animals = american.allAnimals()
                 const msg = report.prettyPrint('American', americanAnimals)
 
                 expect(msg).to.equal(`--- REPORT ---

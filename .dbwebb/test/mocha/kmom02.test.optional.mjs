@@ -8,6 +8,7 @@ import * as african from '../../../me/kmom02/african.mjs'
 import * as european from '../../../me/kmom02/european.mjs'
 import * as american from '../../../me/kmom02/american.mjs'
 import * as report from '../../../me/kmom02/report.mjs'
+import * as helpers from '../../../me/kmom02/helpers.mjs'
 // import * as european from `${SOURCE}/${KMOM}/europe.mjs`
 // import * as american from `${SOURCE}/${KMOM}/american.mjs`
 // const EXERCISE = 'glacier'
@@ -32,16 +33,16 @@ describe('Testsuite for extra optional assignments KMOM02', () => {
     });
 
     beforeEach(function() {
-        americanAnimals = american.allAnimals()
-        africanAnimals = african.allAnimals()
-        europeanAnimals = european.allAnimals()
+        americanAnimals = helpers.allAnimals("america")
+        africanAnimals = helpers.allAnimals("africa")
+        europeanAnimals = helpers.allAnimals("europe")
     })
 
 
     describe("sortAnimalsExtra", () => {
         it('should sort animals regardless upper/lowercase', (done) => {
-            european.addAnimal('bengt')
-            european.addAnimal('t-rex')
+            helpers.addAnimal(europeanAnimals, 'bengt')
+            helpers.addAnimal(europeanAnimals, 't-rex')
             report.sortAnimalsExtra(europeanAnimals)
 
             expect(europeanAnimals).to.have.ordered.members([

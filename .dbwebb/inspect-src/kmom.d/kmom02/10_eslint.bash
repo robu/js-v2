@@ -33,6 +33,6 @@ fi
 
 npm run linter "me/kmom02/" --silent || exit 1
 
-read -p "Done? "
+read -p "All good. Done? "
 
 exit 0
