@@ -11,6 +11,7 @@ module.exports = (env) => {
         ],
         output: {
             filename: 'bundle.js',
+            /* eslint-disable node/no-path-concat */
             path: path.resolve(`${__dirname}/${env.kmom}`, 'dist')
         }
     }
