@@ -33,7 +33,7 @@ $ cp example/kmom02/*.mjs me/kmom02/
 
     | Namn        |  Exempel | Vad ska hända?  |
     | ------------- | -------- | :-----|
-    | allAnimals(&lt;string&gt;) | allAnimals(), allAnimals("african") | Returnera en array med alla djur från &lt;string&gt; tex `allAnimals("africa")`. Giltiga argument är `africa`, `europe`, `america`. Om inget argument skickas med ska det returneras en sammanslagen array med samtliga djur. |
+    | allAnimals(&lt;string&gt;) | allAnimals(), allAnimals("africa"), allAnimals("africa", "europe") | Returnera en array med alla djur från &lt;string&gt;. Giltiga argument är `africa`, `europe`, `america`. Om inget argument skickas med ska det returneras en sammanslagen array med samtliga djur. Det ska fungera med 0, 1, 2 eller 3 argument.|
     | getRandomAnimal(&lt;array&gt;)| getRandomAnimal(africanAnimals)   |   Returnera ett slumpmässigt djur från arrayen. |
     | addAnimal(&lt;array&gt;, &lt;string&gt;)| addAnimal(africanAnimals, "Flamingo")  | Lägg till ett nytt djur i listan. |
     | removeAnimal(&lt;array&gt;, &lt;string&gt;)| removeAnimal("africanAnimals", "Flamingo") | Ta bort ett djur från listan. Returnera information om det gick bra eller inte. Se nedan för exempel. |
