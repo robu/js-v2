@@ -2,7 +2,7 @@ Tjenare,
 
 Vad bra att labbmiljön är på plats. Både node och npm är standardverktyg för en programmerare och bör finnas tillgängliga på alla arbetsstationer.
 
-Jag har kört kommandot "dbwebb test kmom01" och det såg ju bra ut. Vidare körde jag lintern och din kod är väl strukturerad och validerar fint. Jag tittade även på din kod.
+Jag har validerat din kod med eslint och det såg ju bra ut. Vidare tittade jag på koden och testkörde programmet. Koden är välskriven och utskriften matchar instruktionerna, snyggt! Även din me-sida var på plats.
 
 Jag kollade igenom din redovisningstext och den är välskriven och reflekterande.
 

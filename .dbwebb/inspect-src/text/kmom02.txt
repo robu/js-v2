@@ -1,8 +1,6 @@
 Kursmoment 02 klart!
 
-Delarna innefattar en labb, en config-fil som styr din virtual host, en logg-fil samt en skärmdump.
-
-Jag kunde hitta alla delar och de har relevant innehåll. Bra att du använder en config-fil med variabler. Det underlättar skapandet av fler virtuella hostar.
+Den stora utmaningen den här veckan var animals-uppguften. Jag har tittat igenom din kod och provkört de olika exporterade funktionerna och det rullar på riktigt bra. Koden validerar och din me-sida uppfyller kraven.
 
 Allt jag kollade på såg bra ut. Kör på.
 
