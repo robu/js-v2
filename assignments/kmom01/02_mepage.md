@@ -39,7 +39,7 @@ cp -ri example/redovisa me
 
 1. Du har nu en grund för din me-sida i kursen. Modifiera den så den blir "din egen".
 
-1. Uppdatera sidan `me.html` så att den innehåller en kort presentation av dig själv tillsammans med en bild som får representera dig.
+1. Uppdatera sidan `index.html` så att den innehåller en kort presentation av dig själv tillsammans med en bild som får representera dig.
 
 1. I sidan `redovisning.html` skall du skriva dina redovisningstexter för varje kursmoment.
 
@@ -49,7 +49,7 @@ cp -ri example/redovisa me
 
 1. I din `om.html`, länka även till kurssidan på dbwebb.se.
 
-1. Du kan uppdatera stylesheet och eventuellt JavaScript i katalogerna `me/style` och `me/js`. Det är inte nödvändigt, gör det om du vill och känner att du har tid.
+1. Du kan uppdatera stylesheet och eventuellt JavaScript i katalogerna `css/` och `js/`. Det är inte nödvändigt, gör det om du vill och känner att du har tid.
 
 1. Gör en dbwebb publish för att kolla att allt validerar och fungerar.
 
