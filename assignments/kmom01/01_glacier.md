@@ -111,4 +111,4 @@ Nedan är en video som visar hur det kan se ut när det är klart:
 
 Lycka till och hör av dig om du kör fast eller har några funderingar.
 
-[TBD: Länk till issues](#)
+<!-- [TBD: Länk till issues](#) -->
