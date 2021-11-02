@@ -20,6 +20,7 @@
             "unix"
         ],
         "quotes": "off",
-        "indent": ["error", 4]
+        "indent": ["error", 4],
+        "semi": [1, "always"]
     }
 }

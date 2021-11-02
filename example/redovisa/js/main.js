@@ -2,7 +2,7 @@
  * A function to wrap it all in.
  */
 (function () {
-    "use strict"
+    "use strict";
 
-    console.log("JavaScript ready.")
-}())
+    console.log("JavaScript ready.");
+}());

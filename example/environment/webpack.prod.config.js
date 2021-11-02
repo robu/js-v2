@@ -1,5 +1,5 @@
-const path = require('path')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = (env) => {
     return {
@@ -13,5 +13,5 @@ module.exports = (env) => {
             /* eslint-disable node/no-path-concat */
             path: path.resolve(`${__dirname}/${env.kmom}`, 'dist')
         }
-    }
-}
+    };
+};

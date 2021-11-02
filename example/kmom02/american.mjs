@@ -8,6 +8,6 @@ const animals = [
     'Delta Smelt',
     'Giant sea bass',
     "Franklin's bumble bee"
-]
+];
 
-export { animals }
+export { animals };

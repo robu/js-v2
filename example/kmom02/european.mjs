@@ -9,6 +9,6 @@ const animals = [
     'European mink',
     'Gerfalcon',
     'Long-fingered bat'
-]
+];
 
-export { animals }
+export { animals };
