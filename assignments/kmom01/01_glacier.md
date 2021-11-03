@@ -72,17 +72,17 @@ Ett exempel på hur det kan se ut med argumenten `calculate(2050, 5)`:
 $ node glacier_extra.js
 Year    Rate    Sea
 ------------------------
-2000    0.36cm  0mm
-2005    0.45cm  3.78mm
-2010    0.53cm  7.56mm
-2015    0.62cm  11.34mm
-2020    0.71cm  15.12mm
-2025    0.79cm  18.9mm
-2030    0.88cm  22.68mm
-2035    0.97cm  26.46mm
-2040    1.05cm  30.24mm
-2045    1.14cm  34.02mm
-2050    1.23cm  37.8mm
+2000    0.36m  0mm
+2005    0.45m  3.78mm
+2010    0.53m  7.56mm
+2015    0.62m  11.34mm
+2020    0.71m  15.12mm
+2025    0.79m  18.9mm
+2030    0.88m  22.68mm
+2035    0.97m  26.46mm
+2040    1.05m  30.24mm
+2045    1.14m  34.02mm
+2050    1.23m  37.8mm
 ```
 
 
