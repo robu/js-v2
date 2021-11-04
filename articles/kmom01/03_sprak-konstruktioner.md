@@ -5,11 +5,11 @@ Lexikalisk struktur
 
 JavaScript gör skillnad på små och stora bokstäver, nyckelordet `while` måste skrivas exakt så och inte `WHILE`. Variablerna `avar` och `aVar` är två skilda variabler.
 
-JS bryr sig inte om blanka tecken som mellanslag och tabb. Du kan använda dem som du vill för att formatera ditt program. När du kör ett program "live" kan du ta bort alla tomma tecken, det är så som "minifiering" [^1] [^2] fungerar när det förminskar ett JavaScript för att snabba upp laddningshastighet av en sida, allt för att ge användaren en bättre upplevelse.
+JS bryr sig inte om blanka tecken som mellanslag och tabb. Du kan använda dem som du vill för att formatera ditt program. När du kör ett program "live" kan du ta bort alla tomma tecken, det är så som "minifiering" fungerar när det förminskar ett JavaScript för att snabba upp laddningshastighet av en sida, allt för att ge användaren en bättre upplevelse.
 
 Semikolon avslutar ett "statement", men de är valfria. Därför kan du köra program även om de saknar semikolon. Bäst är att ha koll på sina semikolon och alltid lägga dit dem där de ska vara. Annars kommer interpretatorn att gissa sig fram till om det behövs ett semikolon eller ej. Gissningar kan leda till problem.
 
-Kommentarer är samma som i PHP och C++. `//` för en-rads kommentarer och `/* */` för kommentarer som spänner över flera rader. Det finns också stöd för DocBlock kommentarer `/** */` och då i samverkan med externa verktyg för automatgenererande dokumentation [^3].
+Kommentarer är samma som i PHP och C++. `//` för en-rads kommentarer och `/* */` för kommentarer som spänner över flera rader. Det finns också stöd för DocBlock kommentarer `/** */` och då i samverkan med externa verktyg för automatgenererande dokumentation.
 
 
 
