@@ -17,7 +17,6 @@ JavaScript hanterar heltal, flyttal och hexadecimala tal som literaler. Vissa im
 
 Math.sqrt(-1)       // Fails and returns NaN, Not a Number, special case.
 parseInt('no way')  // Fails and returns NaN.
-toInteger('no way') // Succeeds and returns 0.
 ```
 
 När en matematisk funktion eller en parsning av ett number misslyckas så returneras värdet `NaN` som betyder "Not a number". [Läs mer om Nan](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/NaN). Om man har en större beräkning och en del ger Nan så kommer hela uttrycket att bli Nan. Det kan göra det lite svårt att felsöka en komplex beräkning som ger Nan, men dela upp beräkningen i delar så blir det enklare att felsöka.
