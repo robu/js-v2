@@ -28,10 +28,10 @@ Den varianten vi ska använda är ESM. Vi kan exportera en funktion eller variab
 ```js
 // module.mjs
 function sum (x, y) {
-    return x + y
+    return x + y;
 }
 
-export { sum }
+export { sum };
 
 // Alternativt:
 // export const sum = (x, y) => x + y
@@ -41,9 +41,9 @@ Och sedan importera den från en annan fil:
 
 ```js
 // main.mjs
-import { sum } from './module.mjs'
+import { sum } from './module.mjs';
 
-console.log(sum(26, 16)) // 42
+console.log(sum(26, 16)); // 42
 ```
 
 
@@ -52,33 +52,33 @@ Om vi istället vill exportera funktionen som ett default värde och kunna impor
 ```js
 // module_default.mjs
 function sum (x, y) {
-    return x + y
+    return x + y;
 }
 
-export default sum
+export default sum;
 ```
 
 ```js
 // main_default.mjs
-import anything from './module_default.mjs'
+import anything from './module_default.mjs';
 
-console.log(anything(26, 16))
+console.log(anything(26, 16));
 ```
 
 Vi kan även välja vad vi vill att den importerade funktionen/variabeln ska heta med nyckelordet `as`:
 
 ```js
 // Example of import - as
-import { sum as anything } from './module.mjs'
+import { sum as anything } from './module.mjs';
 ```
 
 Man kan även använda wildcardet `*`: `import * as anything from ...` för att importera allt. Det är dock inte att föredra då det blir odiciplinerat att inte veta vad vi vill importera.
 
 
 
-#### type: module eller .mjs? {#type-mjs}
+#### type: module eller .mjs?
 
-För att kunna använda ES moduler behöver vi antingen lägga till `type: "module"` i den närmsta `package.json` uppåt i mappstrukturen alternativt använda filändelsen `.mjs`. Då kommer Node hantera filerna som moduler.
+För att kunna använda ES moduler behöver vi antingen lägga till `type: "module"` i den närmsta `package.json` uppåt i mappstrukturen alternativt använda filändelsen `.mjs`. Då kommer Node hantera filerna som moduler. Vi kör på `.mjs` så länge.
 
 
 
@@ -91,15 +91,15 @@ Om vi tar föregående exempel och gör om det till en CommonJS modul ser det ut
 ```js
 // module.js
 function sum (x, y) {
-    return x + y
+    return x + y;
 }
 
-module.exports = sum
+module.exports = sum;
 
 // main.js
-const sum = require('./module.js')
+const sum = require('./module.js');
 
-console.log(sum(34, 8))
+console.log(sum(34, 8));
 ```
 
 
