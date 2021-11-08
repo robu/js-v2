@@ -11,7 +11,7 @@ function header {
 cd me || exit 1
 
 if [[ -f "kmom01/glacier_extra.js" ]]; then
-    node kmom01/glacier.js
+    node kmom01/glacier_extra.js
 
     read -p "Done? "
 
