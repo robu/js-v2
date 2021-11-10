@@ -22,10 +22,28 @@ Krav
 
 1. Lägg till din redovisningstext i `redovisning.html`.
 
-1. Gör en dbwebb publish för att kolla att allt validerar och fungerar.
 
-```text
-dbwebb publish redovisa
+
+### Validering
+
+Se till så koden validerar:
+
+```console
+$ cd me
+# js
+$ npm run linter redovisa/
+
+# html/css
+$ dbwebb validate redovisa
+```
+
+### Publicering
+
+Glöm inte att publicera koden:
+
+```console
+$ cd me
+$ dbwebb publish redovisa
 ```
 
 
