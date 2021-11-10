@@ -55,7 +55,7 @@ $ cp example/kmom02/*.mjs me/kmom02/
     | ------------- | -------- |:-----|
     | prettyPrint(&lt;string&gt;, &lt;array&gt;)| prettyPrint("African", africanAnimals) |  Returnera en rapport av alla inskickade djur. Se nedan för exempel. |
     | fixFirstLetter(&lt;array&gt;) | fixFirstLetter(africanAnimals)  |   Returnera arrayen där första bokstaven på alla djur är gjord till versal. |
-    | sortAnimals(&lt;array&gt;) | sortAnimals(africanAnimals) | Returnera den inskickade arrayen sorterad alfabetiskt i stigande ordning. Du kan göra skillnad på gemener och versaler. |
+    | sortAnimals(&lt;array&gt;) | sortAnimals(africanAnimals) | Returnera den inskickade arrayen sorterad alfabetiskt i stigande ordning. Du ska göra skillnad på gemener och versaler. |
     | filterAnimals([&lt;array&gt;, &lt;array&gt;...], &lt;int&gt;) | filterAnimals([africanAnimals, americanAnimals], 10) | Returnera en array med alla djur som har färre eller lika många bokstäver (inte tecken) som den inskickade siffran. Se nedan för exempel. |
 
 
