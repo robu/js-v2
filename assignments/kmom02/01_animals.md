@@ -68,8 +68,8 @@ $ cp example/kmom02/*.mjs me/kmom02/
     * Ethiopian wolf
     * Black rhino
     * White rhino
-    * Mountain Gorilla
-    * African Wild Dog
+    * Mountain gorilla
+    * African wild Dog
     * African penguin
     * Giraffe
     * Hooded vulture
