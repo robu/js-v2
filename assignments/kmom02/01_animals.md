@@ -59,7 +59,7 @@ $ cp example/kmom02/*.mjs me/kmom02/
     | filterAnimals([&lt;array&gt;, &lt;array&gt;...], &lt;int&gt;) | filterAnimals([africanAnimals, americanAnimals], 10) | Returnera en array med alla djur som har färre eller lika många bokstäver (inte tecken) som den inskickade siffran. Se nedan för exempel. |
 
 
-    **prettyPrint** Om man exekverar prettyPrint med argumenten `African` och en array med alla Afrikas djur, `prettyPrint('African', africanAnimals)` ska man få utskriften:
+    **prettyPrint** Om man exekverar prettyPrint med argumenten `African` och en array med alla Afrikas djur, `prettyPrint('African', africanAnimals)` ska en sträng returneras. Följande ska synas om strängen skrivs ut:
 
     ```console
     --- REPORT ---
