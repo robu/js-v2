@@ -4,9 +4,9 @@ import chaiFiles from 'chai-files';
 import chaiExecAsync from '@jsdevtools/chai-exec';
 import { SOURCE, SOLUTION, ERROR_MSG } from './config.mjs';
 
-import * as african from '../../../me/kmom02/african.mjs'
-import * as european from '../../../me/kmom02/european.mjs'
-import * as american from '../../../me/kmom02/american.mjs'
+import { animals as african } from '../../../example/kmom02/african.mjs'
+// import * as european from '../../../me/kmom02/european.mjs'
+// import * as american from '../../../me/kmom02/american.mjs'
 import * as report from '../../../me/kmom02/report.mjs'
 import * as helpers from '../../../me/kmom02/helpers.mjs'
 // import * as european from `${SOURCE}/${KMOM}/europe.mjs`
@@ -33,15 +33,21 @@ describe('Testsuite for KMOM02', () => {
 
         before(function () {
             chai.config.includeStack = false;
-        });
-
-        beforeEach(function() {
             americanAnimals = helpers.allAnimals("america")
             africanAnimals = helpers.allAnimals("africa")
             europeanAnimals = helpers.allAnimals("europe")
+        });
+
+        beforeEach(function() {
+            // americanAnimals = helpers.allAnimals("america")
+            // africanAnimals = helpers.allAnimals("africa")
+            // //helpers.allAnimals("africa")
+            // // console.log(africanAnimals);
+            // europeanAnimals = helpers.allAnimals("europe")
         })
 
         describe("all", () => {
+
             it('should return an array of american animals', (done) => {
                 expect(americanAnimals).to.have.members([
                     'Florida panther',
