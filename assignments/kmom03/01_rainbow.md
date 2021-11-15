@@ -41,7 +41,7 @@ $ cp -r example/rainbow/* me/kmom03/
 
 1. Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten? Du kan då uppdatera eventlyssnaren från krav 5 och den behöver således inte tas bort.
 
-1. Du kanske till och med kan göra ett memoryspel av korten?
+1. Du kanske till och med kan göra ett memoryspel av korten? Om du väljer detta krav så kan du anpassa grundkraven efter ditt memoryspel. Du kan tex ändra hur eventlyssnarna fungerar och knappen kan tas bort. Du ska dock använda informationen ifrån arrayerna.
 
 
 
