@@ -39,7 +39,7 @@ $ cp -r example/rainbow/* me/kmom03/
 
 ### Extra uppgift (Optionell)
 
-1. Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten?
+1. Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten? Du kan då uppdatera eventlyssnaren från krav 5 och den behöver således inte tas bort.
 
 1. Du kanske till och med kan göra ett memoryspel av korten?
 
