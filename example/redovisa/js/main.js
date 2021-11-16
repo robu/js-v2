@@ -5,4 +5,4 @@
     "use strict";
 
     console.log("JavaScript ready.");
-}());
+})();
