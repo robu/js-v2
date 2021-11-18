@@ -245,7 +245,7 @@ describe('Testsuite for KMOM02', () => {
                     return item.toLowerCase()
                 }))
 
-                expect(msg).to.equal(`--- REPORT ---
+                expect(msg.trim()).to.equal(`--- REPORT ---
 Test animals
 
 * ethiopian wolf
