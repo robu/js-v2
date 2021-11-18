@@ -170,6 +170,7 @@ describe('Testsuite for KMOM02', () => {
                 let msg = helpers.removeAnimal(europeanAnimals, 'Polar bear')
 
                 expect(europeanAnimals).to.not.include('Polar bear');
+                msg = msg.replace(/"|'/g, '');
                 expect(msg).to.equal('Removed: Polar bear');
                 done();
             });
@@ -192,8 +193,8 @@ describe('Testsuite for KMOM02', () => {
 
             it('should give correct feedback', (done) => {
                 let msg = helpers.removeAnimal(europeanAnimals, 'Kangaroo')
-
-                expect(msg).to.equal('No "Kangaroo" in array.');
+                msg = msg.replace(/"|'/g, '');
+                expect(msg).to.equal('No Kangaroo in array.');
                 done();
             });
         });
