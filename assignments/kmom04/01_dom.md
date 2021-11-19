@@ -121,7 +121,7 @@ Tips. Skapa egna små funktioner för att lösa uppgiften. Dina funktioner kan b
 
 Fånga eventet för när webbläsarens fönster ändrar storlek. När det händer skall du alltid placera `#box1` i mitten av fönstret.
 
-Tips. Studera exemplet [`example/resizeEvent/` i kursrepot](js/repo/example/resizeEvent).
+Tips. Studera exemplet [`example/resizeEvent/` i kursrepot](../../example/resizeEvent).
 
 Tips: `Window.onresize`.
 
