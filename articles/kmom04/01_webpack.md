@@ -90,17 +90,20 @@ Vi skapar nu filen `webpack.prod.config.js` och där har vi konfigurationen för
 const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
-module.exports = {
-    mode: 'production',
-    entry: `./${env.kmom}/js/main.js`,
-    plugins: [
-        new CleanWebpackPlugin({ cleanStaleWebpackAssets: false }),
-    ],
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
-    }
-}
+module.exports = (env) => {
+    return {
+        mode: 'production',
+        entry: `./${env.kmom}/js/main.js`,
+        plugins: [
+            new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
+        ],
+        output: {
+            filename: 'bundle.js',
+            /* eslint-disable node/no-path-concat */
+            path: path.resolve(`${__dirname}/${env.kmom}`, 'dist')
+        }
+    };
+};
 ```
 
 Vi lägger även till ett script i vår `package.json` så vi kan bygga produktionsfilerna:
@@ -110,7 +113,7 @@ Vi lägger även till ett script i vår `package.json` så vi kan bygga produkti
 "build": "webpack --env kmom=$npm_config_kmom --config webpack.prod.config.js"
 ```
 
-Vi kan nu köra script `build` med kommandot `npm run build`. Vi ser alltså att vi kan lägga till vilket script som helst och använda `run` framför scriptets namn för att köra det.
+Vi kan nu köra script `build` med kommandot `npm run build --kmom=kmom03`. Vi ser alltså att vi kan lägga till vilket script som helst och använda `run` framför scriptets namn för att köra det.
 
 
 
