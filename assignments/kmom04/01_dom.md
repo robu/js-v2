@@ -21,8 +21,8 @@ De vill även att uppgiften ska byggas ihop med något som heter "webpack" för 
 Du utgår ifrån din sandbox och har såklart tillgång till tidigare uppgifter att hämta kod från.
 
 ```console
-$ cd me
-$ cp -r example/sandbox/* kmom04/
+# Stå i kursmappen
+$ cp -r example/sandbox/* me/kmom04/
 ```
 
 Dubbelkolla även filen `package.json` och se till så du har webpack installerat.
