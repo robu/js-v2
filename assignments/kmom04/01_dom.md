@@ -1,4 +1,4 @@
-# Uppgift - "DOM och events"
+# Uppgift - "Mera DOM"
 
 I den här uppgiften tränar vi mer på manipuleringen av dom. Vi ska bygga vidare (eller bygga om) föregående uppgift och lägga till fler events och manipulera elementen på sidan.
 
