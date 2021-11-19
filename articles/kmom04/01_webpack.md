@@ -3,7 +3,7 @@ Webpack
 
 ### Vad är webpack?
 
-Webpack är en *module bundler* för JavaScript applikationer. Vi kan med hjälp av webpack bygga ihop ett beroende av de olika modulerna som applikationen använder och som sedan byggs ihop till en fil som vi i sin tur kan köra i webbläsaren.
+Webpack är en *module bundler* för JavaScript applikationer. Vi kan med hjälp av webpack bygga ihop ett beroende av de olika modulerna som applikationen använder och som sedan byggs ihop till en fil som vi i sin tur kan köra i webbläsaren. Du kan titta runt lite på [webpack.js.org](https://webpack.js.org/).
 
 
 
