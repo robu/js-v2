@@ -275,6 +275,14 @@ $ cd me
 $ npm run linter kmom04/
 ```
 
+### Webpack
+
+Packa ihop koden innan publicering:
+
+```console
+$ npm run build --kmom=kmom04
+```
+
 
 
 ### Hur kan det se ut när det är klart?
