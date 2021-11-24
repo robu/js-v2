@@ -300,7 +300,7 @@ Test animals
 
         describe("sort", () => {
             it('should sort the array', (done) => {
-                let americanAnimals2 = europeanAnimals.map((animal) => animal);
+                let americanAnimals2 = americanAnimals.map((animal) => animal);
 
                 helpers.addAnimal(americanAnimals2, "capybara");
                 report.sortAnimals(americanAnimals2);
