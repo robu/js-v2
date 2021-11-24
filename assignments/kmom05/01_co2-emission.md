@@ -26,8 +26,8 @@ Datan innehåller en hel del nycklar och värden och du kan se en lista på dem 
 Du utgår ifrån din sandbox och har tillgång till tidigare uppgifter att hämta kod från.
 
 ```console
-$ cd me
-$ cp -r example/sandbox/* kmom05/
+# Ställ dig i kursmappen
+$ cp -r example/sandbox/* me/kmom05/
 ```
 
 Bra. Då har du nog allt du behöver för att gå igenom kraven.
@@ -36,15 +36,8 @@ Bra. Då har du nog allt du behöver för att gå igenom kraven.
 
 ### Krav
 
-1. Bygg applikationen likt föregående kursmoment med mappstrukturen och webpack. Du kan med fördel kopiera över de relevanta filerna och installera det som behövs:
-
-```console
-$ cd me
-$ cp kmom04/package.* kmom04/webpack* kmom05/
-$ cd kmom05 && npm install
-```
-
-2. Användaren ska via ett select element och en eventlyssnare kunna hämta data från alla filer.
+1. Bygg applikationen likt föregående kursmoment med mappstrukturen och webpack.
+2. Användaren ska via ett `select` element och en eventlyssnare kunna hämta data från alla filer.
 3. Filerna ska hämtas med fetch API.
 4. Man ska bara kunna välja år mellan `1900` och `2019`.
 5. Datan ska presenteras i en tabell med minst sex kolumner.
@@ -55,7 +48,7 @@ $ cd kmom05 && npm install
 ### Extra uppgift (Optionell)
 
 1. Lägg till fler möjligheter till filtrering.
-1. Implementera cachning av datan så du inte hämtar den mer än en gång.
+<!-- 1. Implementera cachning av datan så du inte hämtar den mer än en gång. -->
 
 
 
@@ -66,6 +59,16 @@ Se till så koden validerar:
 ```console
 $ cd me
 $ npm run linter kmom05/
+```
+
+
+
+### Webpack
+
+Packa ihop koden innan publicering:
+
+```console
+$ npm run build --kmom=kmom05
 ```
 
 
@@ -81,5 +84,3 @@ Nedan är en video som visar hur det kan se ut när det är klart:
 ### Avslutningsvis
 
 Lycka till och hör av dig om du kör fast eller har några funderingar.
-
-[TBD: Länk till issues](#)
