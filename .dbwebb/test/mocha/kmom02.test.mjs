@@ -293,11 +293,11 @@ Test animals
 
         describe("sort", () => {
             it('should sort the array', (done) => {
-                // let americanAnimals2 = helpers.allAnimals("america");
-                helpers.addAnimal(americanAnimals, "capybara");
-                report.sortAnimals(americanAnimals);
+                let americanAnimals2 = helpers.allAnimals("america");
+                helpers.addAnimal(americanAnimals2, "capybara");
+                report.sortAnimals(americanAnimals2);
 
-                expect(americanAnimals).to.have.ordered.members([
+                expect(americanAnimals2).to.have.ordered.members([
                   "Bryde's whale",
                   "Delta Smelt",
                   "Devil's Hole pupfish",
