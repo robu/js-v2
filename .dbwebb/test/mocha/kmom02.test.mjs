@@ -84,6 +84,7 @@ describe('Testsuite for KMOM02', () => {
 
             it('should return an array of european animals', (done) => {
                 const lowercased = europeanAnimals.map(name => name.toLowerCase());
+
                 expect(lowercased).to.have.members([
                     'Hooded seal',
                     'Blue whale',
@@ -142,7 +143,7 @@ describe('Testsuite for KMOM02', () => {
             // });
 
             it('should contain the added super animal', (done) => {
-                let europeanAnimals2 = helpers.allAnimals("europe");
+                let europeanAnimals2 = europeanAnimals.map((animal) => animal);
 
                 helpers.addAnimal(europeanAnimals2, 'capybara')
 
@@ -289,7 +290,7 @@ Test animals
                 let europeanAnimals2 = europeanAnimals.map((animal) => animal);
 
                 helpers.addAnimal(europeanAnimals2, "capybara");
-                let fixed = report.fixFirstLetter(europeanAnimals2)
+                let fixed = report.fixFirstLetter(europeanAnimals2);
 
                 expect(fixed).to.include('Capybara');
                 done();
