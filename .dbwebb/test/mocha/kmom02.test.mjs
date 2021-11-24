@@ -177,15 +177,15 @@ describe('Testsuite for KMOM02', () => {
                 ].map(name => name.toLowerCase()));
                 done();
             });
-            it('should return an array of african, american and european animals', (done) => {
-                const lowercasedEuropean = europeanAnimals.map(name => name.toLowerCase());
-                const lowercasedAfrican = africanAnimals.map(name => name.toLowerCase());
-                const lowercasedAmerican = americanAnimals.map(name => name.toLowerCase());
-                const lowercased = lowercasedAfrican.concat(lowercasedAmerican, lowercasedEuropean);
-
-                expect(lowercased).to.have.lengthOf(noOfAllAnimals);
-                done();
-            });
+            // it('should return an array of african, american and european animals', (done) => {
+            //     const lowercasedEuropean = europeanAnimals.map(name => name.toLowerCase());
+            //     const lowercasedAfrican = africanAnimals.map(name => name.toLowerCase());
+            //     const lowercasedAmerican = americanAnimals.map(name => name.toLowerCase());
+            //     const lowercased = lowercasedAfrican.concat(lowercasedAmerican, lowercasedEuropean);
+            //
+            //     expect(lowercased).to.have.lengthOf(noOfAllAnimals);
+            //     done();
+            // });
         });
 
         describe("random", () => {
