@@ -105,7 +105,7 @@ describe('Testsuite for KMOM02', () => {
                     'Amazon ant',
                     'European mink',
                     'Gerfalcon',
-                    'Long-fingered bat'
+                    'Long-fingered bat',
                     'Florida panther',
                     'Lesser prairie chicken',
                     "Devil's Hole pupfish",
@@ -134,7 +134,7 @@ describe('Testsuite for KMOM02', () => {
                     'Amazon ant',
                     'European mink',
                     'Gerfalcon',
-                    'Long-fingered bat'
+                    'Long-fingered bat',
                     'Ethiopian wolf',
                     'Pangolin',
                     'Black rhino',
@@ -164,7 +164,7 @@ describe('Testsuite for KMOM02', () => {
                     'African penguin',
                     'Giraffe',
                     'Hooded vulture',
-                    'Chimpanzee'
+                    'Chimpanzee',
                     'Florida panther',
                     'Lesser prairie chicken',
                     "Devil's Hole pupfish",
@@ -177,15 +177,15 @@ describe('Testsuite for KMOM02', () => {
                 ].map(name => name.toLowerCase()));
                 done();
             });
-            // it('should return an array of african, american and european animals', (done) => {
-            //     const lowercasedEuropean = europeanAnimals.map(name => name.toLowerCase());
-            //     const lowercasedAfrican = africanAnimals.map(name => name.toLowerCase());
-            //     const lowercasedAmerican = americanAnimals.map(name => name.toLowerCase());
-            //     const lowercased = lowercasedAfrican.concat(lowercasedAmerican, lowercasedEuropean);
-            //
-            //     expect(lowercased).to.have.lengthOf(noOfAllAnimals);
-            //     done();
-            // });
+            it('should return an array of african, american and european animals', (done) => {
+                const lowercasedEuropean = europeanAnimals.map(name => name.toLowerCase());
+                const lowercasedAfrican = africanAnimals.map(name => name.toLowerCase());
+                const lowercasedAmerican = americanAnimals.map(name => name.toLowerCase());
+                const lowercased = lowercasedAfrican.concat(lowercasedAmerican, lowercasedEuropean);
+
+                expect(lowercased).to.have.lengthOf(noOfAllAnimals);
+                done();
+            });
         });
 
         describe("random", () => {
