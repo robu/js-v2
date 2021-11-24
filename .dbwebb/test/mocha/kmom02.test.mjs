@@ -315,10 +315,10 @@ Test animals
 
         describe("filter", () => {
             it('should filter out animals with more than 10 letters', (done) => {
-                // americanAnimals = helpers.allAnimals("america");
-                // europeanAnimals = helpers.allAnimals("europe");
-                // africanAnimals = helpers.allAnimals("africa");
-                let filtered = report.filterAnimals([americanAnimals, africanAnimals, europeanAnimals], 10)
+                const americanAnimals2 = helpers.allAnimals("america");
+                const europeanAnimals2 = helpers.allAnimals("europe");
+                const africanAnimals2 = helpers.allAnimals("africa");
+                let filtered = report.filterAnimals([americanAnimals2, africanAnimals2, europeanAnimals2], 10)
 
                 expect(filtered).to.have.members([
                   'Pangolin',    'Black rhino',
