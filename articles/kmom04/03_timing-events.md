@@ -46,7 +46,7 @@ const myInterval = setInterval(printDate, 1000);
 setTimeout(function () {
     clearInterval(myInterval);
     console.log('Interval stopped.');
-}, 5000))
+}, 5000)
 ```
 
 
