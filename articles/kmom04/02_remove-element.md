@@ -1,7 +1,7 @@
 Radera element
 ==================================
 
-För att radera element använder vi funktionen `Node.removeChild()`. Node i detta faller är föräldern till elementet som ska tas bort. Vi tittar på ett exempel där vi tar bort det elementet vi klickar på.
+För att radera element använder vi funktionen `Node.removeChild()`. Node i detta fallet är föräldern till elementet som ska tas bort. Vi tittar på ett exempel där vi tar bort det elementet vi klickar på.
 
 Vi utgår ifrån vår [sandbox](../../example/sandbox).
 
