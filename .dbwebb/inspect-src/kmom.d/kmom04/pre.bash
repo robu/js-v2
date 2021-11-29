@@ -5,42 +5,15 @@ green=$(tput setaf 2)
 cyan=$(tput setaf 6)
 normal=$(tput sgr 0)
 
-printf ">>> -------------- Pre inspect -------------------------\n"
-
-localport="1335"
-port=$(cat me/kmom04/server/dockerhub.txt | head -n1 | sed 's/.*\([0-9]\{4\}\).*/\1/')
-student_docker=$(cat me/kmom04/server/dockerhub.txt | head -n2 | tail -n1 | rev | sed -E -n 's/^\s?([a-zA-Z0-9]+[:][a-zA-Z0-9\-]+[/][a-zA-Z0-9]+).*/\1/p' | rev)
-
-printf "%s ${cyan}%s${normal}\n" "Using port:" "$localport:$port"
-printf "%s ${cyan}%s${normal}\n" "Docker image:" "$student_docker"
-
-read -p "Press any key to move on."
-
-docker run --rm --name kmom04 -d -p "$localport":"$port" -it -v "$(pwd)"/example/json/:"/server/data/" "$student_docker"
-
-function testServer
-{
-    printf "${cyan}\n\n"
-    read -p "Curling localhost:$localport/$1"
-
-    printf "${normal}\n"
-
-    curl "http://localhost:$localport/$1"
-    # tput setaf 6
-    # echo ""
-    # # read -p "Done viewing? <Press Enter>"
-    # tput sgr0
+function header {
+    printf "\033[32;01m>>> -------------- %-20s -------------------------\033[0m\n" "$1"
 }
 
-testServer "all"
-testServer "names"
-testServer "color/Yellow"
-testServer "color/yellow"
+cd me || exit 1
 
-eval "$BROWSER" "http://localhost:$localport/all" &
+header "OPENING FILES IN ATOM"
+atom kmom04
 
-printf "${cyan}\n\n"
-read -p "[CHECK BROWSER] Press any key to continue."
-printf "${normal}"
-
-# docker kill "$dockerId"
+header "OPEN ASSIGNMENT IN BROWSER"
+url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/$KMOM"
+eval "$BROWSER" "$url" &
