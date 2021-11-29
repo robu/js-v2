@@ -63,12 +63,28 @@ Raden `devtool: 'inline-source-map',` gör att i `bundle.js` får vi med informa
 
 För att kompilera JavaScript koden använder vi oss av kommandot `webpack --watch` i vår package.json fil. Då vi döpt vår konfigurationsfil till default-namnet `webpack.config.js` vet webpack redan om vilka filer vi ska utgå ifrån och vart den kompilerade filen ska läggas. Du kan nu köra kommandot `npm start` i terminalen och vår applikation kompileras. Vi kan nu lägga till `dist/bundle.js` längst ner i `index.html` som den enda JavaScript filen vi importerar.
 
+#### Unix/Mac Os
+
 ```json
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack --watch --env kmom=$npm_config_kmom"
 },
 ```
+
+
+#### Windows
+
+När vi kör via Cygwin får vi uppdatera filen så vi använder `%npm_config_kmom%` istället.
+
+```json
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --env kmom=%npm_config_kmom%"
+},
+```
+
+
 
 För att sparka igång webpack med miljövariabeln kan vi köra det med: `$ npm start --kmom=kmom04` för att bygga filerna i mappen `kmom04/`. Npm tar hand om det inskickade argumentet och skickar vidare det som en miljövariabel via `--env` in till configfilen. Det blir smidigt när vi ska bygga i fler kursmoment.
 
@@ -80,8 +96,19 @@ Den färdiga "bundle"-filen `dist/bundle.js` är en ganska så stor JavaScript-f
 
 Vi börjar med att döpa om `webpack.config.js` till `webpack.dev.config.js`, då kan vi skilja på konfigurationen för utveckling och för produktion. Vi ändrar sedan i `package.json` så vårt `npm start` script ser ut som följande. Skillnaden nu är att vi pekar ut konfigurationsfilen istället för att förlita oss på att webpack letar upp den själv.
 
+
+#### Unix/Mac Os
+
 ```json
 "start": "webpack --watch --env kmom=$npm_config_kmom --config webpack.dev.config.js",
+```
+
+
+
+#### Windows
+
+```json
+"start": "webpack --watch --env kmom=%npm_config_kmom% --config webpack.dev.config.js",
 ```
 
 Vi skapar nu filen `webpack.prod.config.js` och där har vi konfigurationen för produktionskoden. Den stora skillnaden är att vi har valt `mode: production` och tagit bort att vi vill skapa source-maps.
@@ -108,10 +135,23 @@ module.exports = (env) => {
 
 Vi lägger även till ett script i vår `package.json` så vi kan bygga produktionsfilerna:
 
+
+
+#### Unix/Mac Os
+
 ```json
 "start": "webpack --watch --env kmom=$npm_config_kmom --config webpack.dev.config.js",
 "build": "webpack --env kmom=$npm_config_kmom --config webpack.prod.config.js"
 ```
+
+
+#### Windows
+
+```json
+"start": "webpack --watch --env kmom=%npm_config_kmom% --config webpack.dev.config.js",
+"build": "webpack --env kmom=%npm_config_kmom% --config webpack.prod.config.js"
+```
+
 
 Vi kan nu köra script `build` med kommandot `npm run build --kmom=kmom03`. Vi ser alltså att vi kan lägga till vilket script som helst och använda `run` framför scriptets namn för att köra det.
 
@@ -121,11 +161,13 @@ Vi kan nu köra script `build` med kommandot `npm run build --kmom=kmom03`. Vi s
 
 Jodå vissa gör de det. Du kan kopiera in dem från exempelmappen:
 
+
 ```console
 # Ställ dig i kursmappen
 $ cp example/environment/*.js me/
 
 ```
+
 
 
 ### Avslutningsvis
