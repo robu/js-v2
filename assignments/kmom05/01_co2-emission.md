@@ -47,7 +47,7 @@ Bra. Då har du nog allt du behöver för att gå igenom kraven.
 
 ### Extra uppgift (Optionell)
 
-1. Lägg till fler möjligheter till filtrering.
+1. Ta med mer data i tabellen och lägg till i jämförelsen. Kanske kan man markera det land som "kom sist" varje år också? 
 <!-- 1. Implementera cachning av datan så du inte hämtar den mer än en gång. -->
 
 
