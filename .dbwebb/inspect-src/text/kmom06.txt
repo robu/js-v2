@@ -1,8 +1,8 @@
 Då kör vi kmom06!
 
-Jag har tittat på dina Awk script och din uppdaterade mazerunner.
+Vi har lärt oss lite mer om objekt och hur vi kan skapa egna instanser som vi kan använda. Till detta har vi ju också skapat ett hänga gubben spel, där vi fick träna lite mer på moduler och uppdelning av kod.
 
-Awk uppgiften var ny för i år och den har du löst utmärkt. Jag startade dina images via docker-compose olika services och det flöt på bra och din spel-loop gör vad den ska enligt instruktionerna.
+Jag har spelat ditt Hangman och det flyter på bra. Jag har även tittat i koden och de relevanta delarna exporteras och det har en fin struktur.
 
 Bra genomfört moment och lycka till med projektet!
 

@@ -1,7 +1,13 @@
 Hej!
 
-Sed labben är klar och godkänd. Jag testade även din mazerunner och den rullar på bra. Det är lätt hänt att det blir ett övermäktigt kursmoment, men du verkar ha bra koll på läget och den fungerar enligt instruktionerna, snyggt jobbat!
+Nu kan vi lägga till fler verktyg till vår ryggsäck. Både Web storage och Fetch. Vi har även lärt oss lite mer om asynkron/synkron programmering och hur vi kan använda inbyggda funktioner för att styra exekveringen.
 
-Både containrarna och nätverket startar och avslutas snyggt via Bash-scriptet.
+Koden passerar eslint.
+
+Jag har tittat på "co2 emission" uppgiften och allt fungerar och visas i rätt ordning. Jag kunde välja årtal och tabellen uppdaterades och markerade rätt celler.
+
+Jag testade ditt spel också och det rullade på bra.
+
+Snyggt jobbat med kursmomentet. Kör vidare med Hangman!
 
 $TEACHER_SIGNATURE

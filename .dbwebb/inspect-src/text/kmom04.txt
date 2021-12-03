@@ -1,7 +1,12 @@
 Hej,
 
-Jag har startat din container och testat den både via webbläsaren och via ditt script. Alla routes fungerar fint och scriptet gör precis vad som förväntas. Jag hoppas kursmomentet har gett en liten inblick i hur man kan konstruera ett server/klient förhållande med hjälp av Docker och Bash.
+Här var det några nya tekniker som vi lärt oss. Webpack är ju ett bra sätt att packa ihop sin kod inför produktion. Det blir snyggt och prydligt. Vi har även fått gräva ner oss ordentligt i DOM trädet och manipulerat diverse former och element.
 
-Väl jobbat med kursmomentet! Kör så det ryker med Docker och nätverk.
+Allt passerar validatorn och finns på rätt plats.
+Jag har tittat igenom DOM uppgiften och den har du löst fint. Jag tittade i koden och där har du delat upp det bra i mindre funktioner som går att återanvända, mycket stiligt.
+
+Jag kunde även flytta på formen på me sidan.
+
+Väl jobbat med kursmomentet! Kör så det ryker med Web API.
 
 $TEACHER_SIGNATURE
