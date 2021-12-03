@@ -6,13 +6,13 @@ Objekt är en samling av namngivna värden som vanligen kallas "properties" (ege
 Man kan skapa ett objekt med objekt-literalen `{}`. Vi kan antingen lägga till properties direkt och/eller vid ett senare tillfälle. Häng gärna med i programmeringen och koda lite själv.
 
 ```js
-const myObject = {
+let myObject = {
     height: 0,
     width: 0
 };
 
 console.log(myObject.height); // 0
-console.log(myObject.width); // 0
+console.log(myObject.width);  // 0
 ```
 
 Objektet innehåller nu två egenskaper, `height` och `width` som ska representera storleken på objektet. Vi kan även lägga till egenskaper efterhand:
@@ -30,7 +30,7 @@ console.log(myObject.backGround); // prints undefined
 Ett objekt kan även innehålla andra objekt. Vi skapar om objektet och kikar på hur vi kan ändra ovan kod och placera height och width i ett eget objekt:
 
 ```js
-const myObject = {
+let myObject = {
     size: {
         h: 0,
         w: 0
@@ -43,7 +43,7 @@ Vi kan nu nå storleken med `myObject.size.h` respektive `myObject.size.w`.
 
 
 
-### Objekt och `this`
+###Objekt och `this` {#this}
 
 Vad sägs om en metod `init()` för att initiera vårt objekt med värden? Vi kallar det *metoder* när funktioner är kopplade till ett objekt.
 
@@ -51,23 +51,22 @@ Vad sägs om en metod `init()` för att initiera vårt objekt med värden? Vi ka
 Objekt-literalen har ingen [konstruktor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor), utan för att se till så varje objekt blir sitt egna kan vi använda `Object.create()` som använder sig av urmoder-objektet *Object* och skapar en ny instans av vårt egna objekt. Men innan vi löser det behöver vi kunna definiera objektets egenskaper. Vi lägger till en metod för att sätta objektets storlek och bakgrundsfärg:
 
 ```js
-const myObject = {
+let myObject = {
     size: {
         h: 0,
         w: 0
     },
     background: "",
-    init: function (height, width, background) {
+    init: function(height, width, background) {
         this.size = {
-          h: height,
-          w: width
-        }
-        this.background = background
-    }
+            h: height,
+            w: width
+        };
+        this.background = background;
+    },
 };
 
-const greenBox = Object.create(myObject); // Create an instance of the object
-
+let greenBox = Object.create(myObject); // Create an instance of the object
 greenBox.init(100, 100, "green"); // Initiate the newly created object with some values
 ```
 
@@ -76,29 +75,28 @@ När man exekverar en metod eller vill nå instansens egenskaper i ett objekt ka
 Nu behöver vi få ut objektet till webbläsaren. Det finns som alltid olika sätt att lösa det på. Vi har våra värden i objektet. Till detta skapar vi en metod, `draw()`, som hjälper oss:
 
 ```js
-const content = document.getElementsByClassName("content")[0];
-const myObj = {
+let content = document.getElementsByClassName("content")[0];
+let myObj = {
     size: {
         h: 100,
         w: 200
     },
     background: "",
-    init: function (height, width, background) {
+    init: function(height, width, background) {
         this.size = {
             h: height,
             w: width
-        }
-        this.background = background
+        };
+        this.background = background;
     },
-    draw: function () {
-        const element = document.createElement("div")
-
-        element.style.position = "absolute"
-        element.style.margin = "5px"
-        element.style.height = this.size.h + "px"
-        element.style.width = this.size.w + "px"
-        element.style.backgroundColor = this.background
-        content.appendChild(element)
+    draw: function() {
+        let element = document.createElement("div");
+        element.style.position = "absolute";
+        element.style.margin = "5px";
+        element.style.height = this.size.h + "px";
+        element.style.width = this.size.w + "px";
+        element.style.backgroundColor = this.background;
+        content.appendChild(element);
     }
 };
 ```
@@ -108,9 +106,9 @@ Vi kan nu skapa några objekt och rita ut dem:
 ```js
 // Objektet skapas ovan
 
-const obj1 = Object.create(myObj);
-const obj2 = Object.create(myObj);
-const obj3 = Object.create(myObj);
+let obj1 = Object.create(myObj);
+let obj2 = Object.create(myObj);
+let obj3 = Object.create(myObj);
 
 obj2.init(100, 250, "red");
 obj3.init(65, 147, "yellow");
@@ -126,15 +124,15 @@ En fördel med att ha en metod som ritar ut dem är att vi kan lägga objekten i
 ```js
 // Objektet skapas ovan
 
-const obj1 = Object.create(myObj);
-const obj2 = Object.create(myObj);
-const obj3 = Object.create(myObj);
+let obj1 = Object.create(myObj);
+let obj2 = Object.create(myObj);
+let obj3 = Object.create(myObj);
 
 obj1.init(25, 54, "green");
 obj2.init(100, 250, "red");
 obj3.init(65, 147, "yellow");
 
-const allObjects = [obj1, obj2, obj3];
+let allObjects = [obj1, obj2, obj3];
 
 for (let i = 0; i < allObjects.length; i++) {
     allObjects[i].draw();
