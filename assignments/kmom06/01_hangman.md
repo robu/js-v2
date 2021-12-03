@@ -62,7 +62,8 @@ $ npm run build --kmom=kmom06
 
 Nedan är en video som visar hur det kan se ut när det är klart:
 
-<!-- [![js exercise kmom06](https://img.youtube.com/vi/hriIA6m5WZI/0.jpg)](https://www.youtube.com/watch?v=hriIA6m5WZI) -->
+[![js exercise kmom06](https://img.youtube.com/vi/1HxW9U0p974/0.jpg)](https://www.youtube.com/watch?v=1HxW9U0p974)
+
 
 
 
