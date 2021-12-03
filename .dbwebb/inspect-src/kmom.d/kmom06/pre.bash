@@ -5,34 +5,15 @@ green=$(tput setaf 2)
 cyan=$(tput setaf 6)
 normal=$(tput sgr 0)
 
-cd "me/kmom06/maze2"
-
-function executeDockerCompose
-{
-    printf "${cyan}\n"
-    read -r -p "Execute $@? [Y/n] " response
-    printf "${normal}\n"
-
-    if [[ ! "$response" = "n" ]]; then
-        eval "$@"
-    fi
+function header {
+    printf "\033[32;01m>>> -------------- %-20s -------------------------\033[0m\n" "$1"
 }
 
-printf "${cyan}\n"
-read -r -p "View docker-compose? (look for :loop tag) [Y/n] " response
-printf "${normal}\n"
+cd me || exit 1
 
-file=""
+header "OPENING FILES IN ATOM"
+atom kmom06
 
-if [[ ! "$response" = "n" ]]; then
-    if [[ -f "docker-compose.yml" ]]; then
-        file="docker-compose.yml"
-    else
-        file="docker-compose.yaml"
-    fi
-    more "$file"
-fi
-
-executeDockerCompose "docker-compose up -d server"
-executeDockerCompose "docker-compose run client"
-executeDockerCompose "docker-compose down"
+header "OPEN ASSIGNMENT IN BROWSER"
+url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/$KMOM"
+eval "$BROWSER" "$url" &

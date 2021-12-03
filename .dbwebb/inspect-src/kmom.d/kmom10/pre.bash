@@ -1,47 +1,19 @@
 #!/usr/bin/env bash
 
-cd "me/kmom10/bthloggen"
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+cyan=$(tput setaf 6)
+normal=$(tput sgr 0)
 
-function executeDockerCompose
-{
-    tput setaf 6
-    read -r -p "----- Execute $@? [Y/n] ----- " response
-    tput sgr0
-
-    if [[ ! "$response" = "n" ]]; then
-        eval "$@"
-    fi
+function header {
+    printf "\033[32;01m>>> -------------- %-20s -------------------------\033[0m\n" "$1"
 }
 
-tput setaf 6
-read -r -p "----- View docker-compose? [Y/n] ----- " response
-tput sgr0
+cd me || exit 1
 
-file=""
+header "OPENING FILES IN ATOM"
+atom kmom10
 
-if [[ ! "$response" = "n" ]]; then
-    if [[ -f "docker-compose.yml" ]]; then
-        file="docker-compose.yml"
-    else
-        file="docker-compose.yaml"
-    fi
-    more "$file"
-fi
-
-executeDockerCompose "docker-compose up -d server"
-executeDockerCompose "docker-compose run client"
-executeDockerCompose "docker-compose up webbclient"
-executeDockerCompose "docker-compose down"
-
-tput setaf 6
-read -r -p "----- Run log2json.bash? [Y/n] ----- " response
-tput sgr0
-
-
-if [[ ! "$response" = "n" ]]; then
-    rm data/log.json
-    ./log2json.bash
-    ls -alh data/
-fi
-
-read -p "----- Good filesize? ~4-5mb ----- "
+header "OPEN ASSIGNMENT IN BROWSER"
+url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/$KMOM"
+eval "$BROWSER" "$url" &
