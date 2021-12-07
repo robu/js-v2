@@ -1,18 +1,4 @@
-Kmom10: Projekt och examination
-==================================
-
-Detta kursmoment avslutar och examinerar kursen.
-
-Upplägget är enligt följande:
-
-* Projektet och redovisning (20-80h)
-
-Totalt omfattar kursmomentet (07/10) ca 20+20+20+20 studietimmar.
-
-
-
-Projektidé och upplägg
---------------------------------------------------------------------
+# Uppgift - "Intelligenstest"
 
 Du har blivit kontaktad av ett företag som mäter intelligens, de vill ha din hjälp att skapa ett testverktyg för att räkna ut hur intelligent en person är. Det handlar om att en testperson skall utföra ett antal övningar och det sammanlagda resultatet från övningarna blir intelligensen hos testpersonen.
 
@@ -20,8 +6,7 @@ Du är tveksam till deras affärsidé, men du accepterar uppdraget som innebär 
 
 
 
-Projektspecifikation
---------------------------------------------------------------------
+# Projektspecifikation
 
 Utveckla och leverera projektet enligt specifikationen från kunden (se längre ned i dokumentet). Saknas info i specen så kan du själv välja väg, dokumentera dina val i redovisningstexten.
 
@@ -37,11 +22,11 @@ Enligt specifikationen från kunden (se nedan) -- gör ett komplett testverktyg 
 
 Spara din kod i samma struktur som din *sandbox*. Spara filerna i katalogen `me/kmom10/`.
 
-Strukturera din kod i en eller flera JavaScript-moduler. Den huvudsakliga modulen skall heta `Test`.
+Strukturera din kod i en eller flera ES moduler. Fundara igenom hur du vill strukturera innan du börjar.
 
-Varje del-test skall ha en funktion som heter `Test.reset()`. Det är en fusk-funktion som låter användaren göra om del-testet för att få bättre resultat.
+Varje del-test skall kunna nollställas och startas om. Det är en fusk-funktion som låter användaren göra om del-testet för att få bättre resultat. Det ska gå att köra `window.reset()` i konsolen i webbläsaren för att starta om deltestet.
 
-Tipsfrågor och eventuell konfiguration görs via JavaScript-objekt. Antingen direkt i modulen, eller som argument som skickas till modulen.
+Tipsfrågor och eventuell konfiguration görs via JavaScript-objekt. Antingen direkt i modulen, eller som argument som skickas till modulen. Välj väg själva.
 
 Kommentera din kod med JSDoc kommentarer, efter bästa förmåga.
 
@@ -49,7 +34,7 @@ Se till att koden validerar.
 
 ```bash
 # Ställ dig i kurskatalogen
-dbwebb publish intelligence
+dbwebb publish kmom10
 ```
 
 
@@ -80,7 +65,7 @@ Hela testet skall köras i en enda HTML-sida, utan omladdningar. Varje test skal
 
 Första delen av testet är valfritt antal 1X2-frågor. Som en tipspromenad. Frågan visas upp i webbsidan. Testpersonen svarar på frågan (genom att till exempel klicka på svarsalternativen) och får därefter direkt se det rätta svaret. Sedan kan testpersonen välja att gå vidare till nästa fråga.
 
-Du väljer att ta med 5 tipsfrågor, bara för att visa hur det fungerar.
+Du väljer att ta med minst 5 tipsfrågor, bara för att visa hur det fungerar.
 
 Testpersonen samlar poäng i varje deltest. Här är förslaget att rätt svar ger tre poäng per fråga och fel ger 0 poäng.
 
@@ -88,7 +73,7 @@ Testpersonen samlar poäng i varje deltest. Här är förslaget att rätt svar g
 
 ### Deltest 2: Fizzbuzz
 
-På detta testet så visar du upp en sekvens av spelet FizzBuzz. Testpersonen skall gissa på nästa siffra i sekvensen genom att klicka på en av flera alternativa svar (länkar eller knappar).
+På detta testet så visar du upp en sekvens av spelet [FizzBuzz](https://en.wikipedia.org/wiki/Fizz_buzz). Testpersonen skall gissa på nästa siffra i sekvensen genom att klicka på en av flera alternativa svar (länkar eller knappar).
 
 När testpersonen klickat på svaret så visas det rätta svaret tillsammans med en länk till nästa test.
 
@@ -104,11 +89,11 @@ Detta är ett litet minnes-test som kollar hur bra bildminne man har.
 
 Testpersonen kommer till testet och får en förklarande text. Därefter klickar man på en länk för att starta testet.
 
-Testet börjar med att 9 flaggor visas under 5 sekunder. Därefter döljs de. Du visar nu upp en numrerad lista men namnen på de nio flaggorna. Testpersonen skall nu klicka på rätt ruta där motsvarande flagga ligger, i rätt ordning. När testpersonen gissar så skall flaggan vändas upp.
+Testet börjar med att 9 bilder visas under 5 sekunder. Därefter döljs de. Du visar nu upp en numrerad lista men namnen på de nio bilderna. Testpersonen skall nu klicka på rätt ruta där motsvarande bild ligger, i rätt ordning. När testpersonen gissar så skall bilden vändas upp.
 
-Du behöver inte ha nio flaggor, du kan återanvända dem så att samma flagga förekommer flera gånger.
+Du behöver inte ha nio olika bilder, du kan återanvända dem så att samma bild förekommer flera gånger, dock max 3 gånger per bild.
 
-Testpersonen får fortsätta så länge hen gissar rätt. När alla flaggorna visas så är testet över, eller när testpersonen gissar fel.
+Testpersonen får fortsätta så länge hen gissar rätt. När alla bilderna visas så är testet över, eller när testpersonen gissar fel.
 
 Rätt klick ger ett poäng styck.
 
@@ -147,6 +132,8 @@ Testpersonen skall få instruktioner att klicka på alla objekt som:
 1. Har en annan färg än röd.
 2. Har en annan form än kvadrat.
 3. Är röd och kvadrat.
+
+Tex ska man **inte** klicka på en gul kvadrat eller en röd cirkel.
 
 Rätt klick ger ett poäng och fel ger 0 poäng.
 
