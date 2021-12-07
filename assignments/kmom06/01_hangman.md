@@ -28,7 +28,7 @@ $ cp -r example/hangman/* me/kmom06/
 1. Använd filerna du kopierade och skapa en bra grundstruktur.
 1. Skapa bokstäverna som du kan klicka på, du kan bara klicka på en bokstav en gång. Då skall den ändra style och inte gå att klicka på.
 1. Skapa en ordlista (minst fem ord) som en del av din Hangman-modul. Skapa en funktion `Hangman.wordlist()` som exporteras och skriver ut hela ordlistan i consolen.
-1. Skapa en funktion som slumpar fram ett ord från ordlistan. Detta blir det aktiva ordet. Skapa en funktion `Hangman.peek()` som exporteras, det skall returnera det aktiva ordet. Det ger en möjlighet för spelaren att fuska.
+1. Skapa en funktion som slumpar fram ett ord från ordlistan. Detta blir det aktiva ordet. Skapa en funktion `Hangman.peek()` som exporteras, det skall returnera det aktiva ordet.
 1. När spelaren klickar på en bokstav så kontrollerar du om bokstaven finns i ordet. Om bokstaven inte finns så ritar du ut en del av bilden. Rita ut ordet med en kombination av `_` för icke gissade bokstäver och de gissade bokstäverna på sina rätta platser.
 1. När (om) alla delar är utritade så visar du ett meddelande om “Game Over” på spelplanen, eller motsvarande. Det går nu inte att göra några fler gissningar.
 1. När (om) spelaren har gissat alla bokstäver i ordet så skriver du ut “You Won The Game!” på spelplanen, eller motsvarande. Det går nu inte att göra några fler gissningar.
