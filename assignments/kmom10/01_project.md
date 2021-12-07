@@ -155,3 +155,24 @@ Specen innehåller grova förslag till poängsättningen, men du kan justera den
 ### Slutet
 
 När testet är slut så visas en siffra upp som motsvarar intelligensen, tillsammans med siffran för maximal intelligens.
+
+
+
+### Validering
+
+Se till så koden validerar:
+
+```console
+$ cd me
+$ npm run linter kmom10/
+```
+
+
+
+### Webpack
+
+Packa ihop koden innan publicering:
+
+```console
+$ npm run build --kmom=kmom10
+```
