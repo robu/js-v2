@@ -87,6 +87,8 @@ Exempel på en fizzbuzz serie:
 buzz, 11, fizz, 13, 14, fizz buzz, ?
 ```
 
+Tips: modulus operator
+
 
 
 ### Deltest 3: Minne
