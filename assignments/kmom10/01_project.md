@@ -81,6 +81,12 @@ Rätt klick ger tre poäng och fel ger 0 poäng.
 
 Startvärdet för FizzBuzz-sekvensens skall slumpas fram så det inte är samma varje gång.
 
+Exempel på en fizzbuzz serie:
+
+```console
+buzz, 11, fizz, 13, 14, fizz buzz, ?
+```
+
 
 
 ### Deltest 3: Minne
