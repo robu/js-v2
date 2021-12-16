@@ -13,7 +13,7 @@
         "browser": true,
         "node": true
     },
-    "ignorePatterns": ["**/dist/*.js"],
+    "ignorePatterns": ["**/dist/*.js", "**/out/"],
     "rules": {
         "linebreak-style": [
             2,
