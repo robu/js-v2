@@ -4,9 +4,9 @@ Jag har tittat igenom din redovisningsvideo. Jag tycker du förklarar bra hur du
 
 Du förklarar även de implementerade kraven bra i din text.
 
-Den implementerade funktionaliteten funkar bra och alla delarna är på plats. Det gick fort att skapa log.json så du har effektiva regex-uttryck!
+Den implementerade funktionaliteten funkar bra och alla delarna är på plats. Jag provade även window.reset() och det gick utmärkt att fuska och starta om deltestet.
 
-Jag hoppas du har fått en inblick i linux som operativsystem och hur man kan använda virtualisering/containerisering vid utveckling av applikationer.
+Jag hoppas kursen har gett dig en introduktion till JavaScript och hur vi kan använda det i både terminalen och mot webbläsaren.
 
 Ta gärna 2 minuter och svara på kursvärderingen som följer upp kursen. Den hjälper mig att göra kursen bättre framöver.
 
