@@ -22,7 +22,7 @@ Enligt specifikationen från kunden (se nedan) -- gör ett komplett testverktyg 
 
 Spara din kod i samma struktur som din *sandbox*. Spara filerna i katalogen `me/kmom10/`.
 
-Strukturera din kod i en eller flera ES moduler. Fundara igenom hur du vill strukturera innan du börjar.
+Strukturera din kod i en eller flera ES moduler. Fundera igenom hur du vill strukturera innan du börjar.
 
 Varje del-test skall kunna nollställas och startas om. Det är en fusk-funktion som låter användaren göra om del-testet för att få bättre resultat. Det ska gå att köra `window.reset()` i konsolen i webbläsaren för att starta om deltestet.
 
