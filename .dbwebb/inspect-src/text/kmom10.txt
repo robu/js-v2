@@ -4,7 +4,7 @@ Jag har tittat igenom din redovisningsvideo. Jag tycker du förklarar bra hur du
 
 Du förklarar även de implementerade kraven bra i din text.
 
-Den implementerade funktionaliteten funkar bra och alla delarna är på plats. Jag provade även window.reset() och det gick utmärkt att fuska och starta om deltestet.
+Den implementerade funktionaliteten funkar bra och alla delarna är på plats. Jag provade även window.reset() och det gick utmärkt att fuska och starta om deltestet. Vad bra att du använt dig av moduler, det gör ju det hela lite enklare och mer strukturerat.
 
 Jag hoppas kursen har gett dig en introduktion till JavaScript och hur vi kan använda det i både terminalen och mot webbläsaren.
 
