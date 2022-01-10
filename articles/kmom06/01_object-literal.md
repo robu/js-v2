@@ -43,7 +43,7 @@ Vi kan nu nå storleken med `myObject.size.h` respektive `myObject.size.w`.
 
 
 
-###Objekt och `this` {#this}
+### Objekt och `this`
 
 Vad sägs om en metod `init()` för att initiera vårt objekt med värden? Vi kallar det *metoder* när funktioner är kopplade till ett objekt.
 
