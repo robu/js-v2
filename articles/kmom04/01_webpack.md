@@ -159,7 +159,7 @@ Vi kan nu köra script `build` med kommandot `npm run build --kmom=kmom03`. Vi s
 
 ### Usch så krångligt...finns inte filerna redan?
 
-Jodå vissa gör de det. Du kan kopiera in dem från exempelmappen:
+Jodå visst gör de det. Du kan kopiera in dem från exempelmappen:
 
 
 ```console
