@@ -1,6 +1,6 @@
-[WARNING]
+:warning:
 Test
-[/WARNING]
+:warning:
 
 # Uppgift - "Me page 6"
 
