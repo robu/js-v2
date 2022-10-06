@@ -1,20 +1,18 @@
-Uppgift - "Me page 3"
-==================================
+# Uppgift - "Me page 3"
 
 Jobba vidare med me-sidan och lägg till lite mer JavaScript.
 
 Det här kursmomentet kan kännas lite överväldigande så lägg till JavaScript efter egen förmåga/tid.
 
-Krav
------------------------
+## Krav
 
-1. Använd de kunskaper du skaffat dig i förra uppgiften (Rainbow) och lägg sedan till något på din egna sida. Det kan vara en grön låda eller snurrande `<body>` element. Du väljer själv hur mycket tid du vill lägga.
+1. Skapa menyvalet "kmom03".
+
+1. Använd de kunskaper du skaffat dig i uppgiften (Rainbow) och lägg sedan till något på din nya sida. Det kan vara en grön låda eller snurrande `<body>` element. Du väljer själv hur mycket tid du vill lägga.
 
 1. Skriv om vad du gjort under ett eget stycke i redovisningstexten.
 
 1. Lägg till din redovisningstext i `redovisning.html`.
-
-
 
 ### Validering
 
@@ -38,10 +36,7 @@ $ cd me
 $ dbwebb publish redovisa
 ```
 
-
-
-Extrauppgift
------------------------
+## Extrauppgift
 
 Om du har tid och kraft.
 

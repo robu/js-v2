@@ -1,28 +1,20 @@
-Uppgift - "Me page 2"
-==================================
+# Uppgift - "Me page 2"
 
 Jobba vidare med me-sidan och lägg till lite JavaScript.
 
-
-
-Förkunskaper
------------------------
+## Förkunskaper
 
 Du har gjort en första version av [me-sidan](../kmom01/02_mepage.md) och har koll på dess struktur.
 
+## Krav
 
+1. Lägg till menyvalet "kmom02".
 
-Krav
------------------------
+1. Ta reda på hur du kan skriva ut dagens datum och lägg till det på den nya sidan.
 
-
-1. Ta reda på hur du kan skriva ut dagens datum på din me sida och lägg till det på valfritt ställe.
-
-1. Skapa en funktion som skriver ut "God förmiddag" eller "God eftermiddag" på din sida beroende på om klockan är före eller efter `12.00`.
+1. Skapa en funktion som skriver ut "God förmiddag" eller "God eftermiddag" på sidan beroende på om klockan är före eller efter `12.00`.
 
 1. Lägg till din redovisningstext i `redovisning.html`.
-
-
 
 ### Validering
 
@@ -46,10 +38,7 @@ $ cd me
 $ dbwebb publish redovisa
 ```
 
-
-
-Extrauppgift
------------------------
+## Extrauppgift
 
 Om du har tid och kraft.
 
