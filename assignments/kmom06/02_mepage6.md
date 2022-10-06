@@ -1,3 +1,7 @@
+[WARNING]
+Test
+[/WARNING]
+
 # Uppgift - "Me page 6"
 
 Jobba vidare med me-sidan och lägg till lite mer information, fast med hjälp av objekt.
