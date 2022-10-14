@@ -5,7 +5,6 @@ Jobba vidare med me-sidan och lägg till lite mer information, fast med hjälp a
 ## Krav
 
 1. Skapa menyvalet "kmom06".
-
 1. Väl ut minst 3 "saker" att lägga till på din nya sida med hjälp av objekt. En "sak" i detta fallet kan vara flaggor, former eller information om personer. Här är valet fritt.
 1. Alla saker ska vara instanser av ett grundobjekt eller funktion.
 1. Grundobjektet ska ha en metod för att rita/skriva ut informationen på me sidan.

@@ -2,13 +2,9 @@
 
 I den här första uppgiften ska du skapa script som hjälper till att beräkna förhållanden mellan de smältande glaciärerna och den stigande havsnivån. Du jobbar i mappen `kmom01/`.
 
-
-
 ### Förutsättning
 
 Det förutsätts att du gått igenom artiklarna för [kursmoment 01](../../articles/kmom01) och har [miljön](../../articles/environment) på plats. Dubbelkolla så du har `me/package.json`, `me/.eslintrc.json` samt kört kommandot `$ npm install`.
-
-
 
 ### Intro
 
@@ -20,13 +16,13 @@ Man räknar med att de smältande glaciärerna har stått för ca 21% av havsniv
 
 Mellan år 2000 och 2019 har glaciärernas smälthastighet generellt ökat från 0.36 meter per år till 0.69 meter per år. Du kan räkna med att det inte är exponentiellt utan en fast ökning per år.
 
-Givet datan ovan ska du skapa en rapport enligt kraven nedan. Du får använda vilka konstruktioner du vill för att lösa uppgiften.
-
-
+Givet datan ovan ska du skapa en rapport enligt kraven nedan.
 
 ### Krav
 
-Utgå ifrån att år 2000 är startdatum. Skapa ett script `kmom01/glacier.js` som skapar följande utskrift:
+1. Du får använda vilka konstruktioner du vill för att lösa uppgiften, dock minst en funktion.
+
+2. Utgå ifrån att år 2000 är startdatum. Skapa ett script `kmom01/glacier.js` som skapar följande utskrift:
 
 ```console
 $ node glacier.js
@@ -54,7 +50,7 @@ Year    Rate    Sea
 2019    0.69m  14.36mm
 ```
 
-
+3. Kommentera din kod.
 
 ### Extra uppgift (Optionell)
 
@@ -85,8 +81,6 @@ Year    Rate    Sea
 2050    1.23m  37.8mm
 ```
 
-
-
 ### Validering
 
 Se till så koden validerar:
@@ -96,16 +90,20 @@ $ cd me
 $ npm run linter kmom01/
 ```
 
+### Dokumentation
 
+Skapa dokumentationen med JSDoc:
+
+```console
+$ cd me
+$ npm run jsdoc --kmom=kmom01
+```
 
 ### Hur kan det se ut när det är klart?
 
 Nedan är en video som visar hur det kan se ut när det är klart:
 
 [![js exercise kmom01](https://img.youtube.com/vi/LcIPQ3YlNLc/0.jpg)](https://www.youtube.com/watch?v=LcIPQ3YlNLc)
-
-
-
 
 ### Avslutningsvis
 
