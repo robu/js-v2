@@ -3,18 +3,22 @@
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 ORANGE='\033[0;33m'
+CYAN='\033[0;36m'
+YELLOW='\033[33m'
 NC='\033[0m' # No Color
 CORRECT='✓'
 ERROR='x'
 KMOM="$1"
 # STUD="$2"
-SOLUTIONPATH="../../.solutions/$KMOM"
+# SOLUTIONPATH="../../.solutions/$KMOM"
 KMOMPATH="../../me/$KMOM"
+
+SUCCESS=0
 
 function header
 {
     printf "\n\n"
-    printf "${ORANGE}### %s ###${NC}\n\n\n" "Test suite for [$1] in the course js for user [$2]"
+    printf "${ORANGE}### %s ###${NC}\n\n\n" "Test suite for [$1] in the course [$3] for user [$2]"
 }
 
 function printYes
@@ -25,7 +29,7 @@ function printYes
 
 function printNo
 {
-    printf "${RED}%s${NC}\n" "${ERROR} No."
+    printf "${RED}%s${NC}" "${ERROR} No."
     printf "\n\n"
 }
 
@@ -34,33 +38,76 @@ function printTest
     printf "${ORANGE}%s${NC}\n" "$1. $2"
 }
 
-function checkIfFileExist
-{
-    if [[ -f "$KMOMPATH/$1" ]]; then
-        printYes
-    else
-        printNo
-        exit 1
-    fi
-
+function isSuccess {
+    echo "$SUCCESS"
 }
 
-function checkIfContentMatch
+function checkIfFilesExist
 {
-    file1=$(node "$KMOMPATH/$1")
-    file2=$(node "$SOLUTIONPATH/$1")
+    local counter=0
+    local arr=("$@")
+    for i in "${arr[@]}"; do
+        (( counter++ ))
+        printTest "$counter" "The file $KMOM/$i is present and have correct filename."
 
-    result=$(diff <(echo "$file1") <(echo "$file2")) > /dev/null
+        if [[ -f "$KMOMPATH/$i" ]]; then
+            printYes
+        else
+            printNo
+            SUCCESS=1
+        fi
+    done
+}
 
-    if ! [[ "$result" ]]; then
+function checkDbwebbPort
+{
+    printTest "$1" "The environment variable DBWEBB_PORT is used in $2."
+    used=$(cat "$KMOMPATH/$2" | grep "DBWEBB_PORT")
+
+    if [[ ! -z "$used" ]]; then
         printYes
     else
         printNo
-        printf "%s\n" "-------------------------------------"
-        echo "$result"
-        printf "%s\n" "-------------------------------------"
+        SUCCESS=1
+    fi
+}
 
+function checkForSudoKmom05
+{
+    printTest "6" "Docker can start without sudo."
+    used=$(cat "$KMOMPATH/maze/kmom05.bash" | grep "sudo")
 
-        exit 1
+    if [[ -z "$used" ]]; then
+        printYes
+    else
+        printNo
+        SUCCESS=1
+    fi
+}
+
+function checkForLoopTag
+{
+    printTest "3" ":loop tag used in docker-compose."
+    used=$(cat "$KMOMPATH/maze2/docker-compose.yml" | grep ":loop")
+
+    if [[ ! -z "$used" ]]; then
+        printYes
+    else
+        printNo
+        SUCCESS=1
+    fi
+}
+
+function checkDockerHubLines
+{
+    printTest "4" "The file 'dockerhub.txt' contains only $2 row(s)."
+    cat "$KMOMPATH/$1/dockerhub.txt" | wc -l
+    lines=$(cat "$KMOMPATH/$1/dockerhub.txt" | wc -l)
+
+    if [[ "$lines" -eq "$2" ]]; then
+        printYes
+    else
+        printNo
+        SUCCESS=1
     fi
 }

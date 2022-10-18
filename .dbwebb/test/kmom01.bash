@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC1091
 . "functions.bash"
 
+declare -a files=(
+    "glacier.js"
+    )
+
 # Print the header for the testsuite
-header "$KMOM" "$STUD"
-printTest "1" "Is the file me/kmom01/glacier.js present and with correct filename?"
-checkIfFileExist "glacier.js"
+header "$1" "$2" "$3"
 
-# printTest "2" "Is the output correct?"
-# checkIfContentMatch "glacier.js"
+# CHeck if the files exists and have correct filename
+checkIfFilesExist "${files[@]}"
 
-printTest "3" "Is the file me/kmom01/glacier_extra.js present and with correct filename?"
-checkIfFileExist "glacier_extra.js"
+exit "$(isSuccess)"
