@@ -1,6 +1,8 @@
 {
     "env": {
-        "es2021": true
+        "es2021": true,
+        "browser": true,
+        "node": true
     },
     "extends": [
         "standard"
@@ -9,11 +11,7 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
-    "env": {
-        "browser": true,
-        "node": true
-    },
-    "ignorePatterns": ["**/dist/*.js", "**/out/"],
+    "ignorePatterns": ["**/dist/*.js", "**/jsdoc/"],
     "rules": {
         "linebreak-style": [
             2,
