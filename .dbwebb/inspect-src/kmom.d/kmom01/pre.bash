@@ -12,4 +12,4 @@ function header {
 cd me || exit 1
 
 header "OPENING FILES"
-atom kmom01
+code kmom01

@@ -4,6 +4,8 @@
 
 declare -a files=(
     "glacier.js"
+    "jsdoc/index.html"
+    "../redovisa/index.html"
     )
 
 # Print the header for the testsuite

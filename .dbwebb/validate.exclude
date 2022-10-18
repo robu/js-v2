@@ -16,7 +16,7 @@
 -*.png
 -*.jpg
 -./.venv
-
+-./me/*/jsdoc/*
 -./me/*/vendor/*
 -./me/*/node_modules/*
 
