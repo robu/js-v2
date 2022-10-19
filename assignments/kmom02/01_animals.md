@@ -23,8 +23,9 @@ $ cp example/animals/animals.mjs me/kmom02/
 
 1. Skapa en fil `kmom02/main.mjs` som du kan ha för att testa dina moduler.
 
+1. Du ska nu skapa två moduler, `kmom02/helpers.mjs` och `kmom02/report.mjs`. Funktionaliteten för modulerna kan nu se i den [genererade dokumentationen](https://htmlpreview.github.io/?https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/animals/jsdoc/index.html)
+
 1. Skapa en fil `helpers.mjs` ska exportera följande funktioner:
-   [jsdoc](../../example/animals/jsdoc/index.html)
 
    | Namn                                        | Exempel                                                            | Vad ska hända?                                                                                                                                                                                                                                   |
    | ------------------------------------------- | ------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
