@@ -57,6 +57,8 @@ $ cd me
 $ npm run jsdoc --kmom=kmom01
 ```
 
+Dubbelkolla så den stämmer.
+
 ### Extra uppgift (Optionell)
 
 Ta en kopia på föregående script och döp kopian till `glacier_extra.js`.

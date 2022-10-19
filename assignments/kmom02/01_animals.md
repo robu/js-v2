@@ -57,6 +57,15 @@ Animals in all continents
 ...
 ```
 
+1. Kommentera din kod enligt JSDoc och generera dokumentationen:
+
+```console
+$ cd me
+$ npm run jsdoc --kmom=kmom02
+```
+
+Dubbelkolla så den stämmer.
+
 ### Validering
 
 Se till så koden validerar:

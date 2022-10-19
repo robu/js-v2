@@ -3,9 +3,11 @@
 . "functions.bash"
 
 declare -a files=(
-    "animals.mjs",
-    "helpers.mjs",
+    "animals.mjs"
+    "helpers.mjs"
     "report.mjs"
+    "jsdoc/index.html"
+    "../redovisa/index.html"
     )
 
 # Print the header for the testsuite
