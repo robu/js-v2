@@ -23,9 +23,9 @@ $ cp example/animals/animals.mjs me/kmom02/
 
 1. Skapa en fil `kmom02/main.mjs` som du kan ha för att testa dina moduler.
 
-1. Du ska nu skapa två moduler, `kmom02/helpers.mjs` och `kmom02/report.mjs`. Funktionaliteten och funktionsnamnen modulerna ska innehålla kan ni se i den genererade dokumentationen. Antingen öppnar ni [example/animals](../../example/animals/jsdoc/) lokalt i en webbläsare eller via [htmlpreview](https://htmlpreview.github.io/?https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/animals/jsdoc/index.html). Var noga med returvärden och namngivning. Se dokumentationen som en mall att följa.
+2. Du ska nu skapa två moduler, `kmom02/helpers.mjs` och `kmom02/report.mjs`. Funktionaliteten och funktionsnamnen modulerna ska innehålla kan ni se i den genererade dokumentationen. Antingen öppnar ni [example/animals](../../example/animals/jsdoc/) lokalt i en webbläsare eller via [htmlpreview](https://htmlpreview.github.io/?https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/animals/jsdoc/index.html). Var noga med returvärden och namngivning. Se dokumentationen som en mall att följa.
 
-1. Funktionen **prettyPrint** ska se ut som följer om man exekverar funktionen med argumentet `africa`:
+3. Funktionen **prettyPrint** ska se ut som följer om man exekverar funktionen med argumentet `africa`:
 
 ```console
 --- REPORT ---
@@ -57,7 +57,7 @@ Animals in all continents
 ...
 ```
 
-1. Kommentera din kod enligt JSDoc och generera dokumentationen:
+4. Kommentera din kod enligt JSDoc och generera dokumentationen:
 
 ```console
 $ cd me
