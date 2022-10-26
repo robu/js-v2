@@ -30,4 +30,22 @@ När vi genererar filerna kommer det skapas en mapp som heter `jsdoc` i den mapp
 
 ### Hur gör man då?
 
-För att JSDoc ska förstå vad som händer i koden måste vi kommentera den. Det finns en uppsättning regler för hur kommentarerna bör se ut för att följa standarden. På sidan [jsdoc.app](https://jsdoc.app/index.html) kan vi se hur alla tänkbara konstruktioner ska se ut.
+För att JSDoc ska förstå vad som händer i koden måste vi kommentera den. Det finns en uppsättning regler för hur kommentarerna bör se ut för att följa standarden. 
+
+Här följer ett exempel på några kommentarer:
+
+```js
+/**
+ * @function addNumbers
+ * @param {number} num1 The first number to use
+ * @param {number} num2 The second number to use
+ * @returns {number} The calculated result
+ * */
+function addNumbers (num1, num2) {
+    return num1 + num2;
+}
+```
+
+Vi börjar med att beskriva att det är en funktion samt funktionens namn. `@param` beskriver som väntat vilka parametrar funktionen vill ha, vilken datatyp (number) samt ett namn och en beskrivning. Slutligen kan vi använda `@returns` för att beskriva returvärde. Även där sätter vi datatypen. 
+
+På sidan [jsdoc.app](https://jsdoc.app/index.html) kan vi se hur alla tänkbara konstruktioner ska se ut.
