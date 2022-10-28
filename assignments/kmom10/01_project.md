@@ -4,8 +4,6 @@ Du har blivit kontaktad av ett företag som mäter intelligens, de vill ha din h
 
 Du är tveksam till deras affärsidé, men du accepterar uppdraget som innebär att du skall bygga ett par mindre program som du sätter samman till ett större test-program. Det handlar om JavaScript (HTML, CSS), och det är ju din grej. Du tänker efter och det känns som du har en hel del kod som du kan återanvända.
 
-
-
 # Projektspecifikation
 
 Utveckla och leverera projektet enligt specifikationen från kunden (se längre ned i dokumentet). Saknas info i specen så kan du själv välja väg, dokumentera dina val i redovisningstexten.
@@ -14,13 +12,11 @@ De tre första kraven är obligatoriska och måste lösas för att få godkänt 
 
 Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
-
-
 ### Krav 1, 2, 3: Grunden
 
 Enligt specifikationen från kunden (se nedan) -- gör ett komplett testverktyg som består av deltest 1, 2 och ett av deltesten 3, 4 eller 5.
 
-Spara din kod i samma struktur som din *sandbox*. Spara filerna i katalogen `me/kmom10/`.
+Spara din kod i samma struktur som din _sandbox_. Spara filerna i katalogen `me/kmom10/`.
 
 Strukturera din kod i en eller flera ES moduler. Fundera igenom hur du vill strukturera innan du börjar.
 
@@ -28,7 +24,7 @@ Varje del-test skall kunna nollställas och startas om. Det är en fusk-funktion
 
 Tipsfrågor och eventuell konfiguration görs via JavaScript-objekt. Antingen direkt i modulen, eller som argument som skickas till modulen. Välj väg själva.
 
-Kommentera din kod med JSDoc kommentarer, efter bästa förmåga.
+Kommentera din kod med JSDoc kommentarer, efter bästa förmåga. Skapa även en mapp med genererad dokumentation.
 
 Se till att koden validerar.
 
@@ -37,29 +33,21 @@ Se till att koden validerar.
 dbwebb publish kmom10
 ```
 
-
 ### Krav 4, 5, 6: Optionellt
 
 Välj att göra ett eller två ytterligare del-tester. Välj de som du ännu inte gjort av deltest 3, 4 och 5.
 
 Varje deltest är här värt 15 poäng styck.
 
-
-
-Specification från kunden
---------------------------------------------------------------------
+## Specification från kunden
 
 Så här är tanken att testverktyget skall fungera. Det är en halvt flummig specifikation från kunden, men du gör ditt bästa för att tolka den. Du har ju trots allt en hel del koll på hur man löser sådana här saker.
-
-
 
 ### Idé om testverktyget
 
 Testpersonen öppnar webbsidan i sin webbläsare. Det kommer upp ett välkomstmeddelande som hälsar välkommen till testverktyget och förklarar idén och vad som skall göras. När testpersonen är klar så skall hen klicka på en länk för att starta testet.
 
 Hela testet skall köras i en enda HTML-sida, utan omladdningar. Varje test skall alltså dynamiskt bygga om sidans innehåll.
-
-
 
 ### Deltest 1: Tipsfrågor
 
@@ -68,8 +56,6 @@ Första delen av testet är valfritt antal 1X2-frågor. Som en tipspromenad. Fr�
 Du väljer att ta med minst 5 tipsfrågor, bara för att visa hur det fungerar.
 
 Testpersonen samlar poäng i varje deltest. Här är förslaget att rätt svar ger tre poäng per fråga och fel ger 0 poäng.
-
-
 
 ### Deltest 2: Fizzbuzz
 
@@ -89,8 +75,6 @@ buzz, 11, fizz, 13, 14, fizz buzz, ?
 
 Tips: modulus operator
 
-
-
 ### Deltest 3: Minne
 
 Detta är ett litet minnes-test som kollar hur bra bildminne man har.
@@ -106,8 +90,6 @@ Testpersonen får fortsätta så länge hen gissar rätt. När alla bilderna vis
 Rätt klick ger ett poäng styck.
 
 Efter avklarat test kan testpersonen klicka på en länk för att gå vidare till nästa test.
-
-
 
 ### Deltest 4: Visuell förmåga och läsförståelse
 
@@ -127,8 +109,6 @@ Rätt klick ger ett poäng och fel ger 0 poäng.
 
 Testet sker under tidspress. Testet skall utföras på max 15 sekunder. Därefter visas resultatet och en länk som tar testpersonen vidare till nästa test.
 
-
-
 ### Deltest 5: Uppfattningsförmåga
 
 Testet börjar med en text som förklarar vad det går ut på. Det finns en länk som spelaren kan klicka på för att starta testet.
@@ -147,24 +127,25 @@ Rätt klick ger ett poäng och fel ger 0 poäng.
 
 När testet är klart så visas resultatet tillsammans med en länk till nästa test.
 
-
-
 ### Formel för att beräkna intelligensen
 
 Den är så hemlig så att du inte får se den. Kunden har bett dig att göra en egen formel så länge, du väljer att göra så här.
 
-* Varje fråga/övning ger poäng.
-* Total max intelligens är x (du väljer själv) poäng.
+- Varje fråga/övning ger poäng.
+- Total max intelligens är x (du väljer själv) poäng.
 
 Specen innehåller grova förslag till poängsättningen, men du kan justera den precis som du vill.
-
-
 
 ### Slutet
 
 När testet är slut så visas en siffra upp som motsvarar intelligensen, tillsammans med siffran för maximal intelligens.
 
+### JSDoc och dokumentationen
 
+```console
+$ cd me
+$ npm run jsdoc --kmom=kmom10
+```
 
 ### Validering
 
@@ -174,8 +155,6 @@ Se till så koden validerar:
 $ cd me
 $ npm run linter kmom10/
 ```
-
-
 
 ### Webpack
 

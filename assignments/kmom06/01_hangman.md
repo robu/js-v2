@@ -4,13 +4,9 @@ Nu är det dags att koda ihop ett spel. Det är ett välkänt spel, "Hänga gubb
 
 Du jobbar i mappen `kmom06/`.
 
-
-
 ### Förutsättning
 
 Det förutsätts att du gått igenom artiklarna för [kursmoment 06](../../articles/kmom06) samt är det en fördel om du gjort tidigare kursmoment. De ger dig koll på hur vi börjar jobba med JavaScript, webbläsaren och de tekniker du behöver känna till.
-
-
 
 ### Intro
 
@@ -20,8 +16,6 @@ Det är som sagt "hangman" som gäller. Till din hjälp har du en grundstruktur 
 # Ställ dig i kursmappen
 $ cp -r example/hangman/* me/kmom06/
 ```
-
-
 
 ### Krav
 
@@ -34,8 +28,12 @@ $ cp -r example/hangman/* me/kmom06/
 1. När (om) spelaren har gissat alla bokstäver i ordet så skriver du ut “You Won The Game!” på spelplanen, eller motsvarande. Det går nu inte att göra några fler gissningar.
 1. Ladda om sidan för att köra ett nytt spel.
 1. Fundera på vilka delar som behöver vara publika eller privata och gör aktiva val av hur du strukturerar koden.
+1. Kommentera din kod enligt JSDoc och generera dokumentationen:
 
-
+```console
+$ cd me
+$ npm run jsdoc --kmom=kmom06
+```
 
 ### Validering
 
@@ -46,8 +44,6 @@ $ cd me
 $ npm run linter kmom06/
 ```
 
-
-
 ### Webpack
 
 Packa ihop koden innan publicering:
@@ -56,16 +52,11 @@ Packa ihop koden innan publicering:
 $ npm run build --kmom=kmom06
 ```
 
-
-
 ### Hur kan det se ut när det är klart?
 
 Nedan är en video som visar hur det kan se ut när det är klart:
 
 [![js exercise kmom06](https://img.youtube.com/vi/1HxW9U0p974/0.jpg)](https://www.youtube.com/watch?v=1HxW9U0p974)
-
-
-
 
 ### Avslutningsvis
 
