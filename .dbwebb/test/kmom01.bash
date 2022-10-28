@@ -4,7 +4,6 @@
 
 declare -a files=(
     "glacier.js"
-    "jsdoc/index.html"
     "../redovisa/index.html"
     )
 

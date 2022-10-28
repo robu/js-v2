@@ -20,7 +20,7 @@ Givet datan ovan ska du skapa en rapport som visar upp en rapport där du för v
 
 ### Krav
 
-1. Du får använda vilka konstruktioner du vill för att lösa uppgiften, dock minst en funktion.
+1. Du får använda vilka konstruktioner du vill för att lösa uppgiften.
 
 2. Utgå ifrån att år 2000 är startdatum. Skapa ett script `kmom01/glacier.js` som skapar följande utskrift:
 
@@ -49,15 +49,6 @@ Year	Melt rate (m)	Sea level (mm)
 2018	<rate>		    <level>
 2019	<rate>		    <level>
 ```
-
-3. Kommentera din kod enligt JSDoc och generera dokumentationen:
-
-```console
-$ cd me
-$ npm run jsdoc --kmom=kmom01
-```
-
-Dubbelkolla så den stämmer.
 
 ### Extra uppgift (Optionell)
 

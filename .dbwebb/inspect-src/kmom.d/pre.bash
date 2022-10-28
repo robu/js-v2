@@ -22,6 +22,8 @@ url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/$REDOVISA_HTTP_POSTFI
 printf "$url\n" 2>&1
 eval "$BROWSER" "$url" &
 
-url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/$KMOM/jsdoc/index.html"
-printf "$url\n" 2>&1
-eval "$BROWSER" "$url" &
+if [[ "$KMOM" != "kmom01" ]]; then
+    url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/$KMOM/jsdoc/index.html"
+    printf "$url\n" 2>&1
+    eval "$BROWSER" "$url" &
+fi
