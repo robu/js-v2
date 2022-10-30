@@ -14,7 +14,7 @@ Havsnivån har stigit sedan slutet av 1800-talet när människan började bränn
 
 Man räknar med att de smältande glaciärerna har stått för ca 21% av havsnivåns stigning sedan år 2000 och globalt stiger havsnivån 3.6mm per år.
 
-Mellan år 2000 och 2019 har glaciärernas smälthastighet generellt ökat från 0.36 meter per år till 0.69 meter per år. Du kan räkna med att det inte är exponentiellt utan en fast ökning per år.
+Mellan år 2000 och 2019 har glaciärernas smälthastighet generellt ökat från 0.36 meter per år till 0.69 meter per år. Du kan räkna med att det inte är exponentiellt utan en fast ökning per år. Startvärdet på havsnivån är 0.
 
 Givet datan ovan ska du skapa en rapport som visar upp en rapport där du för varje år räknar ut den aktuella smälthastigheten och den aktuella stigningen av havsnivån.
 
@@ -28,8 +28,8 @@ Givet datan ovan ska du skapa en rapport som visar upp en rapport där du för v
 $ node glacier.js
 Year	Melt rate (m)	Sea level (mm)
 --------------------------------------
-2000	<rate>		    <level>
-2001	<rate>		    <level>
+2000	0.36		    0
+2001	<rate>		    0.756
 2002	<rate>		    <level>
 2003	<rate>		    <level>
 2004	<rate>		    <level>
@@ -47,7 +47,7 @@ Year	Melt rate (m)	Sea level (mm)
 2016	<rate>		    <level>
 2017	<rate>		    <level>
 2018	<rate>		    <level>
-2019	<rate>		    <level>
+2019	0.69		    <level>
 ```
 
 ### Extra uppgift (Optionell)
