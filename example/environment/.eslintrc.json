@@ -18,7 +18,7 @@
             "unix"
         ],
         "quotes": "off",
-        "indent": ["error", 4],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
         "semi": [1, "always"]
     },
     "root": true
