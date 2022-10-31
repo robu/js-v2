@@ -16,13 +16,13 @@ Man räknar med att de smältande glaciärerna har stått för ca 21% av havsniv
 
 Mellan år 2000 och 2019 har glaciärernas smälthastighet generellt ökat från 0.36 meter per år till 0.69 meter per år. Du kan räkna med att det inte är exponentiellt utan en fast ökning per år. Startvärdet på havsnivån är 0.
 
-Givet datan ovan ska du skapa en rapport som visar upp en rapport där du för varje år räknar ut den aktuella smälthastigheten och den aktuella stigningen av havsnivån.
+Givet datan ovan ska du skapa en rapport som visar upp en rapport där du för varje år räknar ut den aktuella smälthastigheten och den aktuella stigningen av havsnivån. Uppgiften är öppen för tolkning och exemplet nedan är inte skrivet i sten. Vill du konstruera rapporten på annat sätt är det helt ok. 
 
 ### Krav
 
 1. Du får använda vilka konstruktioner du vill för att lösa uppgiften.
 
-2. Utgå ifrån att år 2000 är startdatum. Skapa ett script `kmom01/glacier.js` som skapar följande utskrift:
+2. Utgå ifrån att år 2000 är startdatum. Skapa ett script `kmom01/glacier.js` som skapar en utskrift liknande:
 
 ```console
 $ node glacier.js
