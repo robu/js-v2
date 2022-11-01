@@ -1,5 +1,4 @@
-Lexikalisk struktur
-==================================
+# Lexikalisk struktur
 
 ### Allmänt
 
@@ -11,31 +10,26 @@ Semikolon avslutar ett "statement", men de är valfria. Därför kan du köra pr
 
 Kommentarer är samma som i PHP och C++. `//` för en-rads kommentarer och `/* */` för kommentarer som spänner över flera rader. Det finns också stöd för DocBlock kommentarer `/** */` och då i samverkan med externa verktyg för automatgenererande dokumentation.
 
-
-
 ### Literaler
 
-När du skriver in ett värde  i JavaScript är det en "literal" som kan tolkas som ett värde och en typ.
+När du skriver in ett värde i JavaScript är det en "literal" som kan tolkas som ett värde och en typ.
 
 Följande visar hur literaler kan tolkas.
 
 ```javascript
-42              // Talet 42
-4.2             // Talet 4.2
-"hello world"   // En sträng med text
-'hej'           // En sträng till
-true            // Ett boolskt värde
-false           // Ett annat boolskt värde
-null            // Ett null värde
-undefined       // Ett odefinierat värde
-/javascript/    // Ett reguljärt uttryck
-{x:1, y:2}      // Ett objekt med två properties
-[1, 2, "three"] // En array med tre värden
+42; // Talet 42
+4.2; // Talet 4.2
+("hello world"); // En sträng med text
+("hej"); // En sträng till
+true; // Ett boolskt värde
+false; // Ett annat boolskt värde
+null; // Ett null värde
+undefined / // Ett odefinierat värde
+  javascript / // Ett reguljärt uttryck
+  { x: 1, y: 2 }[(1, 2, "three")]; // Ett objekt med två properties // En array med tre värden
 ```
 
 Pröva att skriva in någon av literalerna för att se hur JavaScript tolkar dem.
-
-
 
 ### Identifierare
 
@@ -46,53 +40,44 @@ En identifierare är en sträng som används för att namnge en variabel eller f
 Följande är giltiga identifierare:
 
 ```javascript
-myVar
-moped
-$
-_
-M64
-i
+myVar;
+moped;
+$;
+_;
+M64;
+i;
 ```
 
 Pröva att skriva in en identifierare och tilldela den ett värde av en literal.
 
 ```js
-let myValue = "fortytwo"
+let myValue = "fortytwo";
 
-myValue
+myValue;
 ```
-
-
 
 ### Reserverade ord
 
-Det finns ett antal [reserverade ord i JavaScript](https://developer.mozilla.org/en/JavaScript/Reference/Reserved_Words), dessa kan vara bra att ha lite koll på, kika på dem innan du går vidare. Du kan inte använda reserverade ord som namn på variabler.
+Det finns ett antal [reserverade ord i JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Lexical_grammar#keywords), dessa kan vara bra att ha lite koll på, kika på dem innan du går vidare. Du kan inte använda reserverade ord som namn på variabler.
 
 Vilka ord som är reserverade kan skifta mellan olika versioner av JavaScript, du gör bäst i att undvika dem, oavsett vilken version du använder.
 
-Nu ser vi hur JavaScript upplever typerna för de olika literalerna. De två sifforna är *number* och flera av literalerna upplevdes som *object*.
+Nu ser vi hur JavaScript upplever typerna för de olika literalerna. De två sifforna är _number_ och flera av literalerna upplevdes som _object_.
 
 Låt oss fortsätta studera grunderna så att vi får bättre grepp om typerna som JavaScript erbjuder.
 
-
-
-Värden och Datatyper
-==================================
-
-
+# Värden och Datatyper
 
 ### Primitiva värden
 
 JavaScript har ett antal primitiva värden.
 
-* Boolska variabler som `true` och `false`.
-* Numeriska värden som `42` och `4.2`.
-* Strängar som `"mumin"` och `'mumin'`.
-* Icke-värden i form av `null` och `undefined`.
+- Boolska variabler som `true` och `false`.
+- Numeriska värden som `42` och `4.2`.
+- Strängar som `"mumin"` och `'mumin'`.
+- Icke-värden i form av `null` och `undefined`.
 
 De är primitiver, enkla värden.
-
-
 
 ### Objekt
 
@@ -100,9 +85,9 @@ De literaler som representerar ett icke-primitivt värde representeras som ett o
 
 Alla nedan har samma värde för `typeof()`, alla är `"object"`.
 
-* `[]` array literal.
-* `{}` objekt literal.
-* `/./` ett reguljärt uttryck.
+- `[]` array literal.
+- `{}` objekt literal.
+- `/./` ett reguljärt uttryck.
 
 En funktion har också en upplevd typ i form av `"function"`.
 
@@ -137,21 +122,19 @@ true
 
 Det finns alltså en objekthierarki dit ett värde hör, baserat på dess typ.
 
-
-
 ### Objektbaserade datatyper
 
 I JavaScript finns ett antal objektbaserade datatyper. Följande lista ger en översikt. Dessa inbyggda objekt innehåller inbyggda funktioner som kan användas för att jobba med värden av respektive typ.
 
-| Namn       | Syfte                                         |
-|------------|-----------------------------------------------|
-| [`Number`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Number) | Siffror, tal, nummer |
-| [`String`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String) | Strängar och tecken |
-| [`Boolean`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Boolean) | Boolska värden, `sant` eller `falskt` |
-| [`Object`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object) | Moderobjektet, samt en osorterad lista av `key:value` |
-| [`Array`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array) | En sorterad lista av numrerade värde |
-| [`Function`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function) | Funktioner som exekverbar kod |
-| [`RegExp`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/RegExp) | Reguljära uttryck |
+| Namn                                                                                              | Syfte                                                 |
+| ------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [`Number`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Number)   | Siffror, tal, nummer                                  |
+| [`String`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/String)   | Strängar och tecken                                   |
+| [`Boolean`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Boolean) | Boolska värden, `sant` eller `falskt`                 |
+| [`Object`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Object)   | Moderobjektet, samt en osorterad lista av `key:value` |
+| [`Array`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array)     | En sorterad lista av numrerade värde                  |
+| [`Function`](https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Function)       | Funktioner som exekverbar kod                         |
+| [`RegExp`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/RegExp)   | Reguljära uttryck                                     |
 
 Varje datatyp är representerad som ett objekt med medlemsvariabler och metoder. Dessa används när man jobbar med värden som är av en viss typ. Objektets medlemmar och metoder avgör vad man kan göra med ett värde som är av en viss typ.
 
@@ -181,16 +164,14 @@ Se detta exempel som använder en metod som finns i `Object`.
 
 Detta är grunden i hur värden och datatyper byggs upp och vilka metoder som finns tillgängliga.
 
-
-
 ### Fler objekttyper utan literaler
 
 Låt oss titta på två andra objekttyper inte har en egen literal.
 
-| Namn       | Syfte                                         |
-|------------|-----------------------------------------------|
-| [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | Datum och datumhantering |
-| [`Error`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Error) | Felhantering för syntax och fel under körning |
+| Namn                                                                                            | Syfte                                         |
+| ----------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| [`Date`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) | Datum och datumhantering                      |
+| [`Error`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Error)   | Felhantering för syntax och fel under körning |
 
 Dessa objekt skapar man med operatorn `new` så här.
 
@@ -218,8 +199,6 @@ true
 
 Här skapar vi alltså en instans av objektet och får därmed tillgång till de metoder som objektet implementerar.
 
-
-
 ### Sammanfattningsvis om typer och värden
 
 Det är `number`, `string`, `boolean` som är primitiver och resten är specialiserade objekttyper. Typerna `Number`, `String`, `Boolean`, `Function`, `Array`, `Date` och `RegExp` är en variant, en specialisering, av typen `Object`.
@@ -232,10 +211,10 @@ Samtliga objekttyper är något som kallas globala objekt, de innehåller metode
 
 Till dessa tillkommer `undefined` och `null`.
 
-| Namn       | Syfte                                         |
-|------------|-----------------------------------------------|
-| [`undefined`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/undefined) | En variabel som inte givits ett värde har värdet undefined som är en egen typ. |
-| [`null`](https://developer.mozilla.org/sv-SE/docs/Web/JavaScript/Reference/Global_Objects/null) | Null är avsaknaden av ett värde, men ändå ett medvetet värde som blivit tilldelat till en variabel. Det är en egen typ. |
+| Namn                                                                                                  | Syfte                                                                                                                   |
+| ----------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| [`undefined`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/undefined) | En variabel som inte givits ett värde har värdet undefined som är en egen typ.                                          |
+| [`null`](https://developer.mozilla.org/sv-SE/docs/Web/JavaScript/Reference/Global_Objects/null)       | Null är avsaknaden av ett värde, men ändå ett medvetet värde som blivit tilldelat till en variabel. Det är en egen typ. |
 
 En variabel som ännu inte blivit tilldelad ett värde sägs ha värdet `undefined`. En funktion som inte returnerar något sägs returnera `undefined`. Ett odefinierat värde, helt enkelt.
 
@@ -243,35 +222,29 @@ Man kan tilldela en variabel ett värde `null` som kan sägas innebära avsaknad
 
 Vi tar och kikar lite djupare in i var och en av dessa, samtidigt som vi gör lite övningar. Då fortsätter vi.
 
-
-
-Variabler utan värde, `undefined`
-==================================
+# Variabler utan värde, `undefined`
 
 En variabel som inte har tilldelats ett värde får automatiskt värdet [`undefined`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/undefined). Det är ett odefinerat värde.
 
 ```js
-let i
+let i;
 
 if (i === undefined) {
   // Yep, this is true for i
 }
 
-if (typeof i === 'undefined') {
+if (typeof i === "undefined") {
   // Yep, this is true for i
 }
 ```
 
-
-
-Ett icke-värde, `null`
-==================================
+# Ett icke-värde, `null`
 
 Javascript skiljer på [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null) som är ett icke-värde och `undefined` som är ett odefinierat värde. Man använder `null` för att ge en variabel värdet `null`, med mening. När värdet `undefined` dyker upp så innebär det oftast att man inte initierat en variabel med ett värde.
 
 ```javascript
-let i
-let j = null
+let i;
+let j = null;
 
 if (i === j) {
   // Nope, not the same type, they are not equal.
