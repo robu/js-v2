@@ -16,7 +16,7 @@ När du skriver in ett värde i JavaScript är det en "literal" som kan tolkas s
 
 Följande visar hur literaler kan tolkas.
 
-```javascript
+```js
 42; // Talet 42
 4.2; // Talet 4.2
 ("hello world"); // En sträng med text
@@ -24,9 +24,9 @@ Följande visar hur literaler kan tolkas.
 true; // Ett boolskt värde
 false; // Ett annat boolskt värde
 null; // Ett null värde
-undefined / // Ett odefinierat värde
-  javascript / // Ett reguljärt uttryck
-  { x: 1, y: 2 }[(1, 2, "three")]; // Ett objekt med två properties // En array med tre värden
+undefined // Ett odefinierat värde
+/javascript/ // Ett reguljärt uttryck
+{ x: 1, y: 2 }[(1, 2, "three")]; // Ett objekt med två properties // En array med tre värden
 ```
 
 Pröva att skriva in någon av literalerna för att se hur JavaScript tolkar dem.
@@ -39,7 +39,7 @@ En identifierare är en sträng som används för att namnge en variabel eller f
 
 Följande är giltiga identifierare:
 
-```javascript
+```js
 myVar;
 moped;
 $;
