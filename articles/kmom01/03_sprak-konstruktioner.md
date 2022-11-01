@@ -91,14 +91,14 @@ Alla nedan har samma värde för `typeof()`, alla är `"object"`.
 
 En funktion har också en upplevd typ i form av `"function"`.
 
-```javascript
+```js
 > typeof(function(){})
 'function'
 ```
 
 I samtliga fall så är dessa icke-primitiva värden en instans av `Object`, det ursprungliga objektet i en hierarki av JavaScript objekt.
 
-```javascript
+```js
 [] instanceof Object
 [] instanceof Array
 true
@@ -140,7 +140,7 @@ Varje datatyp är representerad som ett objekt med medlemsvariabler och metoder.
 
 Till exempel kan du ta reda på längden av en sträng på följande sätt.
 
-```javascript
+```js
 > "Mumintrollet".length
 12
 > "Mumintrollet".charAt(1)
@@ -155,7 +155,7 @@ En strängliteral blir alltså till ett String-objekt vilket är kopplat till ob
 
 Se detta exempel som använder en metod som finns i `Object`.
 
-```javascript
+```js
 > a = 42
 42
 > a.toString()
@@ -175,7 +175,7 @@ Låt oss titta på två andra objekttyper inte har en egen literal.
 
 Dessa objekt skapar man med operatorn `new` så här.
 
-```javascript
+```js
 // Date
 > a = new Date()
 Mon Nov 07 2016 18:05:33 GMT+0100 (CET)
@@ -242,7 +242,7 @@ if (typeof i === "undefined") {
 
 Javascript skiljer på [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null) som är ett icke-värde och `undefined` som är ett odefinierat värde. Man använder `null` för att ge en variabel värdet `null`, med mening. När värdet `undefined` dyker upp så innebär det oftast att man inte initierat en variabel med ett värde.
 
-```javascript
+```js
 let i;
 let j = null;
 
