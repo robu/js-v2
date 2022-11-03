@@ -3,7 +3,7 @@ Moduler
 
 I den här artikeln går vi igenom vad en modul är och rätar ut frågetecknen runt olika typer av moduler.
 
-Filerna som används kan ni hitta i [exempelmappen](../../example/modules/article).
+Filerna som används kan ni hitta i [exempelmappen](../../example/modules/toolbox).
 
 ### Vad är en modul?
 
