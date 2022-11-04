@@ -2,9 +2,11 @@ Tjenare,
 
 Vad bra att labbmiljön är på plats. Både node och npm är standardverktyg för en programmerare och bör finnas tillgängliga på alla arbetsstationer.
 
-Jag har validerat din kod med eslint och det såg ju bra ut. Vidare tittade jag på koden och testkörde programmet. Koden är välskriven och utskriften matchar instruktionerna, snyggt! Även din me-sida var på plats.
+Jag har validerat din kod med eslint och det såg ju bra ut. Vidare tittade jag på koden och testkörde programmet.
 
-Jag kollade igenom din redovisningstext och den är välskriven och reflekterande.
+Du har fått till rapporten och använt dig av bra konstruktioner, snyggt! Även din me-sida var på plats.
+
+Jag kollade igenom din redovisningstext och den är helt i sin ordning.
 
 Allt är väl, så här långt. Kör på!
 
