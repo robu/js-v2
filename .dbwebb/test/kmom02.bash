@@ -16,4 +16,8 @@ header "$1" "$2" "$3"
 # CHeck if the files exists and have correct filename
 checkIfFilesExist "${files[@]}"
 
+if [[ "$4" = "teacher" ]]; then 
+    cp "kmom02_main.mjs" "$KMOMPATH/" && node "$KMOMPATH/kmom02_main.mjs"
+fi
+
 exit "$(isSuccess)"

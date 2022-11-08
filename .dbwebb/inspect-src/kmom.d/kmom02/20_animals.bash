@@ -17,7 +17,14 @@ read -p "We are now going to check animals assignment. Press something to contin
 
 #
 cd me/kmom02 || exit 1
-cp ../../.solutions/kmom02/main.mjs .
+
+printf ">>> -------------- dbwebb test kmom01 -------------------------\n"
+
+dbwebb test "kmom02" "teacher"
+
+echo "Press any key to continue."
+read
+# cp ../../.solutions/kmom02/main.mjs .
 #
 # touch "dbwebb.mjs"
 #
@@ -29,6 +36,6 @@ cp ../../.solutions/kmom02/main.mjs .
 # console.log('Hi')\n
 # console.log(europeanAnimals)" > dbwebb.mjs
 #
-node main.mjs
+# node main.mjs
 
 read -p "Done? "

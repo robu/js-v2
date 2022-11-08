@@ -25,9 +25,9 @@
 # COURSE="$2"
 # ACRONYM="$3"
 # KMOM="$4"
-# echo "$@"
+
 cd "$1/.dbwebb/test" || exit
-bash "$4.bash" "$4" "$3" "$2"
+bash "$4.bash" "$4" "$3" "$2" "$5"
 
 # shellcheck disable=SC2181
 [[ "$?" -gt 0 ]] && printf "\n\n[$3] %s\n\n" "Fix your errors and run test again."
