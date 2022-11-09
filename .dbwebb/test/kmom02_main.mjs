@@ -7,24 +7,10 @@ const Green = "\x1b[32m";
 const Yellow = "\x1b[33m";
 const Magenta = "\x1b[35m";
 
-function checkExistance (animal) {
-    // let msg = "No";
-    return allAnimals().indexOf(animal) > -1 ? "Yes" : "No";
-    // if (allAnimals().indexOf(animal) > -1) {
-    //     msg = "Yes";
-    // }
-    // return msg;
-}
-
-function giveMeColor (msg, check) {
-    return check === msg ? `${Green}${check}${Reset}` : `${Red}${check}${Reset}`;
-}
-
-function infoText (msg) {
-    return `${Magenta}${msg}${Reset}`;
-}
-
-function checkContinent (cont, arr) {
+const checkExistance = (animal) => allAnimals().indexOf(animal) > -1 ? "Yes" : "No";
+const giveMeColor = (msg, check) => check === msg ? `${Green}${check}${Reset}` : `${Red}${check}${Reset}`;
+const infoText = (msg) => `${Magenta}${msg}${Reset}`;
+const checkContinent = (cont, arr) => {
     let result = `${Red}Not OK${Reset}`;
     let temp;
     switch (cont) {
@@ -48,7 +34,7 @@ function checkContinent (cont, arr) {
             break;
     }
     return result;
-}
+};
 
 console.log(`${Yellow}------------- getRandomAnimal -------------${Reset}`);
 let rand = getRandomAnimal();
@@ -110,14 +96,18 @@ console.log(prettyPrint());
 console.log(`\n${Yellow}--------------- filterAnimals -----------------${Reset}`);
 
 const test7 = filterAnimals(4);
-console.log(`${infoText("Is it an array?:")} ${Array.isArray(test7) ? Green + 'Yes' + Reset : Red + 'No' + Reset}`);
 console.log(`${infoText("Filter on '4':")} ${giveMeColor('Lynx', test7.join(","))}`);
-const test7american = filterAnimals(10, "america");
-console.log(`${infoText("Filter on 10, 'america':")} ${test7american.length === 1 ? Green + 'Empty array' + Reset : Red + 'Not empty' + Reset}`);
-const test7european = filterAnimals(8, "europe");
-console.log(`${infoText("Filter on 8, 'europe':")} ${test7european.length === 2 ? Green + test7european + Reset : Red + "Wrong length" + Reset}`);
+console.log(`${infoText("Is it an array?:")} ${Array.isArray(test7) ? Green + 'Yes' + Reset : Red + 'No' + Reset}`);
+
+const test10american = filterAnimals(10, "america");
+console.log(`${infoText("Filter on 10, 'america':")} ${test10american}`);
+// console.log(test10american)
+
+const test8european = filterAnimals(8, "europe");
+console.log(`${infoText("Filter on 8, 'europe':")} ${test8european}`);
+
 const test8african = filterAnimals(8, "africa");
-console.log(`${infoText("Filter on 8, 'africa':")} ${test8african.length === 1 ? Green + test8african + Reset : Red + "Wrong length" + Reset}`);
+console.log(`${infoText("Filter on 8, 'africa':")} ${test8african}`);
 
 console.log(`\n${Yellow}--------------- sortAnimals -----------------${Reset}`);
 const res = [
