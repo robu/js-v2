@@ -20,7 +20,7 @@ cd me/kmom02 || exit 1
 
 printf ">>> -------------- dbwebb test kmom01 -------------------------\n"
 
-dbwebb test "kmom02" "teacher"
+dbwebb test "kmom02" "animals"
 
 echo "Press any key to continue."
 read
