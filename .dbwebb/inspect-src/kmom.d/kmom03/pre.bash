@@ -11,8 +11,8 @@ function header {
 
 cd me || exit 1
 
-header "OPENING FILES IN ATOM"
-atom kmom03
+header "OPENING FILES IN VSCode"
+code kmom03
 
 header "OPEN ASSIGNMENT IN BROWSER"
 url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/$KMOM"

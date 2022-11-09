@@ -53,5 +53,3 @@ $ npm run linter kmom03/
 ### Avslutningsvis
 
 Lycka till och hör av dig om du kör fast eller har några funderingar.
-
-[TBD: Länk till issues](#)
