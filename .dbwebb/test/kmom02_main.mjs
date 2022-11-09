@@ -8,11 +8,12 @@ const Yellow = "\x1b[33m";
 const Magenta = "\x1b[35m";
 
 function checkExistance (animal) {
-    let msg = "No";
-    if (allAnimals().indexOf(animal) > -1) {
-        msg = "Yes";
-    }
-    return msg;
+    // let msg = "No";
+    return allAnimals().indexOf(animal) > -1 ? "Yes" : "No";
+    // if (allAnimals().indexOf(animal) > -1) {
+    //     msg = "Yes";
+    // }
+    // return msg;
 }
 
 function giveMeColor (msg, check) {
@@ -63,14 +64,14 @@ const added2 = addAnimal("africa", "AFRICAN");
 const added3 = addAnimal("europe", "EUROPEAN");
 const added4 = addAnimal("asia", "ASIAN");
 
-console.log(`${infoText("Adding american:")} ${giveMeColor("Success", added1)}`);
-console.log(`${infoText("Adding african:")} ${giveMeColor("Success", added2)}`);
-console.log(`${infoText("Adding european:")} ${giveMeColor("Success", added3)}`);
-console.log(`${infoText("Adding wrongful:")} ${giveMeColor("Error", added4)}`);
+console.log(`${infoText("Adding american:")} ${giveMeColor("AMERICAN added", added1)}`);
+console.log(`${infoText("Adding african:")} ${giveMeColor("AFRICAN added", added2)}`);
+console.log(`${infoText("Adding european:")} ${giveMeColor("EUROPEAN added", added3)}`);
+console.log(`${infoText("Adding wrongful:")} ${giveMeColor("ASIAN not added", added4)}`);
 
 console.log(`\n${Yellow}--------------- allAnimals -----------------${Reset}`);
 
-console.log(`${infoText("Total number of animals:")} ${giveMeColor("32", allAnimals().length)}`);
+console.log(`${infoText("Total number of animals:")} ${giveMeColor(32, allAnimals().length)}`);
 
 console.log(`\n${Yellow}--------------- removeAnimal -----------------${Reset}`);
 
@@ -108,13 +109,15 @@ console.log(prettyPrint());
 
 console.log(`\n${Yellow}--------------- filterAnimals -----------------${Reset}`);
 
-const test7 = filterAnimals(7);
+const test7 = filterAnimals(4);
 console.log(`${infoText("Is it an array?:")} ${Array.isArray(test7) ? Green + 'Yes' + Reset : Red + 'No' + Reset}`);
-console.log(`${infoText("Filter on '7':")} ${giveMeColor('AFRICAN,Lynx', test7.join(","))}`);
-const test7american = filterAnimals(7, "america");
-console.log(`${infoText("Filter on 7, 'america':")} ${test7american.length === 0 ? Green + 'Empty array' + Reset : Red + 'Not empty' + Reset}`);
-const test7european = filterAnimals(7, "europe");
-console.log(`${infoText("Filter on 7, 'europe':")} ${test7european.length === 1 ? Green + test7european + Reset : Red + test7european + Reset}`);
+console.log(`${infoText("Filter on '4':")} ${giveMeColor('Lynx', test7.join(","))}`);
+const test7american = filterAnimals(10, "america");
+console.log(`${infoText("Filter on 10, 'america':")} ${test7american.length === 1 ? Green + 'Empty array' + Reset : Red + 'Not empty' + Reset}`);
+const test7european = filterAnimals(8, "europe");
+console.log(`${infoText("Filter on 8, 'europe':")} ${test7european.length === 2 ? Green + test7european + Reset : Red + "Wrong length" + Reset}`);
+const test8african = filterAnimals(8, "africa");
+console.log(`${infoText("Filter on 8, 'africa':")} ${test8african.length === 1 ? Green + test8african + Reset : Red + "Wrong length" + Reset}`);
 
 console.log(`\n${Yellow}--------------- sortAnimals -----------------${Reset}`);
 const res = [
