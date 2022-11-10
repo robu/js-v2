@@ -67,6 +67,8 @@ if ! compgen -G "$DIR/$KMOM/??*_*.bash" > /dev/null; then
     exit 0
 fi
 
+npm config set update-notifier false
+
 for file in $DIR/$KMOM/??*_*.bash; do
     output=
     target=$( basename "$file" )
