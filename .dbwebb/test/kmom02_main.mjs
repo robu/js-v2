@@ -100,7 +100,7 @@ console.log(`${infoText("Filter on '4':")} ${giveMeColor('Lynx', test7.join(",")
 console.log(`${infoText("Is it an array?:")} ${Array.isArray(test7) ? Green + 'Yes' + Reset : Red + 'No' + Reset}`);
 
 const test10american = filterAnimals(10, "america");
-console.log(`${infoText("Filter on 10, 'america':")} ${test10american.length === 0 ? Green + "OK" + Reset : Red + "Not OK" + Reset}`);
+console.log(`${infoText("Filter on 10, 'america':")} ${test10american.length === 0 ? Green + "OK (Empty array)" + Reset : Red + "Not OK" + Reset}`);
 
 const test8european = filterAnimals(8, "europe");
 console.log(`${infoText("Filter on 8, 'europe':")} ${test8european}`);
