@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="sv">
+<meta charset="utf-8" />
+<title>js | kmom03</title>
+
+<!-- Mithril HTML Slideshow styles -->
+<link href="../css/mithril-slideshow.css" rel="stylesheet" />
+
+<!-- Code formatting using highlight.js -->
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="../css/tomorrow.css">
+<script src="../js/highlight.pack.js"></script>
+
+<!-- Text formatting using Markdown through showdown.js -->
+<script src="../js/showdown.min.js"></script>
+
+<style>
+    h1 {
+        border-bottom: 2px solid orange
+    }
+</style>
+
+
+<!-- Here comes the slides in order -->
+<script data-role="slide" data-markdown type="text/html">
+# Programmering med JavaScript
+## (js)
+## kmom03 2021
+### Kenneth Lewenhagen
+</script>
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Agenda
+
+* try/catch
+* jsdoc
+* Live vs not live
+* event propagation
+
+</script>
+
+
+<script data-role="slide" data-markdown type="text/html">
+# try/catch (I)
+
+* RangeError (arr.length = 90**90)
+* ReferenceError
+* SyntaxError
+* TypeError (42.toUpperCase())
+
+</script>
+
+<script data-role="slide" data-markdown type="text/html">
+# try/catch (II)
+
+```javascript
+"use strict";
+
+try {
+    some = 42;
+} catch (err) {
+    console.error(err);
+}
+```
+
+</script>
+
+<script data-role="slide" data-markdown type="text/html">
+# try/catch (III)
+
+```javascript
+"use strict";
+
+try {
+    some = 42;
+} catch (err) {
+    console.error(`${err.name}: ${err.message)`;
+}
+```
+
+</script>
+
+<script data-role="slide" data-markdown type="text/html">
+# try/catch (IV)
+
+```javascript
+function valueCheck(val) {
+    try {
+        if (isNaN(parseInt(val))) {
+            throw new Error("Inte en siffra");
+        }
+    } catch (err) {
+        console.error(`${err.name}: ${err.message}`);
+    }
+}
+
+valueCheck("hejhej");
+```
+
+</script>
+
+<script data-role="slide" data-markdown type="text/html">
+# try/catch (V)
+
+```javascript
+function valueCheck(val) {
+    try {
+        if (isNaN(parseInt(val))) {
+            throw new Error("Inte en siffra");
+        } else if (val < 42) {
+            throw new Error("För litet");
+        }
+    } catch (err) {
+        console.log(`${err.name}: ${err.message}`);
+    }
+}
+
+valueCheck(41);
+```
+
+</script>
+
+<script data-role="slide" data-markdown type="text/html">
+# try/catch (VI)
+
+```javascript
+function valueCheck(val) {
+    try {
+        if (isNaN(parseInt(val))) {
+            throw new Error("Inte en siffra");
+        } else if (val < 42) {
+            throw new Error("För litet");
+        }
+    } catch (err) {
+        console.log(`${err.name}: ${err.message}`);
+    } finally {
+        console.log("Jag kommer alltid vara med!");
+    }
+}
+
+valueCheck(41);
+```
+
+</script>
+
+<script data-role="slide" data-markdown type="text/html">
+# jsdoc
+
+* Hjälper andra (och en själv)
+* npm install -g jsdoc
+* https://jsdoc.app/
+
+```javascript
+/**
+ * @function <name> [desc]
+ * @param {type} <name> [desc]
+ * @return {type} [desc]
+ */
+```
+</script>
+
+<script data-role="slide" data-markdown type="text/html">
+# live vs not live Nodelist (I)
+
+```javascript
+for (let i = 0; i < boxes.length; i++) {
+    document.body.removeChild(boxes[i]);
+    console.log(i);
+}
+```
+
+</script>
+
+<script data-role="slide" data-markdown type="text/html">
+# live vs not live Nodelist (II)
+
+```javascript
+let liveTests = document.getElementsByClassName("test");
+let staticTests = document.querySelectorAll(".test");
+console.log("live before: " + liveTests.length);
+console.log("static before: " + staticTests.length);
+
+let temp = document.createElement("div");
+temp.className = "test";
+document.getElementsByTagName("body")[0].appendChild(temp);
+
+console.log("live after: " + liveTests.length);
+console.log("static after: " + staticTests.length);
+```
+
+</script>
+
+<script data-role="slide" data-markdown type="text/html">
+# event propagation (I)
+
+```html
+<div class="box outer">OUTER
+    <div class="box middle">MIDDLE
+        <div class="box inner">INNER</div>
+    </div>
+</div>
+```
+
+</script>
+
+
+
+
+
+
+<!-- include essential js-script -->
+<script src="../js/mithril.min.js"></script>
+<script src="../js/mithril-slideshow.js"></script>
+
+<!-- default to theme 3 -->
+<script>app.useTheme(3)</script>
