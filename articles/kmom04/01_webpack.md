@@ -73,7 +73,7 @@ För att kompilera JavaScript koden använder vi oss av kommandot `webpack --wat
 ```
 
 
-#### Windows
+#### Windows (Cygwin)
 
 När vi kör via Cygwin får vi uppdatera filen så vi använder `%npm_config_kmom%` istället.
 
@@ -105,7 +105,7 @@ Vi börjar med att döpa om `webpack.config.js` till `webpack.dev.config.js`, d�
 
 
 
-#### Windows
+#### Windows (Cygwin)
 
 ```json
 "start": "webpack --watch --env kmom=%npm_config_kmom% --config webpack.dev.config.js",
@@ -145,7 +145,7 @@ Vi lägger även till ett script i vår `package.json` så vi kan bygga produkti
 ```
 
 
-#### Windows
+#### Windows (Cygwin)
 
 ```json
 "start": "webpack --watch --env kmom=%npm_config_kmom% --config webpack.dev.config.js",
@@ -159,7 +159,7 @@ Vi kan nu köra script `build` med kommandot `npm run build --kmom=kmom03`. Vi s
 
 ### Usch så krångligt...finns inte filerna redan?
 
-Jodå visst gör de det. Du kan kopiera in dem från exempelmappen:
+Jodå, visst gör de det. Du kan kopiera in dem från exempelmappen:
 
 
 ```console
