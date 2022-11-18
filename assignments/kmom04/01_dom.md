@@ -108,7 +108,7 @@ Fånga eventet för när webbläsarens fönster ändrar storlek. När det hände
 
 Tips. Studera exemplet [`example/resizeEvent/` i kursrepot](../../example/resizeEvent).
 
-Tips: `Window.onresize`.
+Tips: `window.onresize`, `window.addEventListener()`.
 
 ##### 2.2 Fånga ett klick-event
 
