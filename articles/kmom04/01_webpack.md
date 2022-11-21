@@ -41,16 +41,18 @@ const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = (env) => {
-    mode: 'development',
-    devtool: 'inline-source-map',
-    entry: `./${env.kmom}/js/main.js`,
-    plugins: [
-        new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
-    ],
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
-    }
+    return {
+        mode: 'development',
+        devtool: 'inline-source-map',
+        entry: `./${env.kmom}/js/main.js`,
+        plugins: [
+            new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
+        ],
+        output: {
+            filename: 'bundle.js',
+            path: path.resolve(__dirname, 'dist')
+        }
+    };
 }
 ```
 
