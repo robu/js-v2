@@ -4,7 +4,7 @@ Den här veckan har det handlat om eventlyssnare, DOM, HTML och lite CSS. Jag ho
 
 Jag har tittat på Rainbowuppgiften och dess kod och jag tycker du har löst det på ett fint sätt. Bra indelning i funktioner och det är lätt att följa koden och vad den gör.
 
-Koden passerar även eslint.
+Koden passerar även eslint och dokumentationen finns på plats.
 
 Bra att du fick in JavaScripten i me sidan också.
 
