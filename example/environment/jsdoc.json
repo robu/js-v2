@@ -1,6 +1,7 @@
 {
     "source": {
-        "includePattern": ".+\\.m?js(doc|x)?$"
+        "includePattern": ".+\\.m?js(doc|x)?$",
+        "excludePattern": "(^|\\/|\\\\)dist"
     },
     "templates": {
         "default": {
