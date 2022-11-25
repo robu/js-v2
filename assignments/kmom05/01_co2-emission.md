@@ -64,11 +64,6 @@ Packa ihop koden innan publicering:
 $ npm run build --kmom=kmom05
 ```
 
-### Hur kan det se ut när det är klart?
-
-Nedan är en video som visar hur det kan se ut när det är klart:
-
-[![js exercise kmom05](https://img.youtube.com/vi/rXqr9K65pdo/0.jpg)](https://www.youtube.com/watch?v=rXqr9K65pdo)
 
 ### Avslutningsvis
 
