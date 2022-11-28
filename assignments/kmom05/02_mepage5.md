@@ -14,7 +14,7 @@ Vi ska jobba lite med Web Storage och bygga till ett litet spel i me-sidan.
    1. När man klickar på `kasta` ska det slumpas fram en siffra mellan och inklusive 1 och 6. Tänk en vanlig tärning.
    1. Spelaren får kasta en ny tärning så länge det inte blir en 1:a. Då avslutas spelet.
    1. För varje kast ska det nya värdet samt det totala värdet presenteras.
-   1. Använd Web Storage, tex `localStorage` för att spara den nödvändiga informationen vid eventuell omladdning av sidan.
+   1. Använd Web Storage (`sessionStorage`) för att spara den nödvändiga informationen vid eventuell omladdning av sidan.
    1. Klickar spelaren på `Nytt spel` ska omgången starta om och alla värden nollställas.
 
 1. Skriv om hur det har gått under ett eget stycke i redovisningstexten.
