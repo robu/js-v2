@@ -12,7 +12,7 @@ function header {
 cd me || exit 1
 
 header "OPENING FILES IN ATOM"
-atom kmom04
+code kmom04
 
 header "OPEN ASSIGNMENT IN BROWSER"
 url="$REDOVISA_HTTP_PREFIX/~$ACRONYM/dbwebb-kurser/$COURSE/me/$KMOM"
