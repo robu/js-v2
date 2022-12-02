@@ -1,6 +1,18 @@
+/**
+* @module hangman
+*/
+
+/**
+* @name hangman
+* @description Base object for hangman
+*/
 const hangman = {
 
-    // Get all elements as their id
+    /**
+    * @type {object}
+    * @name partAsElement
+    * @description All parts as html elements
+    */
     partAsElement: {
         hill: document.getElementById('hang_hill'),
         gallow: document.getElementById('hang_construction'),
@@ -13,7 +25,11 @@ const hangman = {
         head: document.getElementById('hang_head')
     },
 
-    // Create an array with all valid parts
+    /**
+    * @type {Array}
+    * @name validParts
+    * @description All valid parts as strings
+    */
     validParts: [
         "hill",
         "gallow",
@@ -27,45 +43,42 @@ const hangman = {
     ],
 
     /**
-     * Check if part a valid part, writes error message to console if the part is invalid.
-     *
-     * @param string part Name of the part to check.
-     *
+     * @function isValid
+     * @description Check if part a valid part, writes error message to console if the part is invalid.
+     * @param {string} part Name of the part to check.
      * @returns boolean true if valid part, else false.
      */
     isValid: function (part) {
         if (this.validParts.indexOf(part) === -1) {
-            window.console.log("The part is not valid: " + part);
+            console.log("The part is not valid: " + part);
             return false;
         }
-        window.console.log("The part is valid: " + part);
+        console.log("The part is valid: " + part);
         return true;
     },
 
     /**
-     * Hide a part.
-     *
-     * @param string part Name of the part to hide.
-     *
+     * @function hide
+     * @description Hide a part.
+     * @param {string} part Name of the part to hide.
      * @returns void.
      */
     hide: function (part) {
         if (this.isValid(part)) {
-            window.console.log("Hiding part: " + part);
+            console.log("Hiding part: " + part);
             this.partAsElement[part].style.display = "none";
         }
     },
 
     /**
-     * Show a part.
-     *
-     * @param string part Name of the part to show.
-     *
+     * @function show
+     * @description Show a part.
+     * @param {string} part Name of the part to show.
      * @returns void.
      */
     show: function (part) {
         if (this.isValid(part)) {
-            window.console.log("Showing part: " + part);
+            console.log("Showing part: " + part);
             this.partAsElement[part].style.display = "inline";
         }
     }
