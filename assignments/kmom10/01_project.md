@@ -8,36 +8,25 @@ Du är tveksam till deras affärsidé, men du accepterar uppdraget som innebär 
 
 Utveckla och leverera projektet enligt specifikationen från kunden (se längre ned i dokumentet). Saknas info i specen så kan du själv välja väg, dokumentera dina val i redovisningstexten.
 
-De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De tre sista kraven är optionella krav. Lös de optionella kraven för att samla poäng och därmed nå högre betyg.
+De tre första kraven är obligatoriska och måste lösas för att få godkänt på uppgiften. De tre sista kraven samt genererad dokumentation är optionella krav. Lös de optionella kraven för att samla poäng och därmed nå högre betyg.
 
 Varje krav ger max 10 poäng, totalt är det 60 poäng.
 
-### Krav 1, 2, 3: Grunden
+### Deltest 1, 2, 3: Grunden
 
-Enligt specifikationen från kunden (se nedan) -- gör ett komplett testverktyg som består av deltest 1, 2 och ett av deltesten 3, 4 eller 5.
+Enligt specifikationen från kunden (se nedan) -- gör ett komplett testverktyg som består av deltest 1, 2 och ett av deltesten 3, 4 eller 5 samt genererad dokumentation.
 
-Spara din kod i samma struktur som din _sandbox_. Spara filerna i katalogen `me/kmom10/`.
+Spara filerna i katalogen `me/kmom10/`.
 
 Strukturera din kod i en eller flera ES moduler. Fundera igenom hur du vill strukturera innan du börjar.
 
 Varje del-test skall kunna nollställas och startas om. Det är en fusk-funktion som låter användaren göra om del-testet för att få bättre resultat. Det ska gå att köra `window.reset()` i konsolen i webbläsaren för att starta om deltestet.
 
-Tipsfrågor och eventuell konfiguration görs via JavaScript-objekt. Antingen direkt i modulen, eller som argument som skickas till modulen. Välj väg själva.
-
-Kommentera din kod med JSDoc kommentarer, efter bästa förmåga. Skapa även en mapp med genererad dokumentation.
-
-Se till att koden validerar.
-
-```bash
-# Ställ dig i kurskatalogen
-dbwebb publish kmom10
-```
-
-### Krav 4, 5, 6: Optionellt
+### Deltest 4, 5, 6: Optionellt
 
 Välj att göra ett eller två ytterligare del-tester. Välj de som du ännu inte gjort av deltest 3, 4 och 5.
 
-Varje deltest är här värt 15 poäng styck.
+Varje deltest är här värt 15 poäng styck. Totalt 30 poäng.
 
 ## Specification från kunden
 
@@ -75,7 +64,7 @@ buzz, 11, fizz, 13, 14, fizz buzz, ?
 
 Tips: modulus operator
 
-### Deltest 3: Minne
+### Deltest 3: Minne (optionellt)
 
 Detta är ett litet minnes-test som kollar hur bra bildminne man har.
 
@@ -91,7 +80,7 @@ Rätt klick ger ett poäng styck.
 
 Efter avklarat test kan testpersonen klicka på en länk för att gå vidare till nästa test.
 
-### Deltest 4: Visuell förmåga och läsförståelse
+### Deltest 4: Visuell förmåga och läsförståelse (optionellt)
 
 Detta testet kombinerar läsförståelse med visuell förmåga.
 
@@ -109,7 +98,7 @@ Rätt klick ger ett poäng och fel ger 0 poäng.
 
 Testet sker under tidspress. Testet skall utföras på max 15 sekunder. Därefter visas resultatet och en länk som tar testpersonen vidare till nästa test.
 
-### Deltest 5: Uppfattningsförmåga
+### Deltest 5: Uppfattningsförmåga (optionellt)
 
 Testet börjar med en text som förklarar vad det går ut på. Det finns en länk som spelaren kan klicka på för att starta testet.
 
@@ -118,14 +107,25 @@ I testet visas ett objekt under 1 sekund. Testpersonen skall välja att klicka p
 Testpersonen skall få instruktioner att klicka på alla objekt som:
 
 1. Har en annan färg än röd.
-2. Har en annan form än kvadrat.
-3. Är röd och kvadrat.
+2. Har en annan form än kvadrat...
+3. ...eller är röd och kvadrat.
 
-Tex ska man **inte** klicka på en gul kvadrat eller en röd cirkel.
+Tex ska man **inte** klicka på en gul kvadrat eller en röd cirkel men man ska klicka på en röd kvadrat.
 
-Rätt klick ger ett poäng och fel ger 0 poäng.
+Rätt klick ger +1 poäng och fel ger -1 poäng.
 
 När testet är klart så visas resultatet tillsammans med en länk till nästa test.
+
+### JSDoc: genererad dokumentation (optionellt)
+
+Kommentera koden likt tidigare kursmoment och generera dokumentationen. Glöm inte att dubbelkolla så dokumentationen är genererad i mappen `jsdoc`. Om det inte finns med är det 0 poäng.
+
+För 10 poäng ska det finnas dokumentation för moduler, objekt, funktioner, parametrar, returvärde samt eventlyssnare.
+
+```console
+$ cd me
+$ npm run jsdoc --kmom=kmom10
+```
 
 ### Formel för att beräkna intelligensen
 
@@ -140,12 +140,6 @@ Specen innehåller grova förslag till poängsättningen, men du kan justera den
 
 När testet är slut så visas en siffra upp som motsvarar intelligensen, tillsammans med siffran för maximal intelligens.
 
-### JSDoc och dokumentationen
-
-```console
-$ cd me
-$ npm run jsdoc --kmom=kmom10
-```
 
 ### Validering
 
