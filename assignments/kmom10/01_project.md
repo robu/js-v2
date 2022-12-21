@@ -120,7 +120,7 @@ När testet är klart så visas resultatet tillsammans med en länk till nästa 
 
 Kommentera koden likt tidigare kursmoment och generera dokumentationen. Glöm inte att dubbelkolla så dokumentationen är genererad i mappen `jsdoc`. Om det inte finns med är det 0 poäng.
 
-För 10 poäng ska det finnas dokumentation för moduler, objekt, funktioner, parametrar, returvärde samt eventlyssnare.
+För 6 poäng ska det finnas dokumentation för moduler, objekt, funktioner, parametrar, returvärde samt eventlyssnare.
 
 ```console
 $ cd me
@@ -141,7 +141,7 @@ Specen innehåller grova förslag till poängsättningen, men du kan justera den
 När testet är slut så visas en siffra upp som motsvarar intelligensen, tillsammans med siffran för maximal intelligens.
 
 
-### Validering
+### Validering (4p)
 
 Se till så koden validerar:
 
