@@ -70,7 +70,7 @@ Detta är ett litet minnes-test som kollar hur bra bildminne man har.
 
 Testpersonen kommer till testet och får en förklarande text. Därefter klickar man på en länk för att starta testet.
 
-Testet börjar med att 9 bilder visas under 5 sekunder. Därefter döljs de. Du visar nu upp en numrerad lista men namnen på de nio bilderna. Testpersonen skall nu klicka på rätt ruta där motsvarande bild ligger, i rätt ordning. När testpersonen gissar så skall bilden vändas upp.
+Testet börjar med att 9 bilder visas under 5 sekunder. Därefter döljs de. Du visar nu upp en numrerad lista med namnen på de nio bilderna. Testpersonen skall nu klicka på rätt ruta där motsvarande bild ligger, i rätt ordning. När testpersonen gissar så skall bilden vändas upp.
 
 Du behöver inte ha nio olika bilder, du kan återanvända dem så att samma bild förekommer flera gånger, dock max 3 gånger per bild.
 
@@ -86,13 +86,13 @@ Detta testet kombinerar läsförståelse med visuell förmåga.
 
 Testet börjar med en text som förklarar vad det går ut på. Sedan klickar testpersonen på en länk för att starta testet.
 
-Testet innebär att du skall rita ut 10 unika objekt. Objekt kan vara en kvadrat, en cirkel, en triangel eller en rektangel. Objektet har en färg. Samtidigt får testpersonen en numrerad lista med 10 alternativ som säger i vilken ordning som de olika objekten skall klickas på. Så här kan alternativen på listan se ut.
+Testet innebär att du skall rita ut 10 unika objekt. Objekt kan vara en kvadrat, en cirkel, en triangel eller en rektangel. Objektet har en färg. Samtidigt får testpersonen en numrerad lista med 10 alternativ som säger i vilken ordning som de olika objekten skall klickas på. Så här kan alternativen i listan se ut.
 
 1. Den röda cirkeln.
 2. Den vita trekanten.
 3. Den svarta cirkeln.
 
-Testpersonen måste klicka på rätt objekt i rätt ordning. Om hen klickar fel så fortsätter testet med nästa alternativ på listan.
+Testpersonen måste klicka på rätt objekt i rätt ordning. Om hen klickar fel, så fortsätter testet med nästa alternativ på listan.
 
 Rätt klick ger ett poäng och fel ger 0 poäng.
 
@@ -110,7 +110,7 @@ Testpersonen skall få instruktioner att klicka på alla objekt som:
 2. Har en annan form än kvadrat...
 3. ...eller är röd och kvadrat.
 
-Tex ska man **inte** klicka på en gul kvadrat eller en röd cirkel men man ska klicka på en röd kvadrat.
+Man ska t ex **inte** klicka på en gul kvadrat eller en röd cirkel men man ska klicka på en röd kvadrat.
 
 Rätt klick ger +1 poäng och fel ger -1 poäng.
 
@@ -118,7 +118,7 @@ När testet är klart så visas resultatet tillsammans med en länk till nästa 
 
 ### JSDoc: genererad dokumentation (optionellt)
 
-Kommentera koden likt tidigare kursmoment och generera dokumentationen. Glöm inte att dubbelkolla så dokumentationen är genererad i mappen `jsdoc`. Om det inte finns med är det 0 poäng.
+Kommentera koden likt tidigare kursmoment och generera dokumentationen. Glöm inte att dubbelkolla så att dokumentationen är genererad i mappen `jsdoc`. Om det inte finns med är det 0 poäng.
 
 För 6 poäng ska det finnas dokumentation för moduler, objekt, funktioner, parametrar, returvärde samt eventlyssnare.
 
