@@ -1,0 +1,5 @@
+name: Testing-workflow
+on:
+  push:
+    paths-ignore:
+      - '.solutions/'
