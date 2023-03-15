@@ -2,7 +2,7 @@
     'use strict';
 
     const staff = document.getElementById('staff');
-    const url = '../../fetch/data/';
+    const url = '../fetch/data';
     const file = 'staff.json';
 
     function addDataToTable (data) {
