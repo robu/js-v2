@@ -1,7 +1,0 @@
-name: Testing-workflow
-on:
-  push:
-    paths-ignore:
-      - '.solutions/'
-jobs:
-  some-cool-name
