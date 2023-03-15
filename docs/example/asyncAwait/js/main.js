@@ -2,7 +2,7 @@
     'use strict';
 
     const staff = document.getElementById('staff');
-    const url = 'https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/fetch/data/';
+    const url = './example/fetch/data/';
     const file = 'staff.json';
 
     function addDataToTable (data) {
