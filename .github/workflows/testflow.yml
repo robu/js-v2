@@ -3,3 +3,5 @@ on:
   push:
     paths-ignore:
       - '.solutions/'
+jobs:
+  some-cool-name
