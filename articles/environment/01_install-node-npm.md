@@ -3,7 +3,7 @@ Installera Node.js och npm
 
 ![Nodejs logo](../img/nodejs-logo.png)
 
-Vi skall installera en miljö för JavaScript. Det handlar om Node.js och pakethanteraren npm. Vi ska installera LTS versionen av Node.js, vilket står för Long Term Support och är oftast lite stabilare.
+Vi skall installera en miljö för JavaScript. Det handlar om Node.js och pakethanteraren npm. Vi ska installera LTS versionen av Node.js, vilket står för Long Term Support och är en mer stabil version.
 
 Miljön innebär att du kan köra JavaScript på din dator och du kan ta del av alla de program och paket som erbjuds via pakethanteraren npm.
 
@@ -29,18 +29,18 @@ Du kör Windows, macOS eller en linuxdistribution, du är bekant med terminalen 
 
 
 
-Installera på Windows (Cygwin, cmd)
+<!-- Installera på Windows (Cygwin, cmd)
 -------------------------------
 
 Gå till [nedladdningssidan för Node](https://nodejs.org/en/download/). Ladda ned installationsprogrammet för LTS och installera.
 
 Programmen node och npm läggs till i din PATH automatiskt.
 
-Du kan nu starta programmen från windows-terminalen `cmd` eller ifrån Cygwin. Men starta om din terminal så att den får del av den uppdaterade pathen.
+Du kan nu starta programmen från windows-terminalen `cmd` eller ifrån Cygwin. Men starta om din terminal så att den får del av den uppdaterade pathen. -->
 
 
 
-Installera på Windows 10 WSL Debian/Bash
+Installera på Windows 10 WSL Debian/Ubuntu/Bash
 -------------------------------
 
 Även om du har installerat Node på din Windows-maskin, och du använder WSL, så behöver du installera Node/npm i din klient i WSL. Du har då två installationer av Node, en i Windows och en i ditt WSL.
@@ -106,9 +106,9 @@ Nu är programmen installerade och redo. Verifiera att både node och npm funger
 
 ```console
 $ node --version
-v16.11.1
+v18.16.0
 $ npm --version
-6.14.15
+9.7.1
 ```
 
 
@@ -126,7 +126,7 @@ Hello World
 
 Du kan också köra node interaktivt och evaluera JavaScript rad för rad. Programmet visar att den är redo för inmatning med prompten `>`.
 
-**NOTERING:** För att få upp prompten i cygwin skall node köras i _interactive mode_. Detta gör du genom att använda kommandot `node -i`.
+<!-- **NOTERING:** För att få upp prompten i cygwin skall node köras i _interactive mode_. Detta gör du genom att använda kommandot `node -i`. -->
 
 ```console
 $ node
