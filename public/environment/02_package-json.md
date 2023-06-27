@@ -10,10 +10,10 @@ Till varje nodeprojekt finns oftast en tillhörande fil, `package.json`. I den f
 
 Du ska ha mappen `me/` som rotmapp och där installera alla beroenden för dina program.
 
-Ställ dig i kursrepot och kopiera in filen från exempelmappen:
+Ställ dig i rotmappen och kopiera in filen från exempelmappen:
 
 ```console
-$ cp docs/example/environment/package.json me/
+$ cp public/example/environment/package.json me/
 ```
 
 Sedan är det bara att installera:
