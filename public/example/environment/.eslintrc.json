@@ -1,25 +1,28 @@
 {
     "env": {
-        "es2021": true,
         "browser": true,
+        "es2021": true,
         "node": true
     },
+    "plugins": [
+        "jsdoc"
+    ],    
     "extends": [
-        "standard"
+        "standard",
+        "plugin:jsdoc/recommended"
     ],
     "parserOptions": {
-        "ecmaVersion": 12,
+        "ecmaVersion": "latest",
         "sourceType": "module"
     },
-    "ignorePatterns": ["**/dist/*.js", "**/jsdoc/"],
     "rules": {
-        "linebreak-style": [
-            2,
-            "unix"
-        ],
-        "quotes": "off",
-        "indent": ["error", 4, { "SwitchCase": 1 }],
-        "semi": [1, "always"]
-    },
-    "root": true
+        "jsdoc/require-jsdoc": [1, {
+            "require": {
+              "ClassDeclaration": true,
+              "MethodDefinition": true
+            }
+          }],
+          "jsdoc/require-description": 1,
+          "jsdoc/require-description-complete-sentence": 1
+    }
 }
