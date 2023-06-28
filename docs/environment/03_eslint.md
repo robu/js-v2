@@ -10,7 +10,7 @@ I den här kursen används ES standard, med vissa inställningar. Du kan hitta f
 
 ```console
 # stå i kursens rotmapp
-$ cp public/example/environment/.eslintrc.json me/
+$ cp docs/example/environment/.eslintrc.json me/
 ```
 
 Då formatet på kursen är nytt så kan konfigurationen vara diskuterbar. Om valideringen säger ifrån och du känner att du vill/kan motivera varför regeln ska ändras är det fritt fram. Gör bara en issue i jsrepot så tar vi det där ifrån.
