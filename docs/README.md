@@ -10,7 +10,12 @@ Artiklar om utvecklingsmiljön.
 
 ### docs/example
 
-Exempelprogram att utforska och testa. Kan ses via [(https://dbwebb-se.github.io/js-v2/example/](./example) 
+Exempelprogram att utforska och testa. Kan ses via [(https://dbwebb-se.github.io/js-v2/example/](https://dbwebb-se.github.io/js-v2/example/). Om du vill ändra i exemplen så kopiera dem först till din egna katalog ```console
+$ # stå i kursroten
+cp -r docs/example/<folder> me/<folder>
+```
+
+Byt ut <folder> mot det exemplet du vill testa.
 
 
 
