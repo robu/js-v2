@@ -6,11 +6,11 @@ Många programmeringsspråk har en standardsyntax att följa. Det kan handla om 
 
 ### ESLint i kursen
 
-I den här kursen används ES standard, med vissa inställningar. Du kan hitta filen i [exempelmappen](../example/environment). Det är den du kommer använda och det är även den som läraren använder vid rättning. Kopiera in filen till din me-mapp:
+I den här kursen används ES standard, med vissa inställningar. Du kan hitta filen i [exempelmappen](../example/configfiles). Det är den du kommer använda och det är även den som läraren använder vid rättning. Kopiera in filen till din me-mapp:
 
 ```console
 # stå i kursens rotmapp
-$ cp docs/example/environment/.eslintrc.json me/
+$ cp docs/example/configfiles/.eslintrc.json me/
 ```
 
 Då formatet på kursen är nytt så kan konfigurationen vara diskuterbar. Om valideringen säger ifrån och du känner att du vill/kan motivera varför regeln ska ändras är det fritt fram. Gör bara en issue i jsrepot så tar vi det där ifrån.
@@ -23,13 +23,13 @@ Vi kör vår linter i terminalen med hjälp av `npm`. Filen som heter `package.j
 
 ```json
 "scripts": {
-    "eslint": "npx eslint . || exit 0",
-    "eslint:fix": "npx eslint . --fix || exit 0",
+    "eslint": "npx eslint ./$npm_config_kmom || exit 0",
+    "eslint:fix": "npx eslint ./$npm_config_kmom --fix || exit 0",
     // fler paket
 },
 ```
 
-Där talar vi om att med kommandot *eslint* vill vi köra eslint med den definierade configfilen som numer ligger i me-mappen och heter ".eslintrc.json". De flesta fel som dyker upp kan vi överlåta åt lintern att fixa med kommandot: *eslint:fix*.
+Där talar vi om att med kommandot *eslint* vill vi köra eslint med den definierade configfilen som numer ligger i me-mappen och heter ".eslintrc.json". De flesta fel som dyker upp kan vi överlåta åt lintern att fixa med kommandot: *eslint:fix*. Vi kan även skicka med ett argument och välja katalog att validera.
 
 
 
@@ -40,16 +40,20 @@ Hur gör vi då för att testa koden?
 När vi står vår me-mapp kan vi köra scriptet med:
 
 ```console
-$ npm run linter <folder or file>
+# Specific folder
+$ npm run eslint --kmom=<folder>
+
+# All subfolders and files
+$ npm run eslint
 ```
 
 Låt säga att det är ett valideringsfel i filen `kmom01/forloop.js` och vi kör lintern på den:
 
 ```console
-$ npm run linter kmom01/forloop.js
+$ npm run eslint --kmom=kmom01
 
-> example@1.0.0 linter
-> eslint -c eslint/.eslintrc.json "kmom01/forloop.js"
+> dv1657@1.0.0 eslint
+> npx eslint ./$npm_config_kmom || exit 0
 
 
 /some/path/to/forloop.js
@@ -81,12 +85,16 @@ Om vi inte vill fixa det själva finns en fantastisk grej som vi såg längst ne
   1 error and 0 warnings potentially fixable with the `--fix` option.
 ```
 
-Vi kan lösa de felen automatiskt med ett option `--fix`:
+Vi kan lösa de felen automatiskt med ett option `--fix`. Kikar vi i `package.json` igen så kan vi se att vi har ett eget script som hjälper oss här med:
 
-```console
-$ npm run linter kmom01/forloop.js -- --fix
+```json
+"eslint:fix": "npx eslint ./$npm_config_kmom --fix || exit 0",
 ```
 
-`--` talar om att det kommer ett argument till kommandot och `--fix` är själva optionet.
+Kör scriptet med:
+
+```console
+$ npm run eslint:fix --kmom=kmom01
+```
 
 Som nämn ovan så kommer läraren använda configfilen från exempelmappen vid rättning så om den visar grönt är allt ok vad det gäller validering. Skulle det visa fel kommer det sannolikt bli komplettering. Det är bra att ha koll på.

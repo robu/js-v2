@@ -1,7 +1,7 @@
 {
-  "name": "devjs",
+  "name": "dv1657",
   "version": "1.0.0",
-  "description": "Development environment for js courses showing structure of files and tools to use.",
+  "description": "Development environment for DV1657.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
