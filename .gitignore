@@ -6,6 +6,6 @@ me/
 package.json
 .eslintrc.json
 *.ansi
-
+.log
 # Mac
 .DS_Store
