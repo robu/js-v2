@@ -6,7 +6,7 @@
 
 ### Exempel
 
-[environment](./example/environment)
+[environment](example/environment/)
 
 ### Uppgift
 
