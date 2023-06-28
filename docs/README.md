@@ -1,8 +1,30 @@
-# Uppgift - "Glacier Report"
+# Instruktioner och material till kursen Programmering med JavaScript (DV1657)
 
-I den här första uppgiften ska du skapa script som hjälper till att beräkna förhållanden mellan de smältande glaciärerna och den stigande havsnivån. Du jobbar i mappen `kmom01/`.
+## Instruktioner kursmoment 01
 
-### Förutsättning
+### Läsa
+
+### Exempel
+
+[environment](example/environment)
+
+### Uppgift
+
+
+
+## Instruktioner kursmoment 02
+
+### Läsa
+
+### Uppgift
+
+
+
+## Instruktioner kursmoment 03
+
+### Läsa
+
+### Uppgift
 
 Det förutsätts att du gått igenom artiklarna för [kursmoment 01](../../articles/kmom01) och har [miljön](../../articles/environment) på plats. Dubbelkolla så du har `me/package.json`, `me/.eslintrc.json` samt kört kommandot `$ npm install`.
 
