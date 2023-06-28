@@ -21,6 +21,15 @@ function header
     printf "${ORANGE}### %s ###${NC}\n\n\n" "Test suite for [$1] in the course [$3] for user [$2]"
 }
 
+function validation
+{
+  #echo "Running [npm run $2 --kmom=$1]"
+  res=$(npm run --silent $2 --kmom=$1)
+
+  [[ ! -z "$res" ]] && printf "$2 validates: ${RED}${ERROR}${NC} $res" || printf "$2 validates: ${GREEN}${CORRECT}${NC}"
+  echo ""
+}
+
 function printYes
 {
     printf "${GREEN}%s${NC}" "${CORRECT} Yes"
@@ -58,6 +67,7 @@ function checkIfFilesExist
         fi
     done
 }
+
 
 function checkDbwebbPort
 {
