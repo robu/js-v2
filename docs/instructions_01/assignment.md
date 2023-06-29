@@ -55,7 +55,7 @@ $ dbwebb test kmom01
 ```
 
 
-> **_GLÖM INTE:_** Vill du köra en enskild validering kan du göra det med: $ npm run {eslint,htmlhint,stylelint} --what=<folder>
+> **_GLÖM INTE:_** Vill du köra en enskild validering kan du göra det med: `$ npm run {eslint,htmlhint,stylelint} --what=<folder>`
 
 
 
