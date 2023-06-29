@@ -57,6 +57,28 @@ function doLog {
 
 export -f doLog
 
+# printf "Deleting config files... \n"
+# mv me/.eslintrc.json me/.eslintrc_temp.json
+# mv me/package.json me/package_temp.json
+# mv me/jsdoc.json me/jsdoc_temp.json
+# mv me/.stylelintrc.json me/.stylelintrc_temp.json
+# mv me/node_modules me/node_modules_temp
+
+printf "Copying config files... \n"
+
+cp docs/example/configfiles/.eslintrc.json me/
+cp docs/example/configfiles/package.json me/
+cp docs/example/configfiles/jsdoc.json me/
+cp docs/example/configfiles/.stylelintrc.json me/
+
+
+
+printf "Running npm install --silent... \n"
+cd me && npm install --silent || exit 0
+printf "Done. \n"
+
+
+
 printf "\n"
 header "Start"
 printf "Running scripts in '%s'.\n" "$DIR/$KMOM"
@@ -87,3 +109,11 @@ done
 printf "\n$MSG_DONE All scripts were executed.\n"
 header "Summary"
 printf "$summary"
+
+# echo "Cleaning up repo"
+
+# rm -rf node_modules
+# rm .eslintrc.json
+# rm .stylelintrc.json
+# rm jsdoc.json
+# rm package*.json

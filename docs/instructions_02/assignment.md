@@ -1,42 +1,41 @@
 # Uppgift - "Me page 2"
 
-Jobba vidare med me-sidan och lägg till lite JavaScript.
+Jobba vidare med me-sidan och utöka med moduler.
 
 ## Förkunskaper
 
-Du har gjort en första version av [me-sidan](../kmom01/02_mepage.md) och har koll på dess struktur.
+Du har gjort en första version av [me-sidan](../instructions_01/assignment.md) och har koll på dess struktur.
 
 ## Krav
 
-1. Lägg till menyvalet "kmom02".
+1. Lägg till menyvalet "kmom02" som ska länka till filen `kmom02.html`.
 
-1. Ta reda på hur du kan skriva ut dagens datum och lägg till det på den nya sidan.
+1. Läs där in scriptet `js/kmom02.js`.
 
-1. Skapa en funktion som skriver ut "God förmiddag" eller "God eftermiddag" på sidan beroende på om klockan är före eller efter `12.00`.
+1. Kopiera in modulen "animals" som du ska jobba med: 
 
-1. Lägg till din redovisningstext i `redovisning.html`.
+  ```console
+  # stå i kursroten
+  $ mkdir -p me/public/js/modules/kmom02
+  $ cp docs/example/animals/animals.js me/public/js/modules/kmom02/`.
+  ```
+1. Använd modulen via `kmom02.js` och skriv ut på sidan ett slumpmässigt djur från varje kontinent. Vid sidomladdning ska det slumpas ut nya djur. 
 
-### Validering
+1. Skapa en modul `modules/kmom02/greeting.js` som skriver ut "God förmiddag" eller "God eftermiddag" i på sidan beroende på om klockan är före eller efter `12.00`.
 
-Se till så koden validerar:
-
-```console
-$ cd me
-# js
-$ npm run linter redovisa/
-
-# html/css
-$ dbwebb validate redovisa
-```
-
-### Publicering
-
-Glöm inte att publicera koden:
+1. Kör `dbwebb test kmom02` för att se så allt validerar och att filerna ligger på rätt plats.
 
 ```console
-$ cd me
-$ dbwebb publish redovisa
+$ dbwebb test kmom02
 ```
+
+1. Publicera koden på studentservern:
+
+```console
+$ dbwebb publish public
+```
+
+
 
 ## Extrauppgift
 
@@ -44,4 +43,3 @@ Om du har tid och kraft.
 
 1. Lägg extra kraft på CSS och styla din me-sida så den blir mer personlig.
 
-1. Lägg till något mer JavaScript på sidan.

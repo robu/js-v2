@@ -21,20 +21,22 @@ I din me-sida skall du samla programkod och uppgifter och du har länkar till de
 
 <!-- Redovisningstexterna är en del av underlaget till [bedömning och betygsättning](https://dbwebb.se/kurser/faq/bedomning-och-betygsattning) i kursen. -->
 
-Du kan testa hur me-sidan bör fungera, genom att öppna din exempel-katalog i kursrepot under `docs/example/redovisa`.
+Du kan testa hur me-sidan bör fungera, genom att öppna din exempel-katalog i kursrepot under `docs/example/public`.
 
 Du kan bygga en mer avancerad me-sida om du vill, det går bra. Mallen finns med för de som vill ha en enkel me-sida.
+
+Vill du testa konstruktioner eller annan kod kan du använda katalogen `me/kmom01`.
 
 
 
 Krav
 -----------------------
 
-I din kurskatalog (repot) för kursen, skall du ta en kopia av exempelkatalogen `docs/example/redovisa` och lägga i din me-katalog under `me/redovisa`. Gör det med följande kommando i terminalen.
+I din kurskatalog (repot) för kursen, skall du ta en kopia av exempelkatalogen `docs/example/public` och lägga i din me-katalog under `me/public`. Gör det med följande kommando i terminalen.
 
 ```console
 # Gå till kurskatalogen
-cp -ri docs/example/redovisa me
+cp -ri docs/example/public me
 ```
 
 1. Du har nu en grund för din me-sida i kursen. Modifiera den så den blir "din egen". Se till så du presenterar dig själv med text och en godtycklig bild.
@@ -46,7 +48,7 @@ cp -ri docs/example/redovisa me
 
 3. Du kan uppdatera stylesheet i katalogen `css/`. Det är inte nödvändigt, gör det om du vill och känner att du har tid.
 
-4. Kör `dbwebb test kmom01` för att se så allt validerar och fungerar.
+4. Kör `dbwebb test kmom01` för att se så allt validerar och att filerna ligger på rätt plats.
 
 ```console
 $ dbwebb test kmom01
@@ -55,7 +57,7 @@ $ dbwebb test kmom01
 5. Publicera koden på studentservern:
 
 ```console
-$ dbwebb publish redovisa
+$ dbwebb publish public
 ```
 
 

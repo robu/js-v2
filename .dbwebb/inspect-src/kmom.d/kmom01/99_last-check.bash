@@ -7,8 +7,8 @@
 #   $ACRONYM
 #   $COURSE_REPO
 #
-
-cd me || exit
+pwd
+# cd me || exit
 
 e() { exit; }; export -f e
 

@@ -13,6 +13,7 @@ header "$1" "$2" "$3"
 # CHeck if the files exists and have correct filename
 checkIfFilesExist "${files[@]}"
 cd "../../me"
+
 validation "public" "eslint"
 validation "public" "htmlhint"
 validation "public" "stylelint"

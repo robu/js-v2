@@ -4,17 +4,9 @@ function header {
     printf "\033[32;01m>>> -------------- %-20s -------------------------\033[0m\n" "$1"
 }
 
-read -p "I'm gonna update the repo. [Press any key to continue]"
-
-dbwebb update
-
-read -p "I'm gonna get package.json and config files. [Press any key to continue]"
-
-cp docs/example/configfiles/*.json .
-
-npm install --silent || exit 0
-
-dbwebb test public
+# rm "me/*.json"
+# rm -rf "me/node_modules"
+dbwebb test kmom01
 
 
 # if [[ ! -f "package.json" ]] || [[ ! -f ".eslintrc.json" ]]; then

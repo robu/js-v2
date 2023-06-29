@@ -11,7 +11,7 @@ function header {
 # echo "Press any key to continue."
 # read
 
-cd me || exit 1
+# cd me || exit 1
 
 header "OPENING FILES"
-code kmom01
+code public

@@ -27,3 +27,26 @@ if [[ "$KMOM" != "kmom01" ]]; then
     printf "$url\n" 2>&1
     eval "$BROWSER" "$url" &
 fi
+
+# if [[ ! -f "package.json" ]] || [[ ! -f ".eslintrc.json" ]] || [[ ! -f "jsdoc.json" ]] || [[ ! -f ".stylelintrc.json" ]];then
+#     read -p "Missing files. Should I fix it? [Y/n]" answer
+#     if [[ "$answer" != "n" ]]; then
+#         cp docs/example/configfiles/.eslintrc.json .
+#         cp docs/example/configfiles/package.json .
+#         cp docs/example/configfiles/jsdoc.json .
+#         cp docs/example/configfiles/.stylelintrc.json .
+
+#         npm install --silent || exit 0
+#     else
+#         exit 1
+#     fi
+# fi
+
+# if [[ ! -d "node_modules" ]]; then
+#     read -p "Missing folder npm_modules. Should I fix it? [Y/n]" answer
+#     if [[ "$answer" != "n" ]]; then
+#         npm install --silent
+#     else
+#         exit 1
+#     fi
+# fi
