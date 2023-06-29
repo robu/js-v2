@@ -11,21 +11,21 @@ Funktioner kan skapas på olika sätt, jämför följande sätt att använda och
 
 ```js
 function square (x) {           // Traditionellt sätt,
-    return x*x                   // att jämföra med C/C++, PHP.
+  return x*x                   // att jämföra med C/C++, PHP.
 }
 val = square(x)
 
 let square = function (x) {     // Funktions literal / Funktion expression,
-    return x*x                    // funktionen tilldelas en variabel
+  return x*x                    // funktionen tilldelas en variabel
 }
 val = square(x)
 
 element.onclick = function () {  // Namnlös funktion som används
-    alert('Hello')                 // som eventhanterare.
+  alert('Hello')                 // som eventhanterare.
 }
 
 element.addEventListener("click", function () {
-    alert('Hello')                 // Variant på namnlös funktion som
+  alert('Hello')                 // Variant på namnlös funktion som
 })                               // eventhanterare som skickas som
                                  // parameter i en funktion.
 ```
@@ -34,7 +34,7 @@ Funktioner har en argumentlista. Om man anropar funktionen med färre argument �
 
 ```js
 function sum(a, b, c) {
-    return a + b + c
+  return a + b + c
 }
 
 sum(1, 2, 3) // returnerar 6
@@ -45,11 +45,11 @@ Man kan ge "default"-värden på ett argument med hjälp av operatorn `||`. Stud
 
 ```js
 function sum(a, b, c) {
-    a = a || 0
-    b = b || 0
-    c = c || 0
+  a = a || 0
+  b = b || 0
+  c = c || 0
 
-    return a + b + c
+  return a + b + c
 }
 
 sum(1, 2, 3) // returnerar 6
@@ -60,13 +60,13 @@ Man kan även hantera en variabel argument-lista med identifieraren `arguments` 
 
 ```js
 function sum() {
-    let i, sum = 0
+  let i, sum = 0
 
-    for(i = 0; i < arguments.length; i++) {
-    sum += arguments[i]
-    }
+  for(i = 0; i < arguments.length; i++) {
+  sum += arguments[i]
+  }
 
-    return sum
+  return sum
 }
 
 sum(1, 2, 3)           // returnerar 6
@@ -83,7 +83,7 @@ En *function declaration* eller *function statement* definierar en namngiven fun
 
 ```js
 function taxes () {
-    console.log("Taxes are declared.")
+  console.log("Taxes are declared.")
 }
 
 taxes() // Prints "Taxes are declared." in the console
@@ -93,13 +93,13 @@ Vi kan även skicka med argument till funktionen:
 
 ```js
 function taxes (declared) {
-    let message = 'Taxes are not declared.'
+  let message = 'Taxes are not declared.'
 
-    if (declared) {
-        message = 'Taxes are declared.'
-    }
+  if (declared) {
+      message = 'Taxes are declared.'
+  }
 
-    console.log(message)
+  console.log(message)
 }
 
 taxes(true) // Prints "Taxes are declared." in the console
@@ -113,7 +113,7 @@ taxes(true) // Prints "Taxes are declared." in the console
 
 ```js
 const speak = function () {
-    console.log("I speak, therefore I am.")
+  console.log("I speak, therefore I am.")
 }
 
 speak() // Prints "I speak, therefore I am." in the console
@@ -123,7 +123,7 @@ Vi kan även skicka med argument till funktionen:
 
 ```js
 const speak = function (what) {
-    console.log(what)
+  console.log(what)
 }
 
 speak("I speak, therefore I am.") // Prints "I speak, therefore I am." in the console
@@ -137,13 +137,11 @@ En *self-invoking* funktion är egentligen en *function expression* som exekvera
 
 ```js
 (function () {
-    console.log("Self-invoking, baby!")
+  console.log("Self-invoking, baby!")
 })()
 
 // Prints "Self-invoking, baby!" in the console
 ```
-
-Vi har redan sett en sådan i vår sandbox!
 
 Det kallas även *anonymous self-invoking function*.
 
@@ -161,7 +159,7 @@ Om man deklarerat en funktion på följande sätt:
 
 ```js
 function speak () {
-    console.log("Its working!")
+  console.log("Its working!")
 }
 ```
 
@@ -171,7 +169,7 @@ Då kan man anropa den innan den kommer i programmets flöde:
 speak() // Prints "Its working!" in the console
 
 function speak () {
-    console.log("Its working!")
+  console.log("Its working!")
 }
 ```
 
@@ -179,7 +177,7 @@ Anledningen är att JavaScript flyttar upp alla deklarationer högst upp så hel
 
 ```js
 const speak = function () {
-    console.log("Its working!")
+  console.log("Its working!")
 }
 ```
 
@@ -189,7 +187,7 @@ Här deklareras inte funktionen förrän programmet körs. Deklarationen som ske
 speak() // prints "Uncaught TypeError: speak is not a function" in the console
 
 const speak = function () {
-    console.log("Its not working!!")
+  console.log("Its not working!!")
 }
 ```
 
@@ -201,7 +199,7 @@ En anonym funktion, *anonymous function*, är en namnlös funktion. Det betyder 
 
 ```js
 let whoAreYou = function () {
-    console.log("We are Anonymous!")
+  console.log("We are Anonymous!")
 }
 
 whoAreYou() // Prints "We are Anonymous!" in the console
@@ -213,6 +211,6 @@ Vi har sett ett användningsområde för en anonym funktion i eventlyssnaren:
 
 ```js
 button.addEventListener("click", function () {
-    // Do something
+  // Do something
 })
 ```
