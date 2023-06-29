@@ -3,8 +3,8 @@
 . "functions.bash"
 
 declare -a files=(
-    "glacier.js"
-    "../redovisa/index.html"
+    "../public/js/main.js"
+    "../public/index.html"
     )
 
 # Print the header for the testsuite
@@ -13,9 +13,9 @@ header "$1" "$2" "$3"
 # CHeck if the files exists and have correct filename
 checkIfFilesExist "${files[@]}"
 cd "../../me"
-validation "kmom01" "eslint"
-validation "kmom01" "htmlhint"
-validation "kmom03" "stylelint"
+validation "public" "eslint"
+validation "public" "htmlhint"
+validation "public" "stylelint"
 # cd "../../me"
 
 # echo "Running [npm run eslint --kmom=$1]"

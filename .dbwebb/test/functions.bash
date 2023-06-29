@@ -57,7 +57,7 @@ function checkIfFilesExist
     local arr=("$@")
     for i in "${arr[@]}"; do
         (( counter++ ))
-        printTest "$counter" "The file $KMOM/$i is present and have correct filename."
+        printTest "$counter" "The file $i is present and have correct filename."
 
         if [[ -f "$KMOMPATH/$i" ]]; then
             printYes
