@@ -39,17 +39,23 @@ cp -ri docs/example/redovisa me
 
 1. Du har nu en grund för din me-sida i kursen. Modifiera den så den blir "din egen". Se till så du presenterar dig själv med text och en godtycklig bild.
 
-1. Via den inlänkade filen `main.js` ska du skriva ut följande i consolen:
+2. Via den inlänkade filen `main.js` ska du skriva ut följande i consolen:
   * Siffrorna 10 - 20 (for-loop)
   * Siffrorna 100 - 85 (while-loop)
   * En hälsningsfras tillsammans med dagens datum (funktion)
 
-1. Du kan uppdatera stylesheet i katalogen `css/`. Det är inte nödvändigt, gör det om du vill och känner att du har tid.
+3. Du kan uppdatera stylesheet i katalogen `css/`. Det är inte nödvändigt, gör det om du vill och känner att du har tid.
 
-1. Gör en dbwebb publish för att kolla att allt validerar och fungerar.
+4. Kör `dbwebb test kmom01` för att se så allt validerar och fungerar.
 
-```text
-dbwebb publish redovisa
+```console
+$ dbwebb test kmom01
+```
+
+5. Publicera koden på studentservern:
+
+```console
+$ dbwebb publish redovisa
 ```
 
 
