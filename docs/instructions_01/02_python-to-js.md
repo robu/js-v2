@@ -40,7 +40,7 @@ If i JavaScript:
 const numberOfApples = 13
 
 if (numberOfApples > 10) {
-    console.log("Du har mer än 10 äpplen")
+  console.log("Du har mer än 10 äpplen")
 }
 ```
 
@@ -61,9 +61,9 @@ If/else i JavaScript:
 const numberOfApples = 13
 
 if (numberOfApples > 10) {
-    console.log("Du har mer än 10 äpplen")
+  console.log("Du har mer än 10 äpplen")
 } else {
-    console.log("Du har nog varit hungrig och ätit upp dina äpplen")
+  console.log("Du har nog varit hungrig och ätit upp dina äpplen")
 }
 ```
 
@@ -86,11 +86,11 @@ If/elseif/else i JavaScript:
 const numberOfApples = 13
 
 if (numberOfApples > 10) {
-    console.log("Du har mer än 10 äpplen")
+  console.log("Du har mer än 10 äpplen")
 } else if (numberOfApples < 10) {
-    console.log("Du har mindre än 10 äpplen")
+  console.log("Du har mindre än 10 äpplen")
 } else {
-    console.log("Du har 10 äpplen")
+  console.log("Du har 10 äpplen")
 }
 ```
 
@@ -109,7 +109,7 @@ For-loop i JavaScript:
 
 ```js
 for (let i = 0; i < 10; i++) {
-    console.log(i)
+  console.log(i)
 }
 ```
 
@@ -125,9 +125,9 @@ Loopa en sträng i JavaScript:
 
 ```js
 for (const char of "räksmörgås") {
-    if ("åäö".includes(char)) {
-        console.log(char)
-    }
+  if ("åäö".includes(char)) {
+    console.log(char)
+  }
 }
 ```
 
@@ -151,8 +151,8 @@ while-loop i JavaScript:
 let number = 2
 
 while (number < 20) {
-    console.log(number)
-    number = number + number
+  console.log(number)
+  number = number + number
 }
 ```
 
@@ -193,7 +193,7 @@ Funktion i JavaScript:
 
 ```js
 function calculate () {
-    console.log(29 + 13)
+  console.log(29 + 13)
 }
 
 calculate()
@@ -212,7 +212,7 @@ Funktion med argument i JavaScript:
 
 ```js
 function calculate (a, b) {
-    console.log(a + b)
+  console.log(a + b)
 }
 
 calculate(29, 13)
@@ -232,7 +232,7 @@ Funktion med returvärde i JavaScript:
 
 ```js
 function calculate (a, b) {
-    return a + b
+  return a + b
 }
 
 const sum = calculate(29, 13)

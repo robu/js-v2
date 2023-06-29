@@ -7,9 +7,9 @@ Syftet med denna guide är att ge en introduktion till kärnan, de väsentliga d
 
 ### Versioner
 
-JavaScript uppdateras flitigt och vid varje uppdatering tillkommer det funktionalitet. Webbläsarna, som renderar JavaScripten, måste då uppdateras för att kunna hantera den nya funktionaliteten. De två "stora" uppdateringarna var ES5 (ca 2009) och ES6 (ca 2015). Den senaste, i skrivande stund, är ECMAScript 2021.
+JavaScript uppdateras flitigt och vid varje uppdatering tillkommer det funktionalitet. Webbläsarna, som renderar JavaScripten, måste då uppdateras för att kunna hantera den nya funktionaliteten. De två "stora" uppdateringarna var ES5 (ca 2009) och ES6 (ca 2015). Den senaste, i skrivande stund, är ECMAScript 2023.
 
-I den här kursen kommer vi ha ett fokus på grunderna i språket och hur det fungerar på klientsidan. De här kursen kommer fokusera på ES6 och bakåt. Vi har valt att inte dra det längre, utan vi håller oss däromkring. Det kan såklart finnas konstruktioner i senare versioner som går att använda, vilket uppmuntras om stödet finns i de vanliga webbläsarna.
+I den här kursen kommer vi ha ett fokus på grunderna i språket och hur det fungerar på klientsidan. De här kursen kommer fokusera på ES6. Vi har valt att inte dra det längre, utan vi håller oss däromkring. Det kan såklart finnas konstruktioner i senare versioner som går att använda, vilket uppmuntras om stödet finns i de vanliga webbläsarna.
 
 
 
@@ -35,7 +35,7 @@ Vi börjar kursen med att hålla oss i terminalen och exekvering av JavaScript d
 
 Du ska installera Node.js och köra dess interpretator i terminalen, det låter dig testa enklare konstruktioner på ett enkelt sätt.
 
-Det som sedan ligger närmast till hands är en webbläsare och en grundstruktur för en webbsida. Du kan hitta en mall för att skriva dina exempel och testprogram i ditt kursrepo under `example/sandbox`.
+Det som sedan ligger närmast till hands är en webbläsare och en grundstruktur för en webbsida. Du kan hitta en mall för att skriva dina exempel och testprogram i ditt kursrepo under `docs/example/sandbox`.
 
 Din webbläsare har en developer tools (console) där du kan skriva enklare konstruktioner i JavaScript.
 
