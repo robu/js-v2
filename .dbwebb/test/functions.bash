@@ -23,9 +23,9 @@ function header
 
 function validation
 {
-  #echo "Running [npm run $2 --kmom=$1]"
+  #echo "Running [npm run $2 --what=$1]"
 
-  res=$(npm run --silent $2 --kmom="$1")
+  res=$(npm run --silent $2 --what="$1")
 
   [[ ! -z "$res" ]] && printf "$2 validates: ${RED}${ERROR}${NC} $res" || printf "$2 validates: ${GREEN}${CORRECT}${NC}"
   echo ""

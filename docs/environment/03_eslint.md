@@ -23,8 +23,8 @@ Vi kör vår linter i terminalen med hjälp av `npm`. Filen som heter `package.j
 
 ```json
 "scripts": {
-    "eslint": "npx eslint ./$npm_config_kmom || exit 0",
-    "eslint:fix": "npx eslint ./$npm_config_kmom --fix || exit 0",
+    "eslint": "npx eslint ./$npm_config_what || exit 0",
+    "eslint:fix": "npx eslint ./$npm_config_what --fix || exit 0",
     // fler paket
 },
 ```
@@ -41,7 +41,7 @@ När vi står vår me-mapp kan vi köra scriptet med:
 
 ```console
 # Specific folder
-$ npm run eslint --kmom=<folder>
+$ npm run eslint --what=<folder>
 
 # All subfolders and files
 $ npm run eslint
@@ -50,10 +50,10 @@ $ npm run eslint
 Låt säga att det är ett valideringsfel i filen `kmom01/forloop.js` och vi kör lintern på den:
 
 ```console
-$ npm run eslint --kmom=kmom01
+$ npm run eslint --what=kmom01
 
 > dv1657@1.0.0 eslint
-> npx eslint ./$npm_config_kmom || exit 0
+> npx eslint ./$npm_config_what || exit 0
 
 
 /some/path/to/forloop.js
@@ -88,13 +88,13 @@ Om vi inte vill fixa det själva finns en fantastisk grej som vi såg längst ne
 Vi kan lösa de felen automatiskt med ett option `--fix`. Kikar vi i `package.json` igen så kan vi se att vi har ett eget script som hjälper oss här med:
 
 ```json
-"eslint:fix": "npx eslint ./$npm_config_kmom --fix || exit 0",
+"eslint:fix": "npx eslint ./$npm_config_what --fix || exit 0",
 ```
 
 Kör scriptet med:
 
 ```console
-$ npm run eslint:fix --kmom=kmom01
+$ npm run eslint:fix --what=kmom01
 ```
 
 Som nämn ovan så kommer läraren använda configfilen från exempelmappen vid rättning så om den visar grönt är allt ok vad det gäller validering. Skulle det visa fel kommer det sannolikt bli komplettering. Det är bra att ha koll på.

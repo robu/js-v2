@@ -54,6 +54,13 @@ cp -ri docs/example/public me
 $ dbwebb test kmom01
 ```
 
+[INFO]
+Vill du köra en enskild validering kan du göra det med:
+```console
+$ npm run {eslint,htmlhint,stylelint} --what=<folder>
+```
+[/INFO]
+
 5. Publicera koden på studentservern:
 
 ```console
