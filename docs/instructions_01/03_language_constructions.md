@@ -17,16 +17,16 @@ När du skriver in ett värde i JavaScript är det en "literal" som kan tolkas s
 Följande visar hur literaler kan tolkas.
 
 ```js
-42; // Talet 42
-4.2; // Talet 4.2
-("hello world"); // En sträng med text
-("hej"); // En sträng till
-true; // Ett boolskt värde
-false; // Ett annat boolskt värde
-null; // Ett null värde
+42 // Talet 42
+4.2 // Talet 4.2
+("hello world") // En sträng med text
+("hej") // En sträng till
+true // Ett boolskt värde
+false // Ett annat boolskt värde
+null // Ett null värde
 undefined // Ett odefinierat värde
 /javascript/ // Ett reguljärt uttryck
-{ x: 1, y: 2 }[(1, 2, "three")]; // Ett objekt med två properties // En array med tre värden
+{ x: 1, y: 2 }[(1, 2, "three")] // Ett objekt med två properties // En array med tre värden
 ```
 
 Pröva att skriva in någon av literalerna för att se hur JavaScript tolkar dem.
@@ -40,20 +40,20 @@ En identifierare är en sträng som används för att namnge en variabel eller f
 Följande är giltiga identifierare:
 
 ```js
-myVar;
-moped;
-$;
-_;
-M64;
-i;
+myVar
+moped
+$
+_
+M64
+i
 ```
 
 Pröva att skriva in en identifierare och tilldela den ett värde av en literal.
 
 ```js
-let myValue = "fortytwo";
+let myValue = "fortytwo"
 
-myValue;
+myValue
 ```
 
 ### Reserverade ord
@@ -227,7 +227,7 @@ Vi tar och kikar lite djupare in i var och en av dessa, samtidigt som vi gör li
 En variabel som inte har tilldelats ett värde får automatiskt värdet [`undefined`](https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/undefined). Det är ett odefinerat värde.
 
 ```js
-let i;
+let i
 
 if (i === undefined) {
   // Yep, this is true for i
@@ -243,8 +243,8 @@ if (typeof i === "undefined") {
 Javascript skiljer på [`null`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null) som är ett icke-värde och `undefined` som är ett odefinierat värde. Man använder `null` för att ge en variabel värdet `null`, med mening. När värdet `undefined` dyker upp så innebär det oftast att man inte initierat en variabel med ett värde.
 
 ```js
-let i;
-let j = null;
+let i
+let j = null
 
 if (i === j) {
   // Nope, not the same type, they are not equal.
