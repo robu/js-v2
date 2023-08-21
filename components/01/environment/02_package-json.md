@@ -13,7 +13,7 @@ Du ska ha mappen `me/` som rotmapp och där installera alla beroenden för dina 
 Ställ dig i rotmappen och kopiera in filen från exempelmappen:
 
 ```console
-$ cp docs/example/configfiles/package.json me/
+$ cp example/configfiles/package.json me/
 ```
 
 Sedan är det bara att installera:

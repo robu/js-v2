@@ -6,11 +6,11 @@ Många programmeringsspråk har en standardsyntax att följa. Det kan handla om 
 
 ### ESLint i kursen
 
-I den här kursen används ES standard, med vissa inställningar. Du kan hitta filen i [exempelmappen](../example/configfiles). Det är den du kommer använda och det är även den som läraren använder vid rättning. Kopiera in filen till din me-mapp:
+I den här kursen används ES standard, med vissa inställningar. Du kan hitta filen i [exempelmappen](../../../example/configfiles). Det är den du kommer använda och det är även den som läraren använder vid rättning. Kopiera in filen till din me-mapp:
 
 ```console
 # stå i kursens rotmapp
-$ cp docs/example/configfiles/.eslintrc.json me/
+$ cp example/configfiles/.eslintrc.json me/
 ```
 
 Då formatet på kursen är nytt så kan konfigurationen vara diskuterbar. Om valideringen säger ifrån och du känner att du vill/kan motivera varför regeln ska ändras är det fritt fram. Gör bara en issue i jsrepot så tar vi det där ifrån.
