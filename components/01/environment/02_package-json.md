@@ -24,4 +24,4 @@ $ npm install
 # massa utskrift från installationen
 ```
 
-Du har nu fått en mapp `node_modules` som innehåller alla beroenden och allt som behövs än så länge i kursen. Du kan se vad som installerats i package.json.
+Du har nu fått en mapp `node_modules` som innehåller alla beroenden och allt som behövs än så länge i kursen. Du kan se vad som installerats i package.json. Vi kommer gå igenom alla delarna och beroenden som installerats efter hand.
