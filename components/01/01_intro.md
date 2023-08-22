@@ -35,8 +35,8 @@ Vi börjar kursen med att hålla oss i terminalen och exekvering av JavaScript d
 
 Du ska installera Node.js och köra dess interpretator i terminalen, det låter dig testa enklare konstruktioner på ett enkelt sätt.
 
-Det som sedan ligger närmast till hands är en webbläsare och en grundstruktur för en webbsida. Du kan hitta en mall för att skriva dina exempel och testprogram i ditt kursrepo under `docs/example/sandbox`.
+Det som sedan ligger närmast till hands är en webbläsare och en grundstruktur för en webbsida. Du kan hitta en mall för att skriva dina exempel och testprogram i ditt kursrepo under `example/sandbox`.
 
-Din webbläsare har en developer tools (console) där du kan skriva enklare konstruktioner i JavaScript.
+Din webbläsare har en developer tools (console) där du kan skriva enklare konstruktioner i JavaScript (högerklicka och välj "inspektera/inspect").
 
 Vill du göra kodexempel och dela med dig av koden så använder du online-verktyg likt [jsfiddle](https://jsfiddle.net/) eller [codepen](https://codepen.io/). Det är gratis att skapa ett konto på båda de sidorna.
