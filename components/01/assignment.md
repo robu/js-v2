@@ -36,7 +36,7 @@ I din kurskatalog (repot) för kursen, skall du ta en kopia av exempelkatalogen 
 
 ```console
 # Gå till kurskatalogen
-cp -ri example/public me
+cp -ri example/public me/
 ```
 
 1. Du har nu en grund för din me-sida i kursen. Modifiera den så den blir "din egen". Se till så du presenterar dig själv med text och en godtycklig bild.

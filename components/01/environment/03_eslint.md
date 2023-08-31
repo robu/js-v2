@@ -6,7 +6,7 @@ Många programmeringsspråk har en standardsyntax att följa. Det kan handla om 
 
 ### ESLint i kursen
 
-I den här kursen används ES standard, med vissa inställningar. Du kan hitta filen i [exempelmappen](../../../example/configfiles). Det är den du kommer använda och det är även den som läraren använder vid rättning. Kopiera in filen till din me-mapp:
+I den här kursen används ES standard, med vissa inställningar. Du kan hitta filen i [exempelmappen](../../../example/configfiles). Filen är dold (filnamnet börjar med en punkt) och det är den du kommer använda. Även läraren kommer använda den vid rättning. Kopiera in filen till din me-mapp:
 
 ```console
 # stå i kursens rotmapp

@@ -40,7 +40,7 @@ Du kan nu starta programmen från windows-terminalen `cmd` eller ifrån Cygwin. 
 
 
 
-Installera på Windows 10 WSL Debian/Ubuntu/Bash
+Installera på Windows 10/11 WSL Debian/Ubuntu/Bash
 -------------------------------
 
 Även om du har installerat Node på din Windows-maskin, och du använder WSL, så behöver du installera Node/npm i din klient i WSL. Du har då två installationer av Node, en i Windows och en i ditt WSL.
@@ -52,7 +52,7 @@ Sist jag installerade på WSL Debian/GNU Linux (oktober 2021) så var instruktio
 Först hämtar jag installationsprogrammet, så att pakethanteraren vet vad som skall installeras. Jag behöver vara root när detta görs. Kör
 
 ```text
-# Using Debian, as root
+# Using Ubuntu, as root
 $ sudo bash
 $ curl -sL https://deb.nodesource.com/setup_lts.x | bash -
 $ apt install -y nodejs
