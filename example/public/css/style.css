@@ -5,10 +5,15 @@
 }
 
 body {
-    margin: 0px auto;
+
     background: #fff;
-    width: 900px;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    width: 900px;
+    margin: 0px auto;
 }
 
 ul {
@@ -67,10 +72,8 @@ h1 {
 
 .column {
     display: flex;
-    flex: 1;
     flex-direction: column;
-    flex-basis: 100%;
-
+    flex: 1;
 }
 
 p {

@@ -1,1 +1,1 @@
-console.log("JavaScript ready.");
+console.log('JavaScript ready.')
