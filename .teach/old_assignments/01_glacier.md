@@ -12,7 +12,7 @@ Att glaciärerna smälter är ett välkänt globalt problem och nu behövs din h
 
 Havsnivån har stigit sedan slutet av 1800-talet när människan började bränna kol, gas och andra fossila bränslen för energi. Koldioxiden som då skickas upp i atmosfären absorberar solens värme och håller den kvar. Det har gjort att planeten blivit varmare vilket i sin tur gjort att glaciärerna har börjat smälta och havsvattnet expanderat av värmen.
 
-Man räknar med att de smältande glaciärerna har stått för ca 21% av havsnivåns stigning sedan år 2000 och globalt stiger havsnivån 3.6mm per år.
+Man räknar med att de smältande glaciärerna har stått för ca 21% av havsnivåns stigning sedan år 2000 och globalt stiger havsnivån 0.0036m per år.
 
 Mellan år 2000 och 2019 har glaciärernas smälthastighet generellt ökat från 0.36 meter per år till 0.69 meter per år. Du kan räkna med att det inte är exponentiellt utan en fast ökning per år. Startvärdet på havsnivån är 0.
 
