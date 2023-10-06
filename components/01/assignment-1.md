@@ -1,10 +1,7 @@
-Uppgift - "Me page"
+Uppgift - "Basics"
 ==================================
 
-Skapa en me-sida för redovisning av uppgifterna i din dbwebb-kurs. Du kopierar en struktur för en webbsida som består av HTML, CSS och JavaScript med ett färdigbyggt skal för de webbsidor som me-sidan skall bestå av.
-
-När kursen är klar kommer din me-sida att innehålla en stor del av det arbetet du gjort under kursen, det blir även din redovisning av kursen.
-
+Skapa några scriptfiler där du använder några vanliga konstruktioner i JavaScript.
 
 
 Förkunskaper
@@ -17,30 +14,22 @@ Du har installerat kursens labbmiljö samt installerat kommandot `dbwebb` och du
 Introduktion
 -----------------------
 
-I din me-sida skall du samla programkod och uppgifter och du har länkar till de uppgifter du löst. Det ger dig en samlad plats att utgå ifrån när du vill visa upp vad du gjort i kursen.
-
-<!-- Redovisningstexterna är en del av underlaget till [bedömning och betygsättning](https://dbwebb.se/kurser/faq/bedomning-och-betygsattning) i kursen. -->
-
-Du kan testa hur me-sidan bör fungera, genom att öppna din exempel-katalog i kursrepot under `example/public`.
-
-Du kan bygga en mer avancerad me-sida om du vill, det går bra. Mallen finns med för de som vill ha en enkel me-sida.
-
-Vill du testa konstruktioner eller annan kod kan du använda katalogen `me/kmom01`.
-
+Du ska skapa en uppsättning scriptfiler som var för sig utför olika uppgifter. Alla filer ska jobba med inkommande argument via `process.argv`. Du kan se hur man går tillväga i [exempelmappen](example/node)
 
 
 Krav
 -----------------------
 
-I din kurskatalog (repot) för kursen, skall du ta en kopia av exempelkatalogen `example/public` och lägga i din me-katalog så du kommer ha `me/public`. Gör det med följande kommando i terminalen.
+Jobba i mappen `me/kmom01` och skapa där följande script som löser respektive uppgift.
 
-```console
-# Gå till kurskatalogen
-cp -ri example/public me/
-```
+1. Skapa filen `if.js`. Skapa if-satser som vid exekvering skriver ut:
+  * 
 
-1. Du har nu en grund för din me-sida i kursen. Modifiera den så den blir "din egen". Se till så du presenterar dig själv med text och en godtycklig bild.
-
+2. Skapa filen `forloop.js`. Vid exekvering ska det skrivas ut:
+  * Alla värden från 5 till och med 10.
+  * Varannat värde mellan 100 och 110.
+  * Alla värden från 5 till och med -5.
+ 
 2. Via den inlänkade filen `main.js` ska du skriva ut följande i consolen:
   * Siffrorna 10 - 20 (for-loop)
   * Siffrorna 100 - 85 (while-loop)
