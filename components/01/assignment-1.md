@@ -50,10 +50,11 @@ $ node if-numbers.js 42
 Meaning of life.
 ```
 
-2. Skapa filen `forloop.js`. Vid exekvering ska det skrivas ut:
-  * Alla värden från 5 till och med 10.
-  * Varannat värde mellan 100 och 110.
-  * Alla värden från 5 till och med -5.
+2. Skapa filen `forloop.js`. Vid exekvering (`$ node forloop.js <arg1> <arg2>`) ska följande krav lösas med hjälp av forloopar och ifsatser:
+  * Gör en kontroll om `<arg1>` är mindre, större eller samma som `<arg2>`.
+  * Om de inte är samma, skriv ut alla värden från `<arg1>` till och med `<arg2>`.
+  * Om `<arg1>` är samma som `<arg2>` och de är 10 eller högre, skriv ut varannat värde ner till 0.
+
  
 2. Via den inlänkade filen `main.js` ska du skriva ut följande i consolen:
   * Siffrorna 10 - 20 (for-loop)
