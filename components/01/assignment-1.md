@@ -14,16 +14,23 @@ Du har installerat kursens labbmiljö samt installerat kommandot `dbwebb` och du
 Introduktion
 -----------------------
 
-Du ska skapa en uppsättning scriptfiler som var för sig utför olika uppgifter. Alla filer ska jobba med inkommande argument via `process.argv`. Du kan se hur man går tillväga i [exempelmappen](../../example/node)
+Du ska skapa en uppsättning scriptfiler som var för sig utför olika uppgifter. Alla filer ska jobba med inkommande argument via `process.argv`. Du kan se hur man går tillväga i [exempelmappen](../../example/node). Du kan räkna med att användaren skickar in rätt datatyp.
 
 
 Krav
 -----------------------
 
-Jobba i mappen `me/kmom01` och skapa där följande script som löser respektive uppgift.
+Jobba i mappen `me/kmom01` och skapa där följande script som löser respektive uppgift. `<arg>` ska bytas ut mot det inskickade argumentet.
 
-1. Skapa filen `if.js`. Skapa if-satser som vid exekvering skriver ut:
-  * 
+1. Skapa filen `if-numbers.js`. Skapa if-satser som vid exekvering skriver ut:
+  * Om argumentet är lägre än 10: `<arg> är lägre än 10.`.
+  * Om argumentet är högre än eller lika med 100: `<arg> är högre än eller lika med 100.`.
+  * Om argumentet är högre än 10 och lägre än 20: `<arg> är mellan 10 och 20.`.
+  * Om argumentet är ett jämt tal: `<arg> är ett jämt tal.`.
+  * Om argumentet är ett udda tal: `<arg> är ett udda tal.`.
+  * Om argumentet är 42: `Meaning of life.`.
+
+[![asciicast](https://asciinema.org/a/612316.png)](https://asciinema.org/a/612316)
 
 2. Skapa filen `forloop.js`. Vid exekvering ska det skrivas ut:
   * Alla värden från 5 till och med 10.
