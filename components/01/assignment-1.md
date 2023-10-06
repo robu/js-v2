@@ -14,7 +14,7 @@ Du har installerat kursens labbmiljö samt installerat kommandot `dbwebb` och du
 Introduktion
 -----------------------
 
-Du ska skapa en uppsättning scriptfiler som var för sig utför olika uppgifter. Alla filer ska jobba med inkommande argument via `process.argv`. Du kan se hur man går tillväga i [exempelmappen](example/node)
+Du ska skapa en uppsättning scriptfiler som var för sig utför olika uppgifter. Alla filer ska jobba med inkommande argument via `process.argv`. Du kan se hur man går tillväga i [exempelmappen](../../example/node)
 
 
 Krav
