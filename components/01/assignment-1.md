@@ -30,6 +30,26 @@ Jobba i mappen `me/kmom01` och skapa där följande script som löser respektive
   * Om argumentet är ett udda tal: `<arg> är ett udda tal.`.
   * Om argumentet är 42: `Meaning of life.`.
 
+Exempel:
+
+```console
+$ node if-numbers.js 2
+2 är lägre än 10.
+2 är ett jämt tal.
+
+$ node if-numbers.js 13
+13 är mellan 10 och 20.
+13 är ett udda tal.
+
+$ node if-numbers.js 100
+100 är högre än eller lika med 100.
+100 är ett jämt tal.
+
+$ node if-numbers.js 42
+42 är ett jämt tal.
+Meaning of life.
+```
+
 2. Skapa filen `forloop.js`. Vid exekvering ska det skrivas ut:
   * Alla värden från 5 till och med 10.
   * Varannat värde mellan 100 och 110.
