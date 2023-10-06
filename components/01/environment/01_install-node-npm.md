@@ -149,6 +149,20 @@ $ node hello.js
 Hello
 ```
 
+Man kan jobba med inkommande argument på följande sätt:
+
+args.js
+```js
+let arg = process.argv[2]
+
+console.log(`You entered: ${arg}`)
+```
+
+```console
+$ node args.js kaktus
+You entered: kaktus
+```
+
 
 
 Avslutningsvis
