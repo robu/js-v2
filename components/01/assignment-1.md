@@ -50,18 +50,38 @@ $ node if-numbers.js 42
 Meaning of life.
 ```
 
-2. Skapa filen `forloop.js`. Vid exekvering (`$ node forloop.js <arg1> <arg2>`) ska följande krav lösas med hjälp av forloopar och ifsatser:
+2. Skapa filen `forloop.js`. Vid exekvering (`$ node forloop.js <arg1> <arg2>`) ska följande krav lösas med hjälp av forloopar och if-satser:
   * Gör en kontroll om `<arg1>` är mindre, större eller samma som `<arg2>`.
   * Om de inte är samma, skriv ut alla värden från `<arg1>` till och med `<arg2>`.
   * Om `<arg1>` är samma som `<arg2>` och de är 10 eller högre, skriv ut varannat värde ner till 0.
 
- 
-2. Via den inlänkade filen `main.js` ska du skriva ut följande i consolen:
-  * Siffrorna 10 - 20 (for-loop)
-  * Siffrorna 100 - 85 (while-loop)
-  * En hälsningsfras tillsammans med dagens datum (funktion)
+Exempel:
 
-3. Du kan uppdatera stylesheet i katalogen `css/`. Det är inte nödvändigt, gör det om du vill och känner att du har tid.
+```console
+$ node forloop.js 4 10
+4
+5
+6
+7
+8
+9
+10
+
+$ node forloop.js 100 96
+100
+99
+98
+97
+96
+
+$ node forloop.js 12 12
+12
+10
+8
+6
+4
+2
+```
 
 4. Kör `dbwebb test kmom01` för att se så allt validerar och att filerna ligger på rätt plats.
 
@@ -72,14 +92,7 @@ $ dbwebb test kmom01
 5. Publicera koden på studentservern:
 
 ```console
-$ dbwebb publish public
+$ dbwebb publish kmom01
 ```
 
 > **_GLÖM INTE:_** Vill du köra en enskild validering kan du göra det med: `$ npm run {eslint,htmlhint,stylelint} --what=<folder>`
-
-Extrauppgift
------------------------
-
-Om du har tid och kraft.
-
-1. Lägg extra kraft på CSS och styla din me-sida så den blir mer personlig.

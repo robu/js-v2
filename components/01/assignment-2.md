@@ -25,8 +25,6 @@ Du kan testa hur me-sidan bör fungera, genom att öppna din exempel-katalog i k
 
 Du kan bygga en mer avancerad me-sida om du vill, det går bra. Mallen finns med för de som vill ha en enkel me-sida.
 
-Vill du testa konstruktioner eller annan kod kan du använda katalogen `me/kmom01`.
-
 
 
 Krav
@@ -44,7 +42,6 @@ cp -ri example/public me/
 2. Via den inlänkade filen `main.js` ska du skriva ut följande i consolen:
   * Siffrorna 10 - 20 (for-loop)
   * Siffrorna 100 - 85 (while-loop)
-  * En hälsningsfras tillsammans med dagens datum (funktion)
 
 3. Du kan uppdatera stylesheet i katalogen `css/`. Det är inte nödvändigt, gör det om du vill och känner att du har tid.
 

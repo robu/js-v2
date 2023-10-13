@@ -1,8 +1,11 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC1091
+
 . "functions.bash"
 
 declare -a files=(
+    "if-numbers.js"
+    "forloop.js"
     "../public/js/main.js"
     "../public/index.html"
     )
