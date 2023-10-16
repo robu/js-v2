@@ -41,7 +41,7 @@ Och sedan importera den från en annan fil:
 
 ```js
 // main.js
-import { sum } from './module.js';
+import { sum } from './module.js'
 
 console.log(sum(26, 16)) // 42
 ```

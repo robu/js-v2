@@ -1,6 +1,6 @@
-let value = 42;
+let value = 42
 
 while (value > 0) {
-    console.log(value);
-    value--;
+  console.log(value)
+  value--
 }

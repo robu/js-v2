@@ -30,7 +30,7 @@ element.addEventListener("click", function () {
                                  // parameter i en funktion.
 ```
 
-Funktioner har en argumentlista. Om man anropar funktionen med färre argument än listan så får de kvarvarande argumenten värdet `undefined`.
+Funktioner har en parameterlista. Om man anropar funktionen med färre parametrar än listan så får de kvarvarande parametrarna värdet `undefined`.
 
 ```js
 function sum(a, b, c) {
@@ -63,7 +63,7 @@ function sum() {
   let i, sum = 0
 
   for(i = 0; i < arguments.length; i++) {
-  sum += arguments[i]
+    sum += arguments[i]
   }
 
   return sum

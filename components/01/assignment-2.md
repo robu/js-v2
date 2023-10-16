@@ -40,8 +40,7 @@ cp -ri example/public me/
 1. Du har nu en grund för din me-sida i kursen. Modifiera den så den blir "din egen". Se till så du presenterar dig själv med text och en godtycklig bild. Vill du inte använda en bild på dig själv kan du leta upp någon som kanske representerar dig. Se bara till så bilden inte är skyddad bakom någon licens.
 
 2. Via den inlänkade filen `main.js` ska du skriva ut följande i consolen:
-  * Siffrorna 10 - 20 (for-loop)
-  * Siffrorna 100 - 85 (while-loop)
+  * En hälsningsfras tillsammans med dagens datum.
 
 3. Du kan uppdatera stylesheet i katalogen `css/`. Det är inte nödvändigt, gör det om du vill och känner att du har tid.
 

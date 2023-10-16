@@ -42,7 +42,7 @@ Här följer ett exempel på några kommentarer:
  * @returns {number} The calculated result
  * */
 function addNumbers (num1, num2) {
-    return num1 + num2;
+    return num1 + num2
 }
 ```
 
