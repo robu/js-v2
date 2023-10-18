@@ -20,6 +20,25 @@ cd "../../me"
 validation "public" "eslint"
 validation "public" "htmlhint"
 validation "public" "stylelint"
+
+
+cd kmom01/
+
+printf "\n${ORANGE}%s${NC}\n" "Testing if-numbers.js"
+echo "Should print '2 är lägre än 10' and '2 är ett jämt tal.':"
+node "if-numbers.js" 2
+
+printf "\n${ORANGE}%s${NC}\n" "Testing forloop.js"
+echo "Should print 5-10:"
+node "forloop.js" 5 10
+
+echo "Should print 10-5:"
+node "forloop.js" 10 5
+
+echo "Should print every other value rom 11 to 1:"
+node "forloop.js" 11 11
+
+
 # cd "../../me"
 
 # echo "Running [npm run eslint --kmom=$1]"
