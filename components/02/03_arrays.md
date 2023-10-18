@@ -94,6 +94,20 @@ arr1.unshift(42) // add value to first place
 console.log(arr1) // [ 42, 1, 2, 3, 42 ]
 ```
 
+Leta element:
+```js
+let arr1 = ["lion", "cougar", "tiger"]
+arr1.includes("cougar") // returns true
+arr1.includes("elephant") // returns false
+```
+
+Var finns elementet?
+```js
+let arr1 = ["lion", "cougar", "tiger"]
+arr1.indexOf("tiger") // returns 2
+arr1.indexOf("elephant") // returns -1
+```
+
 ### First-class-citizens
 
 Funktioner är så kallade "First-class-citizens" och kan behandlas som vanliga variabler. Det möjliggör vissa speciella typer av metoder. Vi tittar på två av de vanligaste.

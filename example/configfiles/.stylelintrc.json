@@ -1,7 +1,8 @@
 {
   "ignoreFiles": [
     "**/*.min.css",
-    "dist/"
+    "dist/",
+    "**/jsdoc/styles/*.css"
   ],
   "extends": ["stylelint-config-recommended"]
 }

@@ -27,7 +27,7 @@ Du kan även se lite automatgenererad dokumentation över funktionaliteten i exe
 
 2. Exportera funktionen `getAll` som returnerar samtliga djur i en array.
 
-3. Exportera funktionen `getFrom` som ska ta ett argument, en sträng. Funktionen ska returnera en array med alla djur ifrån de inskickade argumentet. Man ska med andra ord kunna skicka in `america`, `africa` eller `europe`. Annars returneras en tom array.
+3. Exportera funktionen `getFrom` som ska ta ett argument, en sträng. Funktionen ska returnera en array med alla djur ifrån det inskickade argumentet. Man ska med andra ord kunna skicka in `america`, `africa` eller `europe`. Annars returneras en tom array.
 
 4. Exportera funktionen `filterAnimals` som ska ta ett argument, en sträng. Funktionen ska returnera en array med alla djur som delvis består av det inskickade argumentet. Matchar inget returneras en tom array.
 
@@ -46,50 +46,9 @@ America: Devil's Hole pupfish (2)
 // Fler följer
 ```
 
-6. När du är klar ska filen `kmom02.js` exportera följande funktioner: `export { getAll, getFrom, filterAnimals, whereLives, report }`
+7. När du är klar ska filen `kmom02.js` exportera följande funktioner: `export { getAll, getFrom, filterAnimals, whereLives, report }`
 
-
-
-<!-- 2. Du ska nu skapa två moduler, `kmom02/helpers.js` och `kmom02/report.js`. Funktionaliteten och funktionsnamnen modulerna ska innehålla kan ni se i den genererade dokumentationen. Antingen öppnar ni [example/animals](../../example/animals/jsdoc/) lokalt i en webbläsare eller via [htmlpreview](https://htmlpreview.github.io/?https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/animals/jsdoc/index.html). Var noga med returvärden och namngivning. Se dokumentationen som en mall att följa.
-
-3. Funktionen **prettyPrint** ska se ut som följer om man exekverar funktionen med argumentet `africa`:
-
-```console
---- REPORT ---
-Animals in africa
-
-* <animal>
-* <animal>
-* <animal>
-* <animal>
-* <animal>
-* <animal>
-* <animal>
-...
-```
-
-Om man exekverar utan ett argument blir det istället:
-
-```console
---- REPORT ---
-Animals in all continents
-
-* <animal>
-* <animal>
-* <animal>
-* <animal>
-* <animal>
-* <animal>
-* <animal>
-...
-``` -->
-
-4. Kommentera din kod enligt JSDoc och generera dokumentationen:
-
-```console
-$ cd me
-$ npm run jsdoc --kmom=kmom02
-```
+8. Generera JSDoc med scriptet `npm run jsdoc --what=kmom02`
 
 Dubbelkolla så den stämmer.
 
@@ -99,9 +58,29 @@ Se till så koden validerar:
 
 ```console
 $ cd me
-$ npm run linter kmom02/
+$ npm run linter --what=kmom02
 ```
 
+### Enhetstester
+
+För det här kursmomentet finns en testsuite som kontrollerar modulen.
+
+```console
+$ cd me
+$ cp ../example/animals/kmom02.test.js kmom02/
+$ npm test --what=kmom02
+```
+
+Om allt går igenom är det bara att lämna in.
+
+### Inlämning
+
+Publicera koden enligt följande:
+
+```console
+$ cd me
+$ dbwebb publish kmom02
+```
 <!--
 ### Hur kan det se ut när det är klart?
 
