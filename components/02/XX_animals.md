@@ -19,7 +19,7 @@ Den data du kan få är listor på några utrotningshotade djur i olika platser 
 $ cp example/animals/animals.js me/kmom02/
 ```
 
-Du kan även se lite automatgenererad dokumentation över funktionaliteten [här](https://htmlpreview.github.io/?https://github.com/dbwebb-se/js-v2/blob/master/example/animals/jsdoc/index.html). 
+Du kan även se lite automatgenererad dokumentation över funktionaliteten [här](https://htmlpreview.github.io/?https://raw.githubusercontent.com/dbwebb-se/js-v2/master/example/animals/jsdoc/index.html). 
 
 ### Krav
 
