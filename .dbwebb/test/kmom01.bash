@@ -37,20 +37,6 @@ if [[ -f "forloop.js" ]]; then
     testKmom01For "5" "10" "5 6 7 8 9 10"
     testKmom01For "10" "5" "10 9 8 7 6 5"
     testKmom01For "11" "11" "11 9 7 5 3 1"
-    # printf "\n\n${ORANGE}%s${NC}\n" "##### Testing forloop.js #####"
-
-    # printf "\nArguments 5 10 should print: \n5\n6\n7\n8\n9\n10\n"
-    # printf "${CYAN}"
-    # node "forloop.js" 5 10
-
-    # printf "\n${NC}Arguments 10 5 should print: \n10\n9\n8\n7\n6\n5\n"
-    # printf "${CYAN}"
-    # node "forloop.js" 10 5
-
-    # printf "\n${NC}Arguments 11 11 should print: \n11\n9\n7\n5\n3\n1\n"
-    # printf "${CYAN}"
-    # node "forloop.js" 11 11
-    # printf "${NC}"
 else
     printf "\n${RED}%s${NC}\n" "Unable to test forloop.js"
 fi
