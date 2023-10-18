@@ -47,7 +47,38 @@ Installera på Windows 10/11 WSL Debian/Ubuntu/Bash
 
 Olika linux-varianter har olika sätt att installera node och npm. Följ instruktionerna på [nedladdningssidan för olika pakethanterare](https://nodejs.org/en/download/package-manager/). Det kan finnas vissa förberedelser som behövs för att du skall kunna installera den senaste versionen, det handlar om vilket repo som apt-get använder för att hämta installationsfilern från. Kolla nedladdningssidan för att vara säker.
 
-Sist jag installerade på WSL Debian/GNU Linux (oktober 2021) så var instruktionen enligt följande.
+Sist jag installerade på WSL Ubuntu-22.04 (Oktober 2023) använde jag den nya pakethanteraren `snap`. Om man har en senare version av Ubuntu, tex 22.04 så finns det förinstallerat. Vi kan se vilka varianter som finns att välja mellan:
+
+```console
+$ snap info node
+# Lite info...
+channels:
+  18/stable:        18.18.0                        2023-09-18 (7823) 33MB classic
+  18/candidate:     ↑
+  18/beta:          ↑
+  18/edge:          ↑
+  latest/stable:    –
+  latest/candidate: –
+  latest/beta:      –
+  latest/edge:      21.0.0-nightly20231017ea595ebb 2023-10-17 (7875) 36MB classic
+  20/stable:        20.8.0                         2023-09-29 (7844) 34MB classic
+  20/candidate:     ↑
+  20/beta:          ↑
+  20/edge:          ↑
+  19/stable:        19.9.0                         2023-04-11 (7382) 33MB classic
+```
+
+Vi kan se att version 20 finns som stabil version så den tar vi. 
+
+```console
+$ sudo snap install node --classic --channel=20
+```
+
+`--channel=20` talar om att det är den versionen vi vill ha. Skulle vi vilja byta gör vi det enkelt med: `$ sudo snap refresh node --channel=18` för version 18.
+
+
+
+<!-- Sist jag installerade på WSL Debian/GNU Linux (oktober 2021) så var instruktionen enligt följande.
 
 Först hämtar jag installationsprogrammet, så att pakethanteraren vet vad som skall installeras. Jag behöver vara root när detta görs. Kör
 
@@ -64,7 +95,7 @@ Jag får eventuellt uppdatera sökvägen, så mitt shell hittar de nyligen insta
 
 ```console
 $ hash -r
-```
+``` -->
 
 
 
@@ -77,7 +108,7 @@ Du kan nu starta programmet `node` från din terminal.
 
 
 
-Installera på Linux
+<!-- Installera på Linux
 -------------------------------
 
 Olika linux-varianter har olika sätt att installera node och npm. Följ instruktionerna på [nedladdningssidan för olika pakethanterare](https://nodejs.org/en/download/package-manager/). Det kan finnas vissa förberedelser som behövs för att du skall kunna installera den senaste versionen, det handlar om vilket repo som apt-get använder för att hämta installationsfilern från. Kolla nedladdningssidan för att vara säker.
@@ -95,7 +126,7 @@ $ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 $ sudo apt install nodejs
 ```
 
-Du kan nu starta programmet `node` från din terminal.
+Du kan nu starta programmet `node` från din terminal. -->
 
 
 
@@ -106,9 +137,9 @@ Nu är programmen installerade och redo. Verifiera att både node och npm funger
 
 ```console
 $ node --version
-v18.16.0
+v20.8.0
 $ npm --version
-9.7.1
+9.5.1
 ```
 
 
