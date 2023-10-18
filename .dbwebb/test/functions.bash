@@ -31,6 +31,24 @@ function validation
   echo ""
 }
 
+function testKmom01If
+{
+    printf "\n${ORANGE}%s${NC}\n" "##### Testing if-numbers.js with argument $1 #####"
+    # printf "\nArgument $1 should print:"
+    printf "\n%s\n%s\n" "${@:2}"
+    printf "${ORANGE}"
+    node "if-numbers.js" "$1"
+}
+
+function testKmom01For
+{
+    printf "\n${ORANGE}%s${NC}\n" "##### Testing forloop.js with arguments $1 $2  #####"
+    # printf "\nArguments $1 $2 should print:"
+    printf "\n%s\n%s\n" "${@:3}"
+    printf "${CYAN}"
+    node "forloop.js" "$1" "$2"
+}
+
 function printYes
 {
     printf "${GREEN}%s${NC}" "${CORRECT} Yes"

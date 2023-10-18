@@ -23,20 +23,37 @@ validation "public" "stylelint"
 
 
 cd kmom01/
+if [[ -f "if-numbers.js" ]]; then
 
-printf "\n${ORANGE}%s${NC}\n" "Testing if-numbers.js"
-echo "Should print '2 är lägre än 10' and '2 är ett jämt tal.':"
-node "if-numbers.js" 2
+    testKmom01If "2" "2 är lägre än 10." "2 är ett jämt tal."
+    testKmom01If "13" "13 är mellan 10 och 20." "13 är ett udda tal."
+    testKmom01If "100" "100 är högre än eller lika med 100." "100 är ett jämt tal."
+    testKmom01If "42" "42 är ett jämt tal." "Meaning of life."
+else
+    printf "\n${RED}%s${NC}\n" "Unable to test if-numbers.js"
+fi
 
-printf "\n${ORANGE}%s${NC}\n" "Testing forloop.js"
-echo "Should print 5-10:"
-node "forloop.js" 5 10
+if [[ -f "forloop.js" ]]; then
+    testKmom01For "5" "10" "5 6 7 8 9 10"
+    testKmom01For "10" "5" "10 9 8 7 6 5"
+    testKmom01For "11" "11" "11 9 7 5 3 1"
+    # printf "\n\n${ORANGE}%s${NC}\n" "##### Testing forloop.js #####"
 
-echo "Should print 10-5:"
-node "forloop.js" 10 5
+    # printf "\nArguments 5 10 should print: \n5\n6\n7\n8\n9\n10\n"
+    # printf "${CYAN}"
+    # node "forloop.js" 5 10
 
-echo "Should print every other value rom 11 to 1:"
-node "forloop.js" 11 11
+    # printf "\n${NC}Arguments 10 5 should print: \n10\n9\n8\n7\n6\n5\n"
+    # printf "${CYAN}"
+    # node "forloop.js" 10 5
+
+    # printf "\n${NC}Arguments 11 11 should print: \n11\n9\n7\n5\n3\n1\n"
+    # printf "${CYAN}"
+    # node "forloop.js" 11 11
+    # printf "${NC}"
+else
+    printf "\n${RED}%s${NC}\n" "Unable to test forloop.js"
+fi
 
 
 # cd "../../me"
