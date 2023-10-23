@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="sv">
+<meta charset="utf-8" />
+<title>Bakgrund | js</title>
+
+<!-- Mithril HTML Slideshow styles -->
+<link href="../css/mithril-slideshow.css" rel="stylesheet" />
+
+<!-- Code formatting using highlight.js -->
+<link rel="stylesheet" href="../css/default.css">
+<link rel="stylesheet" href="../css/tomorrow.css">
+<script src="../js/highlight.pack.js"></script>
+
+<!-- Text formatting using Markdown through showdown.js -->
+<script src="../js/showdown.min.js"></script>
+
+<style>
+    h1 {
+        border-bottom: 2px solid orange;
+    }
+</style>
+
+
+<!-- Here comes the slides in order -->
+<script data-role="slide" data-markdown type="text/html">
+# Programmering med JavaScript
+## (js)
+## "Bakgrund" 2023
+### Kenneth Lewenhagen
+</script>
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Agenda
+
+* Vad är JavaScript?
+* Var kommer JavaScript ifrån?
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Vad är JavaScript?
+
+* Tredje lagret av standardiserade webbteknologier (HTML, CSS)
+* Renderas av en js-motor i webbläsarna
+    * Mozilla - Spidermonkey
+    * Chrome, Edge - V8
+    * Safari - JavascriptCore
+    * IE, Edge (innan) - Chakra
+* Dynamisk uppdatering och manipulering av HTML DOM
+* Browser API (Application Programming Interface)
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# HTML DOM
+
+* Document Object Model
+* [Visualisering av DOM](https://dbwebb.se/image/javascript/guide/htmldom.png)
+
+```Javascript
+<!doctype html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>En titel</title>
+</head>
+
+<body>
+    <h1>Rubrik</h1>
+    <div>
+        <a href="http://somewhere.com/else.html">länknamn</a>
+    </div>
+</body>
+
+</html>
+```
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Window
+
+* Window -> DOM document
+* Varje "tabb" har ett eget windowobjekt
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Vad kommer JavaScript från? (I)
+
+* 1993 NCSA - [Mosaic](http://www.favbrowser.com/images/mosaic-browser.jpg)
+* Marc Andreessen (Jim Clark)
+* 1994 Mosaic Communications - Mosaic Netscape
+* Netscape Communications - [Netscape Navigator](https://upload.wikimedia.org/wikipedia/commons/1/10/Netscape_Navigator_1.22_Screenshot.png)
+
+
+</script>
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Vad kommer JavaScript från? (II)
+
+* 1995 - Mer dynamik på webben!
+* (Microsoft, Netscape, IBM)
+* Brendan Eich - Scheme
+* Netscape + Sun Microsystems = Java
+* Mocha - LiveScript - JavaScript
+* 1996 Navigator 2.0
+* JScript
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# ECMAScript (ECMA-262)
+
+* 1996 standardisering ECMA International
+* QWERTY
+* Övriga ECMAScripts: ActionScript, JScript etc
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Utgåvor/versioner
+
+* ES1 1997
+* ES2 1998
+* ES3 1999
+* ES4 Abandoned
+* ES5 2009
+* ES6 2015
+* ES 2016 (7:e utgåvan)
+* ES 2017 (8:e utgåvan)
+* ES 2018 (9:e utgåvan)
+* ES 2019 (10:e utgåvan)
+* ES 2020 (11:e utgåvan)
+* ES 2021 (12:e utgåvan)
+* ES 2022 (13:e utgåvan)
+* ES.Next
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+# Att googla JavaScript
+
+* Är det ES5, ES6, ES2016, jQuery eller TypeScript?
+* Är lösningen kompatibel mellan webbläsare?
+* Referens på MDN
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+
+# Varför ska man lära sig JavaScript?
+
+* [Stack Overflow Insights](https://insights.stackoverflow.com/survey/2021#most-popular-technologies-language)
+* about:config
+* Dynamiken
+* Arbetsmarknaden (React, Angular, Vue m.m.)
+
+</script>
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+
+# Hur kan vi använda JavaScript?
+
+* Inline script
+* Extern fil
+* Konsolen (F12)
+* Bookmarklets
+
+</script>
+
+
+
+<!-- Slide -->
+<!-- <script data-role="slide" data-markdown type="text/html">
+
+# Frågor?
+
+</script> -->
+
+
+
+<!-- Slide -->
+<script data-role="slide" data-markdown type="text/html">
+</script>
+
+
+
+<!-- include essential js-script -->
+<script src="../js/mithril.min.js"></script>
+<script src="../js/mithril-slideshow.js"></script>
+
+<!-- default to theme 3 -->
+<script>app.useTheme(3);</script>
