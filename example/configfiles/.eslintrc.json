@@ -25,5 +25,5 @@
           "jsdoc/require-description": 1,
           "jsdoc/require-description-complete-sentence": 1
     },
-    "ignorePatterns": ["**/jsdoc"]
+    "ignorePatterns": ["**/jsdoc", "**/*.test.js"]
 }

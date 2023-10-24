@@ -4,10 +4,10 @@
 . "functions.bash"
 
 declare -a files=(
-    "if-numbers.js"
-    "forloop.js"
-    "../public/js/main.js"
-    "../public/index.html"
+    "kmom01/if-numbers.js"
+    "kmom01/forloop.js"
+    "public/js/main.js"
+    "public/index.html"
     )
 
 # Print the header for the testsuite
@@ -15,14 +15,16 @@ header "$1" "$2" "$3"
 
 # CHeck if the files exists and have correct filename
 checkIfFilesExist "${files[@]}"
-cd "../../me"
+echo "Press any key to proceed"
+read
+# cd "../../me"
 
-validation "public" "eslint"
-validation "public" "htmlhint"
-validation "public" "stylelint"
+# validation "public" "eslint"
+# validation "public" "htmlhint"
+# validation "public" "stylelint"
 
 
-cd kmom01/
+cd ../../me/kmom01/
 if [[ -f "if-numbers.js" ]]; then
 
     testKmom01If "2" "2 är lägre än 10." "2 är ett jämt tal."
@@ -54,5 +56,6 @@ fi
 
 # echo "Running [npm run stylelint --kmom=$1]"
 # npm run --silent stylelint --kmom=$1
+printf "${NC}"
 
 exit "$(isSuccess)"

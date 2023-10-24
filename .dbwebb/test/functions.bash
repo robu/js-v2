@@ -12,6 +12,7 @@ KMOM="$1"
 # STUD="$2"
 # SOLUTIONPATH="../../.solutions/$KMOM"
 KMOMPATH="../../me/$KMOM"
+MEPATH="../../me"
 
 SUCCESS=0
 
@@ -27,7 +28,7 @@ function validation
 
   res=$(npm run --silent $2 --what="$1")
 
-  [[ ! -z "$res" ]] && printf "$2 validates: ${RED}${ERROR}${NC} $res" || printf "$2 validates: ${GREEN}${CORRECT}${NC}"
+  [[ ! -z "$res" ]] && printf "$2 $1/ validates: ${RED}${ERROR}${NC} $res" || printf "$2 $1/ validates: ${GREEN}${CORRECT}${NC}"
   echo ""
 }
 
@@ -78,7 +79,7 @@ function checkIfFilesExist
         (( counter++ ))
         printTest "$counter" "The file $i is present and have correct filename."
 
-        if [[ -f "$KMOMPATH/$i" ]]; then
+        if [[ -f "$MEPATH/$i" ]]; then
             printYes
         else
             printNo

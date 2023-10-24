@@ -66,6 +66,7 @@ $ npm run linter --what=kmom02
 För det här kursmomentet finns en testsuite som kontrollerar modulen.
 
 ```console
+# Ställ dig i kursroten
 $ cd me
 $ cp ../example/animals/kmom02.test.js kmom02/
 $ npm test --what=kmom02

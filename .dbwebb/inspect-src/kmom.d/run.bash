@@ -66,10 +66,10 @@ export -f doLog
 
 printf "Copying config files... \n"
 
-cp docs/example/configfiles/.eslintrc.json me/
-cp docs/example/configfiles/package.json me/
-cp docs/example/configfiles/.jsdoc.json me/
-cp docs/example/configfiles/.stylelintrc.json me/
+cp example/configfiles/.eslintrc.json me/
+cp example/configfiles/package.json me/
+cp example/configfiles/.jsdoc.json me/
+cp example/configfiles/.stylelintrc.json me/
 
 
 
