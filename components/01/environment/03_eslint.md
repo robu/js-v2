@@ -6,14 +6,14 @@ Många programmeringsspråk har en standardsyntax att följa. Det kan handla om 
 
 ### ESLint i kursen
 
-I den här kursen används ES standard, med vissa inställningar. Du kan hitta filen i [exempelmappen](../../../example/configfiles). Filen är dold (filnamnet börjar med en punkt) och det är den du kommer använda. Även läraren kommer använda den vid rättning. Kopiera in filen till din me-mapp:
+I den här kursen används ES standard, med vissa inställningar. Du kan hitta filen i [exempelmappen](../../../example/configfiles). Filen är dold (filnamnet börjar med en punkt) och det är den du kommer använda. Även läraren kommer använda den vid rättning. Om du inte kopierat in den till din me-mapp redan är det dags att göra det nu.
 
 ```console
-# stå i kursens rotmapp
-$ cp example/configfiles/.eslintrc.json me/
+# Stå i kursroten
+$ cp example/configfiles/{.eslintrc.json,.jsdoc.json,.stylelintrc.json} me/
 ```
 
-Då formatet på kursen är nytt så kan konfigurationen vara diskuterbar. Om valideringen säger ifrån och du känner att du vill/kan motivera varför regeln ska ändras är det fritt fram. Gör bara en issue i jsrepot så tar vi det där ifrån.
+Om valideringen säger ifrån och du känner att du vill/kan motivera varför regeln ska ändras är det fritt fram. Gör bara en issue i jsrepot så tar vi det där ifrån.
 
 
 
@@ -98,3 +98,9 @@ $ npm run eslint:fix --what=kmom01
 ```
 
 Som nämn ovan så kommer läraren använda configfilen från exempelmappen vid rättning så om den visar grönt är allt ok vad det gäller validering. Skulle det visa fel kommer det sannolikt bli komplettering. Det är bra att ha koll på.
+
+
+
+### Övriga linters
+
+Vi har fler linters: stylelint och htmlhint som kontrollerar CSS respektive HTML. Vi kan använda dem på samma sätt som eslint. För stylelint har vi även :fix.

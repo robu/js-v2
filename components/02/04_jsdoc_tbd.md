@@ -4,12 +4,7 @@ Ett bra tips när man skriver kod är att dokumentera den. Det är dels för ens
 
 ### JSDoc i kursen
 
-I den här kursen används verktyget JSDoc för dokumenteringen av koden. Vi har med en konfigurationsfil för att kunna använda filer med filändelsen `.mjs`. Du kan hitta filen i [exempelmappen](../../example/environment). Kopiera in filen till din me-mapp:
-
-```console
-# stå i kursens rotmapp
-$ cp example/environment/jsdoc.json me/
-```
+I den här kursen används verktyget JSDoc för dokumenteringen av koden. vi har den kopplad till eslint så vi får varningar när vi itne kommenterad koden korrekt. Det är bra så vi blir lite uppstyrda.
 
 ### Komma igång med JSDoc
 
@@ -18,11 +13,13 @@ Vi genererar dokumentationen i terminalen med hjälp av `npm`. Filen som heter `
 ```json
 "scripts": {
     ...
-    "jsdoc": "./node_modules/.bin/jsdoc -c jsdoc.json -d $npm_config_kmom/jsdoc $npm_config_kmom/*"
+    "jsdoc": "npx jsdoc -c .jsdoc.json -d $npm_config_what/jsdoc $npm_config_what/* || exit 0",
 },
 ```
 
-Vad är det som händer där då? Vi kan se två stycken så kallade "options": `-c` och `-d`. Med -c kan vi definiera en egen configfil som vi har kopierat in ovan. Via den möjliggörs det att även kunna skapa dokumention från `-mjs`-filer. Med -d kan vi ange en mapp där dokumentationen ska hamna. Om vi inte sätter den själva kommer det skapas en mapp `out` där vi är för tillfället.
+Vad är det som händer där då? Vi kan se två stycken så kallade "options": `-c` och `-d`. Med -c kan vi definiera en egen configfil som vi har i exempelmappen. 
+
+Med -d kan vi ange en mapp där dokumentationen ska hamna. Om vi inte sätter den själva kommer det skapas en mapp `out` där vi är för tillfället.
 
 Vidare nyttjar vi möjligheten till att ta emot variabler i vårt script för att underlätta hanteringen. `$npm_config_kmom` kommer innehålle det vi skickar med som `--kmom=kmom01`. Vi kör alltså till exempel detta kommando när vi står i me-mappen: `npm run jsdoc --kmom=kmom01`. Det kommer "översättas" till: `./node_modules/.bin/jsdoc -c jsdoc.json -d kmom01/jsdoc kmom01/*`. Stjärnan (`*`) är ett wildcard som i detta fallet betyder "alla js-filer i mappen".
 

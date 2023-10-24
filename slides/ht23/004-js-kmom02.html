@@ -25,7 +25,7 @@
 <script data-role="slide" data-markdown type="text/html">
 # Programmering med JavaScript
 ## (js)
-## kmom02 2022
+## kmom02 2023
 ### Kenneth Lewenhagen
 </script>
 
@@ -36,7 +36,6 @@
 
 * Scope
 * Funktioner
-* Closure
 * Arrow functions
 * Arrayer
 
@@ -62,14 +61,14 @@
 
 <script id="b1" data-role="code" data-language="javascript" type="text/html">
 // Variabel och funktion finns i det globala scopet
-let answer = 42;
+let answer = 42
 
 function printAnswer() {
-    console.log(42);
+  console.log(42)
 }
 
-console.log(answer); // 42
-printAnswer();       // 42
+console.log(answer) // 42
+printAnswer()       // 42
 </script>
 
 
@@ -82,12 +81,12 @@ printAnswer();       // 42
 <script id="b2" data-role="code" data-language="javascript" type="text/html">
 // Function scope
 function printAnswer() {
-    let value = 42;
-    console.log(value);
+  let value = 42
+  console.log(value)
 }
 
-printAnswer();      // 42
-console.log(value); // ReferenceError, value is not defined
+printAnswer()      // 42
+console.log(value) // ReferenceError, value is not defined
 
 </script>
 
@@ -100,11 +99,11 @@ console.log(value); // ReferenceError, value is not defined
 <script id="b3" data-role="code" data-language="javascript" type="text/html">
 // Block scope
 {
-    var value = 42;
-    console.log(value);
+  var value = 42
+  console.log(value)
 }
 
-console.log(value); // 42
+console.log(value) // 42
 
 </script>
 
@@ -117,11 +116,11 @@ console.log(value); // 42
 <script id="b4" data-role="code" data-language="javascript" type="text/html">
 // Block scope
 {
-    let value = 42;
-    console.log(value); // 42
+    let value = 42
+    console.log(value) // 42
 }
 
-console.log(value); // ReferenceError: value is not defined
+console.log(value) // ReferenceError: value is not defined
 
 </script>
 
@@ -143,9 +142,9 @@ console.log(value); // ReferenceError: value is not defined
 // Function declaration
 // att jämföra med C/C++, PHP.
 function square (x) {
-    return x*x;
+  return x*x
 }
-let val = square(2);
+let val = square(2)
 </script>
 
 
@@ -159,9 +158,9 @@ let val = square(2);
 // Function expression,
 // Funktionen tilldelas en variabel
 let square = function (x) {
-    return x*x;
-};
-let val = square(2);
+  return x*x
+}
+let val = square(2)
 </script>
 
 
@@ -184,13 +183,13 @@ let val = square(2);
 </script>
 
 <script id="a3" data-role="code" data-language="javascript" type="text/html">
-printAnswer();      // 42
+printAnswer()      // 42
 
 function printAnswer() {
-    console.log(42);
+    console.log(42)
 }
 
-printAnswer();      // 42
+printAnswer()      // 42
 
 </script>
 
@@ -201,11 +200,11 @@ printAnswer();      // 42
 </script>
 
 <script id="a4" data-role="code" data-language="javascript" type="text/html">
-printAnswer();      // ReferenceError: Cannot access
-                    //'printAnswer' before initialization
+printAnswer()      // ReferenceError: Cannot access
+                   //'printAnswer' before initialization
 
 let printAnswer = function() {
-    console.log(42);
+    console.log(42)
 }
 
 </script>
@@ -219,10 +218,10 @@ let printAnswer = function() {
 <script id="a5" data-role="code" data-language="javascript" type="text/html">
 
 let printAnswer = function() {
-    console.log(42);
+    console.log(42)
 }
 
-printAnswer();      // 42
+printAnswer()      // 42
 
 </script>
 
@@ -233,11 +232,11 @@ printAnswer();      // 42
 </script>
 
 <script id="a6" data-role="code" data-language="javascript" type="text/html">
-answer = 42;
+answer = 42
 
-console.log(answer); // 42
+console.log(answer) // 42
 
-var answer;
+var answer
 </script>
 
 <script data-role="slide" data-markdown type="text/html">
@@ -246,11 +245,11 @@ var answer;
 </script>
 
 <script id="a7" data-role="code" data-language="javascript" type="text/html">
-console.log(answer); // undefined
+console.log(answer) // undefined
 
-answer = 42;
+answer = 42
 
-var answer; // initeras med "undefined"
+var answer // initeras med "undefined"
 </script>
 
 
@@ -261,11 +260,11 @@ var answer; // initeras med "undefined"
 </script>
 
 <script id="b8" data-role="code" data-language="javascript" type="text/html">
-console.log(answer); // ReferenceError (not initialized)
+console.log(answer) // ReferenceError (not initialized)
 
-let answer;
+let answer
 
-answer = 42;
+answer = 42
 </script>
 
 <script data-role="slide" data-markdown type="text/html">
@@ -274,11 +273,11 @@ answer = 42;
 </script>
 
 <script id="b9" data-role="code" data-language="javascript" type="text/html">
-let answer;
+let answer
 
-console.log(answer); // undefined
+console.log(answer) // undefined
 
-answer = 42;
+answer = 42
 </script>
 
 
@@ -292,18 +291,18 @@ answer = 42;
 <script id="a8" data-role="code" data-language="javascript" type="text/html">
 // Nested functions / scopes / lexical scoping
 function outerFunction() {
-    let outer = "I am outside!";
+    let outer = "I am outside!"
 
     function innerFunction() {
-        let inner = "I am inside!";
-        console.log(outer); // "I am outside!"
+        let inner = "I am inside!"
+        console.log(outer) // "I am outside!"
     }
 
-    innerFunction();
-    console.log(inner); // ReferenceError: inner is not defined
+    innerFunction()
+    console.log(inner) // ReferenceError: inner is not defined
 }
 
-outerFunction();
+outerFunction()
 
 </script>
 
@@ -320,8 +319,8 @@ outerFunction();
 <script id="a9" data-role="code" data-language="javascript" type="text/html">
 // IIFE
 (function () {
-    console.log(42);
-})(); // 42
+    console.log(42)
+})() // 42
 </script>
 
 
@@ -333,64 +332,8 @@ outerFunction();
 
 <script id="a10" data-role="code" data-language="javascript" type="text/html">
 (function (value) {
-    console.log(value);
-})(42); // 42
-</script>
-
-<script data-role="slide" data-markdown type="text/html">
-# Closure
-"A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the
-lexical environment). In other words, a closure gives you access to an outer function's scope from an inner function.
-"
-</script>
-
-
-<script data-role="slide" data-markdown type="text/html">
-# Closure
-* declaration
-<pre data-code="a11"></pre>
-</script>
-
-<script id="a11" data-role="code" data-language="javascript" type="text/html">
-function addValues() {
-    let total = 0;
-
-    function addTheVal(value) {
-        total += value;
-        console.log(total);
-    }
-
-    return addTheVal;
-}
-
-let adder = addValues();
-
-adder(4); // 4
-adder(5); // 9
-adder(4); // 13
-
-</script>
-
-
-<script data-role="slide" data-markdown type="text/html">
-# Closure (2)
-* expression
-<pre data-code="a12"></pre>
-</script>
-
-<script id="a12" data-role="code" data-language="javascript" type="text/html">
-let add = (function() {
-    let total = 0;
-
-    return function() {
-        total += 1;
-        return total;
-    }
-})();
-
-console.log(add()); // 1
-console.log(add()); // 2
-
+    console.log(value)
+})(42) // 42
 </script>
 
 <script data-role="slide" data-markdown type="text/html">
@@ -402,18 +345,18 @@ console.log(add()); // 2
 // Function declaration
 
 function addValues(a, b) {
-    return a + b;
+    return a + b
 }
 
 function greet(name) {
-    return `Hello ${name}`;
+    return `Hello ${name}`
 }
 
 // Arrow function
 
-addValues = (a, b) => a + b;
+addValues = (a, b) => a + b
 
-greet = name => `Hello ${name}`;
+greet = name => `Hello ${name}`
 
 </script>
 
@@ -427,12 +370,12 @@ greet = name => `Hello ${name}`;
 <script id="a46" data-role="code" data-language="javascript" type="text/html">
 // Function expression
 let addValues = function(a, b) {
-    return a + b;
+    return a + b
 }
 
 // Arrow function
 
-let addValues = (a, b) => a + b;
+let addValues = (a, b) => a + b
 
 </script>
 
@@ -443,7 +386,7 @@ let addValues = (a, b) => a + b;
 * Har inte sitt egna scope, inte använda som metoder.
 * Har inte 'arguments' nyckelordet.
 * Kan inte användas som konstruktor.
-* 'this' är alltid fuktionens ägare.
+* 'this' är alltid funktionens ägare.
 
 </script>
 
@@ -461,7 +404,6 @@ let addValues = (a, b) => a + b;
 
 # Termer att ha koll på...
 
-* "Closure"
 * "Mutable/Immutable"
 * "First class citizens"
 * "Pure functions"

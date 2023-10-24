@@ -10,9 +10,10 @@ Till varje nodeprojekt finns oftast en tillhörande fil, `package.json`. I den f
 
 Du ska ha mappen `me/` som rotmapp och där installera alla beroenden för dina program.
 
-Ställ dig i rotmappen och kopiera in filen från exempelmappen:
+Ställ dig i kursens rot och kopiera in filen från exempelmappen:
 
 ```console
+# Stå i kursroten
 $ cp example/configfiles/package.json me/
 ```
 
@@ -27,5 +28,16 @@ $ npm install
 Du har nu fått en mapp `node_modules` som innehåller alla beroenden och allt som behövs än så länge i kursen. Du kan se vad som installerats i package.json.
 
 Om vi kikar i filen `package.json` kan vi en del kommandon med `npx`. Det är en så kallad "node package runner" som exekverar våra installerade paket utan att behöva ange hela sökvägen.
+
+
+
+### Övriga konfigurationsfiler
+
+Det finns fler filer i mappen example/configfiles. Det är konfigurationsfiler vi kommer använda under kursens gång så vi kopierar in dem till vår me-mapp:
+
+```console
+# Stå i kursroten
+$ cp example/configfiles/{.eslintrc.json,.jsdoc.json,.stylelintrc.json} me/
+```
 
 Vi kommer gå igenom alla delarna och beroenden som installerats efter hand.
