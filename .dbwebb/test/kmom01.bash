@@ -27,10 +27,10 @@ read
 cd ../../me/kmom01/
 if [[ -f "if-numbers.js" ]]; then
 
-    testKmom01If "2" "2 är lägre än 10." "2 är ett jämt tal."
+    testKmom01If "2" "2 är lägre än 10." "2 är ett jämnt tal."
     testKmom01If "13" "13 är mellan 10 och 20." "13 är ett udda tal."
-    testKmom01If "100" "100 är högre än eller lika med 100." "100 är ett jämt tal."
-    testKmom01If "42" "42 är ett jämt tal." "Meaning of life."
+    testKmom01If "100" "100 är högre än eller lika med 100." "100 är ett jämnt tal."
+    testKmom01If "42" "42 är ett jämnt tal." "Meaning of life."
 else
     printf "\n${RED}%s${NC}\n" "Unable to test if-numbers.js"
 fi
