@@ -30,15 +30,27 @@ $ cp example/animals/animals.js me/public/js/modules/kmom02/`.
 
 5. Dokumentera JavaScriptkoden med JSDoc.
 
-6. Kör `dbwebb test kmom02` för att se så allt validerar och att filerna ligger på rätt plats.
+6. Kör `dbwebb test kmom02` för att se så att filerna ligger på rätt plats.
 
 ```console
 $ dbwebb test kmom02
 ```
 
-6. Publicera koden på studentservern:
+### Validering
+
+Se till så koden validerar:
 
 ```console
+$ cd me
+$ npm run eslint --what=kmom02
+```
+
+### Inlämning
+
+Publicera koden enligt följande:
+
+```console
+$ cd me
 $ dbwebb publish public
 ```
 
