@@ -58,7 +58,7 @@ Se till så koden validerar:
 
 ```console
 $ cd me
-$ npm run linter --what=kmom02
+$ npm run eslint --what=kmom02
 ```
 
 ### Enhetstester
