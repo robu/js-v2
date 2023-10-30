@@ -49,7 +49,15 @@ cp -ri example/public me/
 $ dbwebb test kmom01
 ```
 
-5. Publicera koden på studentservern:
+5. Se till så koden validerar:
+
+```console
+$ npm run eslint --what=public
+$ npm run htmlhint --what=public
+$ npm run stylelint --what=public
+```
+
+6. Publicera koden på studentservern:
 
 ```console
 $ dbwebb publish public

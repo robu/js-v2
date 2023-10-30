@@ -89,7 +89,13 @@ $ node forloop.js 12 12
 $ dbwebb test kmom01
 ```
 
-5. Publicera koden på studentservern:
+5. Se till så koden validerar:
+
+```console
+$ npm run eslint --what=kmom01
+```
+
+6. Publicera koden på studentservern:
 
 ```console
 $ dbwebb publish kmom01
