@@ -17,7 +17,7 @@ Kopiera in relevanta moduler från exempelmappen:
 ```console
 # stå i kursroten
 $ mkdir -p me/public/js/modules/kmom02
-$ cp example/animals/animals.js me/public/js/modules/kmom02/`.
+$ cp example/animals/animals.js me/public/js/modules/kmom02/
 ```
 
 1. Lägg till menyvalet "kmom02" som ska länka till filen `kmom02.html`.
