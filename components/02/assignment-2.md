@@ -42,7 +42,7 @@ Se till så koden validerar:
 
 ```console
 $ cd me
-$ npm run eslint --what=kmom02
+$ npm run eslint --what=public
 ```
 
 ### Inlämning
