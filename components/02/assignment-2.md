@@ -24,9 +24,9 @@ $ cp example/animals/animals.js me/public/js/modules/kmom02/
 
 2. Läs där in scriptet `js/kmom02.js`.
 
-3. Använd modulen via `js/kmom02.js` och skriv ut på sidan ett slumpmässigt djur från varje kontinent. Vid sidomladdning ska det slumpas ut nya djur. 
+3. Använd modulen via `js/kmom02.js` och skriv ut ett slumpmässigt djur från varje kontinent i valfritt htmlelement. Vid sidomladdning ska det slumpas ut nya djur. 
 
-4. Skapa en modul `modules/kmom02/greeting.js` som skriver ut "God förmiddag" eller "God eftermiddag" på sidan beroende på om klockan är före eller efter `12.00`.
+4. Skapa en modul `modules/kmom02/greeting.js`. Där exporterar du en funktion som returnerar "God förmiddag" eller "God eftermiddag" beroende på om klockan är före eller efter `12.00`. Använd modulen i `kmom02.js` och skriv ut resultatet i valfritt htmlelement på din sida.
 
 5. Dokumentera JavaScriptkoden med JSDoc.
 
