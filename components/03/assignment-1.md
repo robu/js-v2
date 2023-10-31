@@ -2,7 +2,7 @@
 
 I den här uppgiften ska du skapa former i olika färger och arbeta med DOM-trädet och dess funktionalitet.
 
-Du jobbar i mappen `kmom03/`.
+Du bygger vidare på din sida i `public/`.
 
 ### Förutsättning
 
@@ -10,29 +10,34 @@ Det förutsätts att du gått igenom artiklarna för [kursmoment 03](../../artic
 
 ### Intro
 
-Nu börjar fler få upp ögonen för ditt sinne för programmering och nästa jobb väntar! Rörelsen "eQuality" behöver en dynamisk webbsida där användaren kan interagera med innehållet. Användaren ska kunna klicka på former och få se namnen på några av historiens största förkämpar för mänskliga rättigheter och människans lika värde.
+Nu börjar fler få upp ögonen för ditt sinne för programmering och nästa jobb väntar! Rörelsen "eQuality" behöver en dynamisk webbsida där användaren kan interagera med innehållet. Användaren ska kunna klicka på former och få se namnen på några av historiens största förkämpar för mänskliga rättigheter.
 
-De kan ge dig en start att utgå ifrån och av någon anledning har de lagt filerna i exempelmappen. Mycket märkligt, tänker du, men det är bara att kopiera in dem och köra:
+De kan ge dig en start att utgå ifrån och av någon anledning har de lagt filen i exempelmappen. Mycket märkligt, tänker du, men det är bara att kopiera in den och köra:
 
 ```console
-# Ställ dig i kursmappen
-$ cp -r example/rainbow/* me/kmom03/
+# Ställ dig i kursroten
+$ mkdir -p public/js/modules/kmom03
+$ cp example/rainbow/info.js public/js/modules/kmom03/
+$ cp example/rainbow/logo.png public/js/img/
 ```
+
+Kikar vi i info.js ser vi att det är en modul som exporterar tre arrayer, `colors`, `persons` och `years`. Det gäller nu att använda dem och snickra ihop en sida som uppfyller kraven nedan.
 
 ### Krav
 
-1. Du får enbart ändra i filerna `main.js` och `style.css`.
-1. Varje gång man klickar på knappen ska en form ritas ut med korrekt bakgrundsfärg. Färgerna finns i ordning i en array i `main.js`.
+1. Lägg till menyvalet "kmom03" som ska länka till filen `kmom03.html`.
+1. Läs där in scriptet `js/kmom03.js` som i sin tur använder `modules/kmom03/info.js`.
+1. Börja med en tom sida med en knapp i mitten.
+1. Varje gång man klickar på knappen ska en form ritas ut med korrekt bakgrundsfärg. Färgerna finns i ordning i arrayen `colors`.
 1. Knappen ska visa vilken bild som kommer näst. När alla bilder är framme, tas knappen bort.
 1. När man klickat på knappen ska det även läggas till en eventlyssnare som lägger till en ram runt formen när muspekaren är på elementet. När man för musen utanför ska ramen försvinna.
-1. När man klickat på en form ska respektive namn och år skrivas ut tillsammans med bilden. Namn och år finns i `main.js` och bilden finns i mappen `img/`.
-1. Alla eventlyssnare ska tas bort när man klickat på en form.
+1. När man klickat på en form ska respektive namn och år skrivas ut tillsammans med bilden. Namn och år finns i `info.js` och bilden finns i mappen `img/`.
 1. Utöver dessa krav vill de se hur dina vingar bär. Utmana dig själv och lägg gärna till mer funktionalitet.
 1. Kommentera din kod enligt JSDoc och generera dokumentationen:
 
 ```console
 $ cd me
-$ npm run jsdoc --kmom=kmom03
+$ npm run jsdoc --what=kmom03
 ```
 
 ### Extra uppgift (Optionell)

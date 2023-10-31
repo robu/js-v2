@@ -17,8 +17,8 @@ Vi börjar med att kika på ett event från tangentbordet. Ett event kan triggas
 
 ```js
 document.addEventListener("keydown", function(event) {
-    console.log(event);
-});
+  console.log(event)
+})
 ```
 
 Vi lägger eventlyssnaren direkt på `document`. Det skickas in två argument, eventnamnet `"keydown"` och en anonym funktion som körs automatiskt när eventet triggas. Argumentet `event` skickas med och innehåller hela eventet som triggas. För att enklare se vad som menas så kikar vi på hur det ser ut i consolen när vi skriver ut det:
@@ -32,10 +32,10 @@ Vi har alltså fångat eventet att en tangent trycks ner. All information hittar
 ```js
 let myContent = document.getElementById('content')
 
-myContent.innerHTML = "<h3>Press a letter in the word 'dbwebb':</h3>";
+myContent.innerHTML = "<h3>Press a letter in the word 'dbwebb':</h3>"
 
 document.addEventListener("keydown", function(event) {
-    let key = event.key; // Catch the key property
+    let key = event.key // Catch the key property
 
     switch (key) {
         case "d":
@@ -50,19 +50,14 @@ document.addEventListener("keydown", function(event) {
 });
 ```
 
-<!-- Vill du se mer kan du titta på videon som visar onkeydown:
-
-[YOUTUBE src=pLt5tWcMt-s width=630 caption="Kenneth visar onkeydown."] -->
-
-
 
 #### Övriga keyboard-events
 
 Det finns som sagt fler events att fånga upp från tangentbordet. Det skiljer inte så mycket, utan definiera rätt event som argument till eventlyssnaren:
 
 ```js
-document.addEventListener('keypress', ... );
-document.addEventListener('keyup',  ... );
+document.addEventListener('keypress', ... )
+document.addEventListener('keyup',  ... )
 ```
 
 
@@ -103,12 +98,12 @@ Lite css på den skapar fina, fyrkantiga lådor.
 Vi hämtar lådorna med javascript och lägger på en eventlyssnare, som triggas när man klickar i respektive låda.
 
 ```js
-let boxes = document.getElementsByClassName("box");
+let boxes = document.getElementsByClassName("box")
 
 for (let i = 0; i < boxes.length; i++) {
-    boxes[i].addEventListener("click", function(event) {
-        event.target.style.backgroundColor = "blue";
-    })
+  boxes[i].addEventListener("click", function(event) {
+    event.target.style.backgroundColor = "blue"
+  })
 }
 ```
 
@@ -129,10 +124,10 @@ Vi kör koden och om jag klickar på varannan låda blir det på följande sätt
 Även här finns det fler events att fånga upp. Det skiljer heller inte så mycket, utan definiera rätt event som argument till eventlyssnaren. Några självförklarande exempel är:
 
 ```js
-boxes[i].addEventListener("mouseover", ...);
-boxes[i].addEventListener("mouseenter", ...);
-boxes[i].addEventListener("mouseleave", ...);
-boxes[i].addEventListener("dblclick", ...);
+boxes[i].addEventListener("mouseover", ...)
+boxes[i].addEventListener("mouseenter", ...)
+boxes[i].addEventListener("mouseleave", ...)
+boxes[i].addEventListener("dblclick", ...)
 
 // etc
 ```
@@ -149,13 +144,15 @@ VI kan behöva ta bort en eventlyssnare och då är det enklare om vi inte har a
 let boxes = document.getElementsByClassName("box");
 
 function changeColor(event) {
-    event.target.style.backgroundColor = "blue";
+  event.target.style.backgroundColor = "blue"
 }
 
 for (let i = 0; i < boxes.length; i++) {
-    boxes[i].addEventListener("click", changeColor);
+  boxes[i].addEventListener("click", changeColor)
 }
 
 // Tar bort eventlyssnaren på den första lådan.
-boxes[0].removeEventListener("click", changeColor);
+boxes[0].removeEventListener("click", changeColor)
 ```
+
+Du hittar videor på hur man går tillväga i spellistan ["Kom igång med js"](https://www.youtube.com/playlist?list=PLKtP9l5q3ce8v_z6kLJsIfCJNP4zEtd9c)
