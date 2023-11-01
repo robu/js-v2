@@ -29,9 +29,9 @@ Kikar vi i info.js ser vi att det är en modul som exporterar tre arrayer, `colo
 1. Läs där in scriptet `js/kmom03.js` som i sin tur använder `modules/kmom03/info.js`.
 1. Börja med en tom sida med en knapp i mitten.
 1. Varje gång man klickar på knappen ska en form ritas ut med korrekt bakgrundsfärg. Färgerna finns i ordning i arrayen `colors`.
-1. Knappen ska visa vilken bild som kommer näst. När alla bilder är framme, tas knappen bort.
-1. När man klickat på knappen ska det även läggas till en eventlyssnare som lägger till en ram runt formen när muspekaren är på elementet. När man för musen utanför ska ramen försvinna.
-1. När man klickat på en form ska respektive namn och år skrivas ut tillsammans med bilden. Namn och år finns i `info.js` och bilden finns i mappen `img/`.
+1. Knappen ska visa vilken form i ordningen som kommer näst. När alla former är framme, tas knappen bort.
+1. När man klickar på knappen ska det även läggas till en eventlyssnare som lägger till en ram runt formen när muspekaren är på elementet. När man för musen utanför ska ramen försvinna.
+1. När man klickar på en form ska respektive namn och år skrivas ut tillsammans med bilden `logo.png`. Namn och år finns i `info.js` och bilden finns i mappen `img/`.
 1. Utöver dessa krav vill de se hur dina vingar bär. Utmana dig själv och lägg gärna till mer funktionalitet.
 1. Kommentera din kod enligt JSDoc och generera dokumentationen:
 
@@ -42,9 +42,9 @@ $ npm run jsdoc --what=kmom03
 
 ### Extra uppgift (Optionell)
 
-1. Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten? Du kan då uppdatera eventlyssnaren från krav 5 och den behöver således inte tas bort.
+1. Kan du lägga till en eventlyssnare som gör att man kan "vända tillbaka" korten? 
 
-1. Du kanske till och med kan göra ett memoryspel av korten? Om du väljer detta krav så kan du anpassa grundkraven efter ditt memoryspel. Du kan tex ändra hur eventlyssnarna fungerar och knappen kan tas bort. Du ska dock använda informationen ifrån arrayerna.
+<!-- 1. Du kanske till och med kan göra ett memoryspel av korten? Om du väljer detta krav så kan du anpassa grundkraven efter ditt memoryspel. Du kan tex ändra hur eventlyssnarna fungerar och knappen kan tas bort. Du ska dock använda informationen ifrån arrayerna. -->
 
 ### Validering
 
@@ -52,7 +52,9 @@ Se till så koden validerar:
 
 ```console
 $ cd me
-$ npm run linter kmom03/
+$ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhnt --what=public
 ```
 
 ### Avslutningsvis

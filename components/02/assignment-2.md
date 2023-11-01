@@ -43,6 +43,8 @@ Se till så koden validerar:
 ```console
 $ cd me
 $ npm run eslint --what=public
+$ npm run stylelint --what=public
+$ npm run htmlhnt --what=public
 ```
 
 ### Inlämning
