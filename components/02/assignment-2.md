@@ -1,6 +1,6 @@
 # Uppgift - "Me page 2"
 
-Jobba vidare med me-sidan och utöka med moduler. Här behöver vi använda attributet `type="module"` i htmlfilen och se den via en webbserver. 
+Jobba vidare med me-sidan och utöka med moduler. Här behöver vi använda attributet `type="module"` i htmlfilen och se den via en webbserver.
 
 
 
@@ -24,7 +24,7 @@ $ cp example/animals/animals.js me/public/js/modules/kmom02/
 
 2. Läs där in scriptet `js/kmom02.js`.
 
-3. Använd modulen via `js/kmom02.js` och skriv ut ett slumpmässigt djur från varje kontinent i valfritt htmlelement. Vid sidomladdning ska det slumpas ut nya djur. 
+3. Använd modulen via `js/kmom02.js` och skriv ut ett slumpmässigt djur från varje kontinent i valfritt htmlelement. Vid sidomladdning ska det slumpas ut nya djur.
 
 4. Skapa en modul `modules/kmom02/greeting.js`. Där exporterar du en funktion som returnerar "God förmiddag" eller "God eftermiddag" beroende på om klockan är före eller efter `12.00`. Använd modulen i `kmom02.js` och skriv ut resultatet i valfritt htmlelement på din sida.
 
@@ -44,7 +44,7 @@ Se till så koden validerar:
 $ cd me
 $ npm run eslint --what=public
 $ npm run stylelint --what=public
-$ npm run htmlhnt --what=public
+$ npm run htmlhint --what=public
 ```
 
 ### Inlämning
@@ -63,5 +63,3 @@ $ dbwebb publish public
 Om du har tid och kraft.
 
 1. Lägg extra kraft på CSS och styla din me-sida så den blir mer personlig.
-
-
