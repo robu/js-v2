@@ -11,7 +11,7 @@ Av säkerhetsskäl får vi inte peta på filsystemet via JavaScript i webbläsar
 
 ### Vad behöver vi göra i HTML koden?
 
-Som vi såg i artikeln "[Modules](./01_modules.md)" så behöver vi ange attributet `"type": "module"` i script-taggen i .html-filen där vi läser in JavaScriptfilen. Det borde då se ut ungefär så här: `<script type="module" src="path/to/file.js"></script>`.
+Som vi såg i artikeln "[Modules](./01_modules.md#hur-aktiverar-man-moduler)" så behöver vi ange attributet `"type": "module"` i script-taggen i .html-filen där vi läser in JavaScriptfilen. Det borde då se ut ungefär så här: `<script type="module" src="path/to/file.js"></script>`.
 
 
 #### Webbserver
