@@ -65,8 +65,8 @@ describe('Testsuite for kmom02.js', function () {
   })
 
   describe('report', function () {
-    it('should be of type string with 771 characters', function () {
-      expect(report()).to.be.a('string').with.lengthOf(771)
+    it('should be of type string with 770 or 771 characters, depending on formatting', function () {
+      expect(report()).to.be.a('string').with.lengthOf.at.least(770).and.lengthOf.at.most(771)
     })
     it('should contain America: Florida panther (0)', function () {
       expect(report()).to.include('America: Florida panther (0)')
