@@ -16,7 +16,7 @@ De kan ge dig en start att utgå ifrån och av någon anledning har de lagt file
 
 ```console
 # Ställ dig i kursroten
-$ mkdir -p public/js/modules/kmom03
+$ mkdir -p public/js/modules/kmom03 public/js/img
 $ cp example/rainbow/info.js public/js/modules/kmom03/
 $ cp example/rainbow/logo.png public/js/img/
 ```
