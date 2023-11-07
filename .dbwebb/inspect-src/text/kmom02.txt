@@ -1,6 +1,6 @@
 Kursmoment 02 klart!
 
-Den stora utmaningen den här veckan var animals-uppgiften. Jag har tittat igenom din kod och provkört de olika exporterade funktionerna och det rullar på riktigt bra. Koden validerar och din me-sida uppfyller kraven med datumet och meddelandet.
+Den stora utmaningen den här veckan var animals-uppgiften. Jag har tittat igenom din kod och testat de olika exporterade funktionerna och det rullar på riktigt bra. Koden validerar och din me-sida uppfyller kraven med de slumpade djuren och meddelandet.
 
 Allt jag kollade på såg bra ut. Kör på.
 
