@@ -32,12 +32,12 @@ Kikar vi i info.js ser vi att det är en modul som exporterar tre arrayer, `colo
 1. Knappen ska visa vilken form i ordningen som kommer näst. När alla former är framme, tas knappen bort.
 1. När man klickar på knappen ska det även läggas till en eventlyssnare som lägger till en ram runt formen när muspekaren är på elementet. När man för musen utanför ska ramen försvinna.
 1. När man klickar på en form ska respektive namn och år skrivas ut tillsammans med bilden `logo.png`. Namn och år finns i `info.js` och bilden finns i mappen `img/`.
-1. Utöver dessa krav vill de se hur dina vingar bär. Utmana dig själv och lägg gärna till mer funktionalitet.
+1. Utöver dessa krav vill de se hur dina vingar bär. Utmana dig själv och lägg gärna till mer funktionalitet. Skapar du fler moduler lägger du dem i mappen `modules/kmom3/`.
 1. Kommentera din kod enligt JSDoc och generera dokumentationen:
 
 ```console
 $ cd me
-$ npm run jsdoc --what=kmom03
+$ npm run jsdoc --what=public
 ```
 
 ### Extra uppgift (Optionell)
